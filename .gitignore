@@ -1,0 +1,30 @@
+# Python cache/build products
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.pytest_cache/
+pytestdebug.log
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# Virtual environments and local settings
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Jupyter local state
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+.jupyter_local/
+.jupyter_local_test/
+
+# Downloaded corpora and generated outputs
+data/
+notebooks/data/
+artifacts/
+notebooks/artifacts/
