@@ -8,7 +8,8 @@ They are handwritten hypotheses, not discoveries. The older API is unchanged.
 
 Open the repository's **Actions → Attack DSL prototype** workflow. Each branch
 push and pull request runs the tests and a synthetic probability/fitting demo.
-The run's `attack-demo` artifact contains its JSON report. These jobs use no API
+The run's `attack-reports` artifact contains JSON reports for the synthetic demo
+and the [small Bach pilot](bach-pilot-results.md). These jobs use no API
 keys and make no model calls. The manual trigger becomes visible once the
 workflow is on the default branch; branch pushes run it before then.
 
@@ -19,6 +20,7 @@ python -m pip install -e '.[dev,experiment]'
 python -m pytest -q
 python -m harmonizer.attack.cli validate
 python -m harmonizer.attack.cli demo --output artifacts/attack-demo.json
+python -m harmonizer.attack.pilot --output artifacts/bach-pilot.json
 python -m harmonizer.attack.cli score --score chorale.musicxml --tonic C4 --mode minor
 python -m harmonizer.attack.cli predict --score chorale.musicxml --tonic C4 --mode minor --start 1 --horizon 2 --alto C4,Eb4,G4 --tenor C3,Eb3,G3
 ```
@@ -126,7 +128,8 @@ marginals or report per-decision joint NLL with its distinct conditioning.
 - Traces record bindings, expression, line, contribution or skip reason, but
   do not yet capture every intermediate measurement. Rule IDs survive title
   changes, but are not a semantic-equivalence hash.
-- Still needed: pinned corpus/splits and tune grouping, learned baselines,
+- A small pinned Bach pilot now includes learned pitch and melodic baselines;
+  see its results and limitations above. Still needed: tune-aware corpus splits,
   corpus-scale benchmarks, durable spend accounting, bounded provider adapters,
   and the development-only rule discovery loop. Never expose a final test split
   to a proposal model.
@@ -147,8 +150,8 @@ the run. Do not rely on a prepaid balance or expiring CI artifact as the ledger.
 
 ## Next reproducible milestone
 
-Pin a small chorale manifest and split by piece/tune. Declare pitch spelling
-domains and global-key provenance, audit coverage, fit seed constraints and
-pitch/transition baselines on training only, then compare one- and two-event
-first-choice probabilities on development. Record results and runtime before
-spending on proposals. A final held-out test remains untouched during discovery.
+Expand the pinned pilot to tune-aware splits and simultaneous A/T decisions.
+Keep declared domains and global-key provenance, audit coverage, fit on training
+only, and compare first-choice probabilities on development. Match training
+coverage when isolating horizon effects. A final held-out test remains untouched
+during discovery. Live proposals still require durable spending controls.
