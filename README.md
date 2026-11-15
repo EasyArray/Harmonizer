@@ -1,3 +1,5 @@
+> **Attack DSL prototype:** the new rule language, exact one/two-event probability model, and cloud test instructions are in [docs/attack-prototype.md](docs/attack-prototype.md). The original notebook API below remains available.
+
 # Harmonizer Workbench
 
 Harmonizer Workbench is a notebook-first Python project for experimenting with
