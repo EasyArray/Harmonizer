@@ -85,7 +85,7 @@ def candidates(score, rules, domains, start, horizon=1, max_candidates=10_000):
     replacements = dict(zip((n.id for n in targets), choice))
     # Physically remove unresolved future inner pitches, in addition to the
     # half-open scoring window. Outer voices are supplied conditioning data.
-    notes = tuple(replace(n, pitch=replacements.get(n.id, n.pitch)) for n in score.notes
+    notes = tuple(replace(n, pitch=replacements[n.id]) if n.id in replacements else n for n in score.notes
                   if n.voice not in (Voice.A, Voice.T) or n.onset < stop)
     candidate = replace(score, notes=notes)
     result = evaluate(rules, candidate, start=start, stop=stop, trace=False)

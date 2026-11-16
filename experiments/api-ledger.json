@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "ceiling_micro_usd": 10000000,
+  "scope": "Initial Harmonizer API spending across all providers; no automatic reset",
+  "entries": [
+    {
+      "id": "round-001",
+      "provider": "openai",
+      "model": "gpt-6.1-terra",
+      "status": "reserved",
+      "prompt_sha256": "3ef7a191768827ff5d207f95b9a7a159ebdf36dfc4e035404257af9e65df4577",
+      "ticket_sha256": "77b185ef18e9c817974a52e8f8c0a38b0a68d09587174989125ab42093535918",
+      "max_output_tokens": 6000,
+      "reserved_micro_usd": 50873,
+      "accounted_micro_usd": 50873,
+      "pricing_checked": "2026-11-16",
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+      "input_micro_usd_per_token_ceiling": "2.5",
+      "output_micro_usd_per_token_ceiling": "5"
+    }
+  ]
+}
