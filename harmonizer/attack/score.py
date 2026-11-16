@@ -1,6 +1,9 @@
 """Small immutable musical objects with exact time and spelled pitch."""
 
+from bisect import bisect_left, bisect_right
+from collections import defaultdict
 from dataclasses import dataclass
+from functools import cached_property
 from enum import Enum
 from fractions import Fraction
 import re
@@ -140,21 +143,49 @@ class Score:
       if any(a.offset > b.onset for a, b in zip(notes, notes[1:])):
         raise ValueError(f"Overlapping notes in {voice.name}: monophonic parts required")
 
+  @cached_property
+  def _by_voice(self):
+    return {v: tuple(sorted((n for n in self.notes if n.voice == v), key=lambda n: n.onset)) for v in Voice}
+
+  @cached_property
+  def _onsets(self):
+    return {v: tuple(n.onset for n in notes) for v, notes in self._by_voice.items()}
+
+  @cached_property
+  def _ending(self):
+    return {(n.voice, n.offset): n for n in self.notes}
+
+  @cached_property
+  def _attacks(self):
+    by_time = defaultdict(list)
+    for n in self.notes:
+      by_time[n.onset].append(n)
+    return {t: tuple(sorted(notes, key=lambda n: n.voice.value)) for t, notes in by_time.items()}
+
+  def attacks_at(self, time):
+    return self._attacks.get(time, ())
+
+  @cached_property
+  def _time_points(self):
+    return tuple(sorted({t for n in self.notes for t in (n.onset, n.offset)} | {f.onset for f in self.figures}))
+
   @property
   def times(self):
-    return sorted({t for n in self.notes for t in (n.onset, n.offset)} | {f.onset for f in self.figures})
+    return list(self._time_points)
 
   def at(self, voice, time, before=False):
-    for note in self.notes:
-      if note.voice != voice:
-        continue
-      if (note.onset < time <= note.offset) if before else (note.onset <= time < note.offset):
-        return note
+    search = bisect_left if before else bisect_right
+    index = search(self._onsets[voice], time) - 1
+    if index < 0:
+      return None
+    note = self._by_voice[voice][index]
+    if (time <= note.offset) if before else (time < note.offset):
+      return note
     return None
 
   def previous(self, note):
-    # Equality of boundaries prevents crossing an unnotated gap or explicit rest.
-    return next((n for n in self.notes if n.voice == note.voice and n.offset == note.onset), None)
+    # Exact end boundaries preserve the no-navigation-across-rests contract.
+    return self._ending.get((note.voice, note.onset))
 
 
 def pitch_of(value):

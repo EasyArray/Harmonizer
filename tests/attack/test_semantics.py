@@ -132,3 +132,21 @@ def test_voice_union_is_one_binding_per_attacking_note():
     rule("At alto or alto attack n", "penalty 1")
   with pytest.raises(DSLError):
     rule("At alto or tenor attack a,t", "penalty 1")
+
+
+def test_indexed_score_boundaries_rests_and_replaced_pitches():
+  # Deliberately unordered source notes; a rest separates the second and third.
+  notes = (n("late","A","G4",3,4),n("first","A","C4",0,1),n("second","A","D4",1,2))
+  score = Score(notes,KEY)
+  times = [F(0),F(1,2),F(1),F(2),F(5,2),F(3),F(4)]
+  def identities(before):
+    return [item.id if (item:=score.at(Voice.A,t,before)) else None for t in times]
+  assert identities(False) == ["first","first","second",None,None,"late",None]
+  assert identities(True) == [None,"first","first","second",None,None,"late"]
+  assert score.previous(notes[0]) is None
+  assert score.previous(notes[2]).id == "first"
+  assert [x.id for x in score.attacks_at(F(1))] == ["second"]
+  changed = replace(score, notes=tuple(replace(x,pitch=Pitch.parse("E4")) if x.id=="first" else x for x in notes))
+  assert str(changed.at(Voice.A,F(0)).pitch) == "E4"
+  assert str(changed.previous(notes[2]).pitch) == "E4"
+  assert str(score.previous(notes[2]).pitch) == "C4"

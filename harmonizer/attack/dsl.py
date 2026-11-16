@@ -176,7 +176,7 @@ class Trigger:
   voice: Voice | tuple[Voice, ...] | None = None
 
   def bindings(self, score, time):
-    attacks = sorted((n for n in score.notes if n.onset == time), key=lambda n: n.voice.value)
+    attacks = score.attacks_at(time)
     match self.kind:
       case "single":
         selected = self.voice if isinstance(self.voice, tuple) else (self.voice,)
@@ -184,7 +184,7 @@ class Trigger:
       case "pair":
         values = combinations(attacks, 2)
       case "hold":
-        held = sorted((n for n in score.notes if n.onset < time < n.offset), key=lambda n: n.voice.value)
+        held = [n for v in Voice if (n := score.at(v, time)) is not None and n.onset < time]
         values = ((n, h) for n in attacks for h in held if n.voice != h.voice)
       case "figure":
         values = [(f,) for f in score.figures if f.onset == time]
