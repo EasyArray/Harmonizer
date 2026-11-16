@@ -57,3 +57,16 @@ def test_failed_remote_checkpoint_prevents_paid_request(tmp_path, monkeypatch, l
   with pytest.raises(RuntimeError, match="remote unavailable"):
     cloud.main()
   assert calls == ["/models"]
+
+
+def test_repeated_unchanged_checkpoint_is_a_noop(tmp_path, monkeypatch):
+  import subprocess
+  monkeypatch.chdir(tmp_path)
+  subprocess.run(["git","init","-q"],check=True)
+  subprocess.run(["git","config","user.name","Test"],check=True)
+  subprocess.run(["git","config","user.email","test@example.invalid"],check=True)
+  (tmp_path/"status.json").write_text('{"status":"blocked"}')
+  subprocess.run(["git","add","status.json"],check=True)
+  subprocess.run(["git","commit","-qm","Initial"],check=True)
+  # No remote exists: trying to commit or push unchanged state would fail.
+  cloud.checkpoint(["status.json"],"Same status")

@@ -39,6 +39,8 @@ def request(endpoint, key, payload=None):
 def checkpoint(paths, message):
   """Retry only git transport, never a model request."""
   subprocess.run(["git", "add", "--", *map(str, paths)], check=True, capture_output=True)
+  if subprocess.run(["git", "diff", "--cached", "--quiet"], check=False).returncode == 0:
+    return
   subprocess.run(["git", "commit", "-m", message], check=True, capture_output=True)
   for attempt in range(3):
     result = subprocess.run(["git", "push", "origin", "HEAD:attack-dsl-prototype"], capture_output=True)
@@ -102,8 +104,12 @@ def main():
               "http_status": error.code if isinstance(error, urllib.error.HTTPError) else None,
               "paid_requests_in_probe": 0}
     available = False
+  status["openai_github_secret_available"] = bool(os.environ.get("OPENAI_API_KEY", "").strip())
   save_json(STATUS, status)
   if not available or not REQUEST.exists():
+    if os.environ.get("GITHUB_STEP_SUMMARY"):
+      with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as summary:
+        summary.write("## No paid proposal generated\n\nProvider preflight: " + status["status"] + ". No generation request was sent. See experiments/um-provider-status.json.\n")
     checkpoint([STATUS], "Record U-M model availability without a paid request")
     return
   spec = json.loads(REQUEST.read_text())
