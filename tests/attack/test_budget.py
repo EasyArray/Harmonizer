@@ -90,3 +90,42 @@ def test_saved_model_response_replays_without_a_paid_request():
   from harmonizer.attack.proposals import validate_response
   result=validate_response(Path("experiments/api-responses/round-001.json"))
   assert len(result["accepted"])==3 and not result["rejected"]
+
+
+def test_astra_uses_its_own_price_limits_and_reasoning(tmp_path, monkeypatch):
+  import harmonizer.attack.proposals as api
+  monkeypatch.chdir(tmp_path)
+  monkeypatch.setattr(api, "require_durable", lambda: None)
+  Path("experiments").mkdir()
+  ledger(tmp_path).rename("experiments/api-ledger.json")
+  Path(".env.local").write_text("OPENAI_API_KEY=fake-test-credential\n")
+  prompt = Path("prompt.txt")
+  prompt.write_text("Three readable rules")
+  entry = api.reserve("astra", prompt, model="gpt-6-astra")
+  assert entry["max_output_tokens"] == 12000
+  assert entry["reserved_micro_usd"] > 600000
+  assert entry["reserved_micro_usd"] < 2000000
+  calls = []
+  class Reply:
+    def __enter__(self): return self
+    def __exit__(self, *args): pass
+    def read(self):
+      return json.dumps({"status":"completed","usage":{"input_tokens":1000,"output_tokens":1000}}).encode()
+  def fake_request(request, **kwargs):
+    payload = json.loads(request.data)
+    calls.append(payload)
+    assert payload["model"] == "gpt-6-astra"
+    assert payload["reasoning"]["effort"] == "high"
+    assert payload["max_output_tokens"] == 12000
+    return Reply()
+  monkeypatch.setattr(api.urllib.request,"urlopen",fake_request)
+  result = api.send("astra",prompt)
+  assert result["accounted_micro_usd"] == 75000
+  assert len(calls) == 1
+  with pytest.raises(ValueError,match="unspent"):
+    api.send("astra",prompt)
+
+
+def test_unpriced_model_cannot_reserve(tmp_path):
+  with pytest.raises(ValueError,match="allowlisted"):
+    reserve("unpriced",tmp_path/"unused",model="not-priced")

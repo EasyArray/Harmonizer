@@ -86,3 +86,10 @@ the saved response, validation file and ledger entry establish that.
 The existing OpenAI key is in the temporarily unavailable development workspace.
 Keys are never placed in prompts, source files, logs or reports. GitHub secrets
 are consumed only within the dedicated proposal job.
+
+The local OpenAI adapter also supports the same Astra/high profile, using the
+existing development key once its workspace is available. Reserve with
+`--model gpt-6-astra`; `send` reads the model and limits from that reservation.
+Both providers use the same round identifier, so switching routes cannot
+duplicate a recorded request. OpenAI's verified standard Astra rates are also
+$10/$50 per million, with a conservative $25 input accounting ceiling.

@@ -24,15 +24,29 @@ MAX_BYTES = 64_000
 PRICE_SOURCE = "https://developers.openai.com/api/docs/models/gpt-6.1-terra"
 PRICE_CHECKED = "2026-11-16"
 
+PROFILES = {
+  "gpt-6.1-terra": {"input_rate": Decimal("2.5"), "output_rate": Decimal("5"),
+    "max_output": 6000, "max_bytes": 64000, "request_ceiling": 250000, "effort": "low"},
+  "gpt-6-astra": {"input_rate": Decimal("25"), "output_rate": Decimal("50"),
+    "max_output": 12000, "max_bytes": 40000, "request_ceiling": 2000000, "effort": "high"},
+}
+
+
+def profile(model):
+  if model not in PROFILES:
+    raise ValueError("Model is not priced and allowlisted")
+  return PROFILES[model]
+
 
 def digest(data):
   return sha256(data).hexdigest()
 
 
-def cost(input_tokens, output_tokens):
+def cost(input_tokens, output_tokens, model=MODEL):
   if type(input_tokens) is not int or type(output_tokens) is not int or min(input_tokens, output_tokens) < 0:
     raise ValueError("Invalid token usage")
-  return int((input_tokens * INPUT_RATE + output_tokens * OUTPUT_RATE).to_integral_value(rounding=ROUND_CEILING))
+  config = profile(model)
+  return int((input_tokens * config["input_rate"] + output_tokens * config["output_rate"]).to_integral_value(rounding=ROUND_CEILING))
 
 
 def read_ledger(path=LEDGER):
@@ -69,7 +83,8 @@ def require_durable(path=LEDGER):
     raise ValueError("Ledger is not synchronized to GitHub; checkpoint before proceeding")
 
 
-def reserve(identity, prompt_path, ledger_path=LEDGER, tickets=Path("artifacts/api-tickets")):
+def reserve(identity, prompt_path, ledger_path=LEDGER, tickets=Path("artifacts/api-tickets"), model=MODEL):
+  config = profile(model)
   if not identity or any(c not in "abcdefghijklmnopqrstuvwxyz0123456789-" for c in identity):
     raise ValueError("Request ID must use lowercase letters, digits and hyphens")
   data = read_ledger(ledger_path)
@@ -78,10 +93,10 @@ def reserve(identity, prompt_path, ledger_path=LEDGER, tickets=Path("artifacts/a
   if any(e["status"] == "reserved" for e in data["entries"]):
     raise ValueError("Resolve the pending reservation before starting another")
   raw = prompt_path.read_bytes()
-  if not raw or len(raw) > MAX_BYTES:
+  if not raw or len(raw) > config["max_bytes"]:
     raise ValueError("Prompt is empty or too large")
-  reserved = cost(len(raw) + 4096, MAX_OUTPUT)
-  if reserved > REQUEST_CEILING or sum(e["accounted_micro_usd"] for e in data["entries"]) + reserved > CEILING:
+  reserved = cost(len(raw) + 4096, config["max_output"], model)
+  if reserved > config["request_ceiling"] or sum(e["accounted_micro_usd"] for e in data["entries"]) + reserved > CEILING:
     raise ValueError("Request would exceed the spending ceiling")
   ticket = secrets.token_hex(32)
   tickets.mkdir(parents=True, exist_ok=True)
@@ -89,12 +104,13 @@ def reserve(identity, prompt_path, ledger_path=LEDGER, tickets=Path("artifacts/a
   with target.open("x") as f:
     os.chmod(target, 0o600)
     f.write(ticket)
-  entry = {"id": identity, "provider": "openai", "model": MODEL, "status": "reserved",
+  entry = {"id": identity, "provider": "openai", "model": model, "status": "reserved",
            "prompt_sha256": digest(raw), "ticket_sha256": digest(ticket.encode()),
-           "max_output_tokens": MAX_OUTPUT, "reserved_micro_usd": reserved,
+           "max_output_tokens": config["max_output"], "reasoning_effort": config["effort"], "reserved_micro_usd": reserved,
            "accounted_micro_usd": reserved, "pricing_checked": PRICE_CHECKED,
-           "pricing_source": PRICE_SOURCE, "input_micro_usd_per_token_ceiling": str(INPUT_RATE),
-           "output_micro_usd_per_token_ceiling": str(OUTPUT_RATE)}
+           "pricing_source": "https://developers.openai.com/api/docs/models/" + model,
+           "input_micro_usd_per_token_ceiling": str(config["input_rate"]),
+           "output_micro_usd_per_token_ceiling": str(config["output_rate"])}
   data["entries"].append(entry)
   save_json(ledger_path, data)
   return entry
@@ -128,7 +144,7 @@ def validate_response(path):
 def settle(data, entry, response):
   usage = response.get("usage") or {}
   try:
-    accounted = cost(usage["input_tokens"], usage["output_tokens"])
+    accounted = cost(usage["input_tokens"], usage["output_tokens"], entry.get("model", MODEL))
   except (KeyError, ValueError):
     entry["status"] = "unknown"
     return
@@ -144,8 +160,11 @@ def send(identity, prompt_path):
   require_durable()
   data = read_ledger()
   entry = next(e for e in data["entries"] if e["id"] == identity)
-  if entry["status"] != "reserved" or entry["model"] != MODEL:
+  if entry["status"] != "reserved" or entry["model"] not in PROFILES or entry["provider"] != "openai":
     raise ValueError("Request is not an unspent reservation for the allowed model")
+  config = profile(entry["model"])
+  if entry["max_output_tokens"] != config["max_output"]:
+    raise ValueError("Reservation does not match current model limits")
   raw = prompt_path.read_bytes()
   if digest(raw) != entry["prompt_sha256"]:
     raise ValueError("Prompt changed after reservation")
@@ -164,13 +183,13 @@ def send(identity, prompt_path):
     raise ValueError("Invalid one-use ticket")
   # A lost workspace loses its ticket. The remote reservation continues to
   # count in full and cannot be resent automatically.
-  request_body = {"model": MODEL, "input": raw.decode(), "max_output_tokens": MAX_OUTPUT,
-                  "reasoning": {"effort": "low"}, "service_tier": "default", "store": False}
+  request_body = {"model": entry["model"], "input": raw.decode(), "max_output_tokens": config["max_output"],
+                  "reasoning": {"effort": config["effort"]}, "service_tier": "default", "store": False}
   request = urllib.request.Request("https://api.openai.com/v1/responses",
     data=json.dumps(request_body).encode(),
     headers={"Authorization": "Bearer " + key, "Content-Type": "application/json"})
   try:
-    with urllib.request.urlopen(request, timeout=90) as response:
+    with urllib.request.urlopen(request, timeout=240) as response:
       result = json.load(response)
     save_json(response_path, result)
     entry["response_path"] = str(response_path)
@@ -193,10 +212,11 @@ def main():
   parser.add_argument("action", choices=("reserve", "send"))
   parser.add_argument("identity")
   parser.add_argument("prompt", type=Path)
+  parser.add_argument("--model", choices=tuple(PROFILES), default=MODEL, help="Model to reserve; send uses the recorded reservation")
   args = parser.parse_args()
   if args.action == "reserve":
     require_durable()
-    result = reserve(args.identity, args.prompt)
+    result = reserve(args.identity, args.prompt, model=args.model)
   else:
     result = send(args.identity, args.prompt)
   print(json.dumps(result, indent=2))
