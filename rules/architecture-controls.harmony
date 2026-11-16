@@ -1,0 +1,14 @@
+// Architectural controls, handwritten; not API-discovered rules.
+At alto or tenor attack n:
+  Rule "Spacing counted once per event":
+    if n.voice == A or not A attacks at n:
+      if distance((T at n), (A at n)) > 12:
+        penalty 1
+At alto attack a:
+  Rule "Spacing at alto attacks":
+    if distance((T at a), (A at a)) > 12:
+      penalty 1
+At tenor attack t:
+  Rule "Spacing at tenor attacks":
+    if distance((T at t), (A at t)) > 12:
+      penalty 1
