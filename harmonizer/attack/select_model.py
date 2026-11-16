@@ -13,6 +13,8 @@ def choose(results, policy):
   scores={name:row["mean_piece_nll"] for name,row in results["summary"].items()}
   eligible=[]
   for name,value in scores.items():
+    if policy.get("allowed_models") is not None and name not in policy["allowed_models"]:
+      continue
     if not name.startswith("base+"):
       continue
     if name.startswith("base+pair:") and not policy.get("allow_pair_models",False):

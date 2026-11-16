@@ -115,3 +115,20 @@ def test_import_merges_ties_but_not_repeated_notes_and_preserves_tuplets():
   score.parts[0].flatten().notes[1].tie = None
   with pytest.raises(ValueError, match="Unterminated tie"):
     from_music21(score, KEY)
+
+  
+def test_voice_union_is_one_binding_per_attacking_note():
+  score = Score(tuple(n(v, v, p, 0, 1) for v, p in zip("SATB", ("C5", "G4", "E4", "C3"))), KEY)
+  selected = rule("At alto or tenor attack n", "penalty 1")
+  generic = rule("At attack n", "if n.voice == A or n.voice == T:\n  penalty 1")
+  assert sum(evaluate(selected, score).totals.values()) == 2
+  assert sum(evaluate(generic, score).totals.values()) == 2
+  reordered = rule("At tenor or alto attack n", "penalty 1")
+  assert selected[0].id == reordered[0].id
+  assert len(selected[0].trigger.names) == 1
+  assert sum(evaluate(rule("At tenor attack n", "penalty 1"), score).totals.values()) == 1
+  assert sum(evaluate(rule("At attack n", "penalty 1"), score).totals.values()) == 4
+  with pytest.raises(DSLError, match="only once"):
+    rule("At alto or alto attack n", "penalty 1")
+  with pytest.raises(DSLError):
+    rule("At alto or tenor attack a,t", "penalty 1")

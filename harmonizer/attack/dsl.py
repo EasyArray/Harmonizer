@@ -173,13 +173,14 @@ class Statement:
 class Trigger:
   kind: str
   names: tuple[str, ...]
-  voice: Voice | None = None
+  voice: Voice | tuple[Voice, ...] | None = None
 
   def bindings(self, score, time):
     attacks = sorted((n for n in score.notes if n.onset == time), key=lambda n: n.voice.value)
     match self.kind:
       case "single":
-        values = [(n,) for n in attacks if self.voice is None or n.voice == self.voice]
+        selected = self.voice if isinstance(self.voice, tuple) else (self.voice,)
+        values = [(n,) for n in attacks if self.voice is None or n.voice in selected]
       case "pair":
         values = combinations(attacks, 2)
       case "hold":
@@ -200,7 +201,7 @@ def trigger(text):
   patterns = [
     (r"At attack \((\w+),\s*(\w+)\):", "pair"),
     (r"At attack (\w+) while (\w+) holds:", "hold"),
-    (r"At (soprano|alto|tenor|bass) attack (\w+):", "single_voice"),
+    (r"At ((?:soprano|alto|tenor|bass)(?: or (?:soprano|alto|tenor|bass))*) attack (\w+):", "single_voice"),
     (r"At attack (\w+):", "single"),
     (r"At figure (\w+):", "figure"),
   ]
@@ -209,7 +210,10 @@ def trigger(text):
     if found:
       names, voice = found.groups(), None
       if kind == "single_voice":
-        voice = Voice[names[0][0].upper()]
+        voices = [Voice[v[0].upper()] for v in re.split(r" or ", names[0], flags=re.I)]
+        if len(set(voices)) != len(voices):
+          raise DSLError("Each voice may occur only once in a trigger")
+        voice = voices[0] if len(voices) == 1 else tuple(sorted(voices, key=lambda v: v.value))
         names, kind = names[1:], "single"
       if len(set(names)) != len(names) or any(n in ("key", "S", "A", "T", "B") for n in names):
         raise DSLError("Trigger bindings must have distinct, non-reserved names")

@@ -5,6 +5,17 @@ proposes readable rules, the parser validates them, deterministic code fits
 their weights on training data, and development results select a provisional
 inventory that can be loaded for prediction. No further account setup is needed.
 
+## Subsequent input-data audit
+
+**Do not interpret the leading-tone gain as validated yet.** A key estimate using
+only the supplied soprano and bass disagrees with the encoded global key in
+BWV 153.1, 40.8, 65.2, 33.6 and 277 (five of fifteen pieces). Encoded key
+signatures need not identify analytical tonics; the estimator can also be wrong.
+The original numbers below are preserved, but the current key-independent policy
+excludes the leading-tone proposal. Spacing alone gave mean development NLL
+4.1000 versus 4.1420 for seed+melodic, about 4.3% higher geometric probability,
+on the same five development chorales. This is still an exploratory result.
+
 ## What was evaluated
 
 - 15 chorales: ten training pieces and five development pieces.

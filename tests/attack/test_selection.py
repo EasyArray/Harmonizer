@@ -36,3 +36,12 @@ def test_pair_pruning_is_explicitly_opt_in():
   assert choose(results,policy)=="base+all-proposals"
   policy["allow_pair_models"]=True
   assert choose(results,policy)=="base+pair:a | b"
+
+
+def test_key_independent_allowlist_can_exclude_best_scoring_model():
+  results, policy = fixture()
+  policy["allowed_models"] = ["base+proposal:simple"]
+  results["summary"]["base+all-proposals"]["mean_piece_nll"] = 3.0
+  assert choose(results, policy) == "base+proposal:simple"
+  policy["allowed_models"] = []
+  assert choose(results, policy) == "seed+melodic"

@@ -158,3 +158,26 @@ Keep declared domains and global-key provenance, audit coverage, fit on training
 only, and compare first-choice probabilities on development. Match training
 coverage when isolating horizon effects. A final held-out test remains untouched
 during discovery. Live proposals still require durable spending controls.
+
+## A shared rule for selected voices
+
+```
+At alto or tenor attack n:
+  Rule "Inner-voice spacing":
+    if distance((T at n), (A at n)) > 12:
+      penalty 1
+```
+
+This binds one note at a time: either an alto attack or a tenor attack.
+When both attack, it runs twice. It does not bind two notes or require
+coincident attacks. Use separate alto/tenor rules when separate fitted weights
+are wanted; this shorthand shares one weight. Voice order in the header does
+not matter; repeated voices are rejected. Existing rule identities are unchanged.
+
+## Key labels need review
+
+Encoded MusicXML keys are not verified analytical tonics. In the first fifteen
+pieces, a soprano/bass-only key estimator disagreed with five encoded labels.
+Neither source is treated as ground truth. The leading-tone result is provisional.
+The key-independent selection policy excludes that proposal from the default
+model; the original experiment and fitted inventories remain reproducible.
