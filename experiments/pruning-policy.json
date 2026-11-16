@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "stage": "exploratory development pruning after initial round-001 results",
+  "reference_model": "seed+melodic",
+  "primary_metric": "mean of per-piece mean negative log likelihood",
+  "minimum_improvement_nats": 0.02,
+  "minimum_piece_win_fraction": 0.6,
+  "simplicity_tolerance_nats": 0.01,
+  "allow_pair_models": true,
+  "candidates": "Singles, pairs and all three proposals, fitted on the same training windows",
+  "notes": "Added after seeing that the octave proposal contributed little in the original comparison. This is disclosed development-set tuning, not an independent confirmation. Original selection-policy.json and its all-three result remain preserved. No final test set is used."
+}

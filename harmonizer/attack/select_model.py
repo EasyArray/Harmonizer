@@ -15,6 +15,8 @@ def choose(results, policy):
   for name,value in scores.items():
     if not name.startswith("base+"):
       continue
+    if name.startswith("base+pair:") and not policy.get("allow_pair_models",False):
+      continue
     wins=sum(piece[name]<piece[reference] for piece in results["by_piece"].values())
     if scores[reference]-value >= policy["minimum_improvement_nats"] and wins/len(results["by_piece"])>=policy["minimum_piece_win_fraction"]:
       eligible.append(name)
@@ -22,7 +24,7 @@ def choose(results, policy):
     return reference
   best=min(scores[name] for name in eligible)
   near=[name for name in eligible if scores[name]<=best+policy["simplicity_tolerance_nats"]]
-  return min(near,key=lambda name:(3 if name=="base+all-proposals" else 1,scores[name],name))
+  return min(near,key=lambda name:(len(results.get("added_rules",{}).get(name,[])) or (3 if name=="base+all-proposals" else 1),scores[name],name))
 
 
 def export(report_path, policy_path, seed_path, response_path, rules_output, model_output):
@@ -37,6 +39,11 @@ def export(report_path, policy_path, seed_path, response_path, rules_output, mod
     additions=[item for item in accepted if item["title"]==selected.removeprefix("base+proposal:")]
     if len(additions)!=1:
       raise ValueError("Selected proposal not present in saved response")
+  elif selected.startswith("base+pair:"):
+    titles=report["results"]["added_rules"][selected]
+    additions=[item for item in accepted if item["title"] in titles]
+    if len(additions)!=2:
+      raise ValueError("Selected pair is not present in saved response")
   source=Path(seed_path).read_text()+"\n"+MELODIC+"\n"+"\n\n".join(item["dsl"] for item in additions)+"\n"
   rules=parse(source)
   fitted=report["results"]["weights"][selected]

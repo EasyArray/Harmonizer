@@ -1,4 +1,4 @@
-> **Attack DSL prototype:** the new rule language, exact one/two-event probability model, and cloud test instructions are in [docs/attack-prototype.md](docs/attack-prototype.md). The original notebook API below remains available.
+> **Attack DSL prototype:** [Latest results and fitted model](docs/discovery-round-001.md) · [Language and cloud test instructions](docs/attack-prototype.md). The original notebook API below remains available.
 
 # Harmonizer Workbench
 

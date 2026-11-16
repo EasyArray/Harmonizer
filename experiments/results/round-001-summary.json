@@ -1,0 +1,458 @@
+{
+  "manifest_sha256": "3f26c7580016890b90d2d70b5acede1a3d1a815a13244fe58f6449ac7246e7e4",
+  "code_sha256": "b18a0da8a0bb8ecd133cc68aa0c2b55869da0d004aba8a7c6fef5dbd31cff8b9",
+  "feature_code_sha256": "f9e89071a0bc776dfe73bc1a1a1341884b0dcf846211042dc3eb3658ca86bf90",
+  "domains": {
+    "A": [
+      "B#2",
+      "C3",
+      "C#3",
+      "Db3",
+      "D3",
+      "D#3",
+      "Eb3",
+      "E3",
+      "Fb3",
+      "E#3",
+      "F3",
+      "F#3",
+      "Gb3",
+      "G3",
+      "G#3",
+      "Ab3",
+      "A3",
+      "A#3",
+      "Bb3",
+      "B3",
+      "Cb4",
+      "B#3",
+      "C4",
+      "C#4",
+      "Db4",
+      "D4",
+      "D#4",
+      "Eb4",
+      "E4",
+      "Fb4",
+      "E#4",
+      "F4",
+      "F#4",
+      "Gb4",
+      "G4",
+      "G#4",
+      "Ab4",
+      "A4",
+      "A#4",
+      "Bb4",
+      "B4",
+      "Cb5",
+      "B#4",
+      "C5",
+      "C#5",
+      "Db5",
+      "D5",
+      "D#5",
+      "Eb5",
+      "E5",
+      "Fb5",
+      "E#5",
+      "F5",
+      "F#5",
+      "Gb5",
+      "G5"
+    ],
+    "T": [
+      "B#1",
+      "C2",
+      "C#2",
+      "Db2",
+      "D2",
+      "D#2",
+      "Eb2",
+      "E2",
+      "Fb2",
+      "E#2",
+      "F2",
+      "F#2",
+      "Gb2",
+      "G2",
+      "G#2",
+      "Ab2",
+      "A2",
+      "A#2",
+      "Bb2",
+      "B2",
+      "Cb3",
+      "B#2",
+      "C3",
+      "C#3",
+      "Db3",
+      "D3",
+      "D#3",
+      "Eb3",
+      "E3",
+      "Fb3",
+      "E#3",
+      "F3",
+      "F#3",
+      "Gb3",
+      "G3",
+      "G#3",
+      "Ab3",
+      "A3",
+      "A#3",
+      "Bb3",
+      "B3",
+      "Cb4",
+      "B#3",
+      "C4",
+      "C#4",
+      "Db4",
+      "D4",
+      "D#4",
+      "Eb4",
+      "E4",
+      "Fb4",
+      "E#4",
+      "F4",
+      "F#4",
+      "Gb4",
+      "G4",
+      "G#4",
+      "Ab4",
+      "A4",
+      "A#4",
+      "Bb4",
+      "B4",
+      "Cb5",
+      "B#4",
+      "C5"
+    ]
+  },
+  "policy": "One exact event; supplied global key, S/B, rhythm and past inner pitches. Fit on training only. L2=0.1, nonnegative weights. Equal-piece NLL is primary; development only, no final test.",
+  "grouping": "Normalized chorale title and exact transposition-invariant soprano pitch-sequence fingerprints; matching either groups pieces together. This does not guarantee detection of all related tune variants.",
+  "excluded": [
+    {
+      "source": "bach/bwv41.6.mxl",
+      "reason": "Exactly four parts with an explicit SATB mapping are required"
+    }
+  ],
+  "coverage": {
+    "decisions": 90,
+    "candidate_completions": 166581,
+    "gold_covered": 90
+  },
+  "results": {
+    "summary": {
+      "uniform": {
+        "mean_nll_per_decision": 6.152288146792431,
+        "mean_piece_nll": 6.152288146792431,
+        "mean_nll_single_attack": 4.1048373329540775,
+        "mean_nll_joint_attack": 8.199738960630784
+      },
+      "pitch": {
+        "mean_nll_per_decision": 4.706279061828501,
+        "mean_piece_nll": 4.706279061828502,
+        "mean_nll_single_attack": 3.207804271124417,
+        "mean_nll_joint_attack": 6.204753852532585
+      },
+      "seed": {
+        "mean_nll_per_decision": 4.817168804267386,
+        "mean_piece_nll": 4.817168804267386,
+        "mean_nll_single_attack": 3.166562355205838,
+        "mean_nll_joint_attack": 6.467775253328933
+      },
+      "melodic": {
+        "mean_nll_per_decision": 4.1598537650785286,
+        "mean_piece_nll": 4.1598537650785286,
+        "mean_nll_single_attack": 2.9516980199413854,
+        "mean_nll_joint_attack": 5.36800951021567
+      },
+      "seed+melodic": {
+        "mean_nll_per_decision": 4.141963270677319,
+        "mean_piece_nll": 4.141963270677319,
+        "mean_nll_single_attack": 2.909176443551141,
+        "mean_nll_joint_attack": 5.3747500978034966
+      },
+      "base+proposal:Inner-voice spacing": {
+        "mean_nll_per_decision": 4.100000647132581,
+        "mean_piece_nll": 4.100000647132582,
+        "mean_nll_single_attack": 2.908140665503921,
+        "mean_nll_joint_attack": 5.291860628761244
+      },
+      "base+proposal:Inner leading-tone resolution": {
+        "mean_nll_per_decision": 4.087065332455098,
+        "mean_piece_nll": 4.087065332455097,
+        "mean_nll_single_attack": 2.8792265141659206,
+        "mean_nll_joint_attack": 5.294904150744274
+      },
+      "base+proposal:Parallel octaves involving inner voices": {
+        "mean_nll_per_decision": 4.141413984105157,
+        "mean_piece_nll": 4.1414139841051565,
+        "mean_nll_single_attack": 2.9085664241997256,
+        "mean_nll_joint_attack": 5.374261544010587
+      },
+      "base+all-proposals": {
+        "mean_nll_per_decision": 4.044864728863175,
+        "mean_piece_nll": 4.044864728863175,
+        "mean_nll_single_attack": 2.877681660899215,
+        "mean_nll_joint_attack": 5.212047796827135
+      },
+      "base+pair:Inner-voice spacing | Inner leading-tone resolution": {
+        "mean_nll_per_decision": 4.045426423590468,
+        "mean_piece_nll": 4.045426423590467,
+        "mean_nll_single_attack": 2.8782909704920545,
+        "mean_nll_joint_attack": 5.212561876688879
+      },
+      "base+pair:Inner-voice spacing | Parallel octaves involving inner voices": {
+        "mean_nll_per_decision": 4.099449584399094,
+        "mean_piece_nll": 4.099449584399094,
+        "mean_nll_single_attack": 2.9075274310477095,
+        "mean_nll_joint_attack": 5.291371737750479
+      },
+      "base+pair:Inner leading-tone resolution | Parallel octaves involving inner voices": {
+        "mean_nll_per_decision": 4.086492064216946,
+        "mean_piece_nll": 4.086492064216946,
+        "mean_nll_single_attack": 2.878610330585977,
+        "mean_nll_joint_attack": 5.294373797847916
+      }
+    },
+    "by_piece": {
+      "bach/bwv153.1.mxl": {
+        "uniform": 6.162223852069796,
+        "pitch": 4.303542609118437,
+        "seed": 4.54745030591035,
+        "melodic": 4.288295649278052,
+        "seed+melodic": 4.162991677375577,
+        "base+proposal:Inner-voice spacing": 4.088853871426282,
+        "base+proposal:Inner leading-tone resolution": 4.08929181617288,
+        "base+proposal:Parallel octaves involving inner voices": 4.162536819419607,
+        "base+all-proposals": 4.015366337873021,
+        "base+pair:Inner-voice spacing | Inner leading-tone resolution": 4.0158357244567995,
+        "base+pair:Inner-voice spacing | Parallel octaves involving inner voices": 4.0884006315404,
+        "base+pair:Inner leading-tone resolution | Parallel octaves involving inner voices": 4.088832368629357
+      },
+      "bach/bwv311.mxl": {
+        "uniform": 6.187063115263211,
+        "pitch": 4.798926279409371,
+        "seed": 4.619161354325899,
+        "melodic": 4.062575699056793,
+        "seed+melodic": 3.959122825123377,
+        "base+proposal:Inner-voice spacing": 3.9550015497763282,
+        "base+proposal:Inner leading-tone resolution": 3.8162967765796636,
+        "base+proposal:Parallel octaves involving inner voices": 3.958421418561643,
+        "base+all-proposals": 3.8119752840823415,
+        "base+pair:Inner-voice spacing | Inner leading-tone resolution": 3.81266903091082,
+        "base+pair:Inner-voice spacing | Parallel octaves involving inner voices": 3.954316544202147,
+        "base+pair:Inner leading-tone resolution | Parallel octaves involving inner voices": 3.815581865118613
+      },
+      "bach/bwv40.8.mxl": {
+        "uniform": 6.137384588876382,
+        "pitch": 4.758046959545305,
+        "seed": 4.754175722534306,
+        "melodic": 3.6492762654456707,
+        "seed+melodic": 3.6908880377639783,
+        "base+proposal:Inner-voice spacing": 3.6795857185977994,
+        "base+proposal:Inner leading-tone resolution": 3.6948974425478096,
+        "base+proposal:Parallel octaves involving inner voices": 3.6905258840820445,
+        "base+all-proposals": 3.6831143382051295,
+        "base+pair:Inner-voice spacing | Inner leading-tone resolution": 3.68352917770495,
+        "base+pair:Inner-voice spacing | Parallel octaves involving inner voices": 3.679177452875681,
+        "base+pair:Inner leading-tone resolution | Parallel octaves involving inner voices": 3.694481871270565
+      },
+      "bach/bwv65.2.mxl": {
+        "uniform": 6.162223852069796,
+        "pitch": 4.146132340978294,
+        "seed": 4.70072287167943,
+        "melodic": 3.8158397069868513,
+        "seed+melodic": 3.8291845901663386,
+        "base+proposal:Inner-voice spacing": 3.8336929321286752,
+        "base+proposal:Inner leading-tone resolution": 3.8409979470986944,
+        "base+proposal:Parallel octaves involving inner voices": 3.8285181342099754,
+        "base+all-proposals": 3.8447164694032487,
+        "base+pair:Inner-voice spacing | Inner leading-tone resolution": 3.845406138014607,
+        "base+pair:Inner-voice spacing | Parallel octaves involving inner voices": 3.8330050981916837,
+        "base+pair:Inner leading-tone resolution | Parallel octaves involving inner voices": 3.840288263823455
+      },
+      "bach/bwv86.6.mxl": {
+        "uniform": 6.1125453256829685,
+        "pitch": 5.524747120091102,
+        "seed": 5.464333766886942,
+        "melodic": 4.983281504625272,
+        "seed+melodic": 5.067629222957325,
+        "base+proposal:Inner-voice spacing": 4.9428691637338265,
+        "base+proposal:Inner leading-tone resolution": 4.99384267987644,
+        "base+proposal:Parallel octaves involving inner voices": 5.067067664252512,
+        "base+all-proposals": 4.869151214752133,
+        "base+pair:Inner-voice spacing | Inner leading-tone resolution": 4.8696920468651586,
+        "base+pair:Inner-voice spacing | Parallel octaves involving inner voices": 4.942348195185562,
+        "base+pair:Inner leading-tone resolution | Parallel octaves involving inner voices": 4.993275952242743
+      }
+    },
+    "weights": {
+      "seed": {
+        "Large leaps": 1.0085265710402527,
+        "Continuing upward after a large upward leap": 0.0,
+        "Tenor range": 0.4668773224548185,
+        "Crossing at simultaneous attacks": 1.164151854981586,
+        "Parallel exact fifths": 0.05065626640892416,
+        "Crossing involving a held note": 0.5407250927707322,
+        "Wide inner voices at figure onset": 0.0
+      },
+      "melodic": {
+        "Alto motion baseline": 0.47647978824789106,
+        "Tenor motion baseline": 0.501903500798126
+      },
+      "seed+melodic": {
+        "Large leaps": 0.3303942870459141,
+        "Continuing upward after a large upward leap": 0.0,
+        "Tenor range": 0.28713025938305226,
+        "Crossing at simultaneous attacks": 0.7022137860950592,
+        "Parallel exact fifths": 0.04168235830235418,
+        "Crossing involving a held note": 0.21169528694724973,
+        "Wide inner voices at figure onset": 0.0,
+        "Alto motion baseline": 0.39732765804975007,
+        "Tenor motion baseline": 0.4437379155869875
+      },
+      "base+proposal:Inner-voice spacing": {
+        "Large leaps": 0.3118279137588166,
+        "Continuing upward after a large upward leap": 0.0,
+        "Tenor range": 0.2923790545501793,
+        "Crossing at simultaneous attacks": 0.6887085150204002,
+        "Parallel exact fifths": 0.042792345116001676,
+        "Crossing involving a held note": 0.2068819960085092,
+        "Wide inner voices at figure onset": 0.0,
+        "Alto motion baseline": 0.38748854135429595,
+        "Tenor motion baseline": 0.4321421465714104,
+        "Inner-voice spacing": 0.3612034208872085
+      },
+      "base+proposal:Inner leading-tone resolution": {
+        "Large leaps": 0.3328339918764755,
+        "Continuing upward after a large upward leap": 0.0,
+        "Tenor range": 0.28748547665493535,
+        "Crossing at simultaneous attacks": 0.6982668005789554,
+        "Parallel exact fifths": 0.041319826580139635,
+        "Crossing involving a held note": 0.2129818344896282,
+        "Wide inner voices at figure onset": 0.0,
+        "Alto motion baseline": 0.39437419662447426,
+        "Tenor motion baseline": 0.4422128231193508,
+        "Inner leading-tone resolution": 0.5005143727748176
+      },
+      "base+proposal:Parallel octaves involving inner voices": {
+        "Large leaps": 0.3304094511585152,
+        "Continuing upward after a large upward leap": 0.0,
+        "Tenor range": 0.28710669132933936,
+        "Crossing at simultaneous attacks": 0.7022364808841255,
+        "Parallel exact fifths": 0.041750472519662414,
+        "Crossing involving a held note": 0.21173146264701137,
+        "Wide inner voices at figure onset": 0.0,
+        "Alto motion baseline": 0.3972940836825907,
+        "Tenor motion baseline": 0.4437775597822958,
+        "Parallel octaves involving inner voices": 0.04501776598231986
+      },
+      "base+all-proposals": {
+        "Large leaps": 0.31434838885992844,
+        "Continuing upward after a large upward leap": 0.0,
+        "Tenor range": 0.29303920989410087,
+        "Crossing at simultaneous attacks": 0.6847941268403943,
+        "Parallel exact fifths": 0.04290920258805278,
+        "Crossing involving a held note": 0.208168921115955,
+        "Wide inner voices at figure onset": 0.0,
+        "Alto motion baseline": 0.38464809899067287,
+        "Tenor motion baseline": 0.4306295820525663,
+        "Inner-voice spacing": 0.35991907922672206,
+        "Inner leading-tone resolution": 0.4988090660347,
+        "Parallel octaves involving inner voices": 0.04513309290968714
+      },
+      "base+pair:Inner-voice spacing | Inner leading-tone resolution": {
+        "Large leaps": 0.3143174924436548,
+        "Continuing upward after a large upward leap": 0.0,
+        "Tenor range": 0.2930588110081183,
+        "Crossing at simultaneous attacks": 0.6847562233469995,
+        "Parallel exact fifths": 0.042870707522256454,
+        "Crossing involving a held note": 0.20814171266246204,
+        "Wide inner voices at figure onset": 0.0,
+        "Alto motion baseline": 0.3846718140435086,
+        "Tenor motion baseline": 0.43057537940589957,
+        "Inner-voice spacing": 0.3598933650395626,
+        "Inner leading-tone resolution": 0.49880724623199657
+      },
+      "base+pair:Inner-voice spacing | Parallel octaves involving inner voices": {
+        "Large leaps": 0.31189292692969584,
+        "Continuing upward after a large upward leap": 0.0,
+        "Tenor range": 0.2923395000402964,
+        "Crossing at simultaneous attacks": 0.6887038092229544,
+        "Parallel exact fifths": 0.042843560691229174,
+        "Crossing involving a held note": 0.20693931487454845,
+        "Wide inner voices at figure onset": 0.0,
+        "Alto motion baseline": 0.38746683791157366,
+        "Tenor motion baseline": 0.4321857898292661,
+        "Inner-voice spacing": 0.36119021886795016,
+        "Parallel octaves involving inner voices": 0.04509531517809933
+      },
+      "base+pair:Inner leading-tone resolution | Parallel octaves involving inner voices": {
+        "Large leaps": 0.3328191285576161,
+        "Continuing upward after a large upward leap": 0.0,
+        "Tenor range": 0.28772740825427523,
+        "Crossing at simultaneous attacks": 0.698223734501474,
+        "Parallel exact fifths": 0.0418267935233917,
+        "Crossing involving a held note": 0.21299887374536872,
+        "Wide inner voices at figure onset": 0.0,
+        "Alto motion baseline": 0.39437834178700343,
+        "Tenor motion baseline": 0.4422722728856043,
+        "Inner leading-tone resolution": 0.5004832646730243,
+        "Parallel octaves involving inner voices": 0.04504702613415741
+      }
+    },
+    "training_windows_with_varying_feature": {
+      "Large leaps": 60,
+      "Continuing upward after a large upward leap": 0,
+      "Tenor range": 51,
+      "Crossing at simultaneous attacks": 41,
+      "Parallel exact fifths": 8,
+      "Crossing involving a held note": 36,
+      "Wide inner voices at figure onset": 0,
+      "Alto motion baseline": 39,
+      "Tenor motion baseline": 51,
+      "Inner-voice spacing": 60,
+      "Inner leading-tone resolution": 15,
+      "Parallel octaves involving inner voices": 6
+    },
+    "added_rules": {
+      "seed": [],
+      "melodic": [],
+      "seed+melodic": [],
+      "base+proposal:Inner-voice spacing": [
+        "Inner-voice spacing"
+      ],
+      "base+proposal:Inner leading-tone resolution": [
+        "Inner leading-tone resolution"
+      ],
+      "base+proposal:Parallel octaves involving inner voices": [
+        "Parallel octaves involving inner voices"
+      ],
+      "base+all-proposals": [
+        "Inner-voice spacing",
+        "Inner leading-tone resolution",
+        "Parallel octaves involving inner voices"
+      ],
+      "base+pair:Inner-voice spacing | Inner leading-tone resolution": [
+        "Inner-voice spacing",
+        "Inner leading-tone resolution"
+      ],
+      "base+pair:Inner-voice spacing | Parallel octaves involving inner voices": [
+        "Inner-voice spacing",
+        "Parallel octaves involving inner voices"
+      ],
+      "base+pair:Inner leading-tone resolution | Parallel octaves involving inner voices": [
+        "Inner leading-tone resolution",
+        "Parallel octaves involving inner voices"
+      ]
+    }
+  },
+  "selection": {
+    "initial": "base+all-proposals",
+    "pruned": "base+pair:Inner-voice spacing | Inner leading-tone resolution",
+    "exploratory_pruning": true
+  }
+}

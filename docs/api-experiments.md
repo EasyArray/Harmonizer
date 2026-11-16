@@ -60,4 +60,6 @@ passed grammar/type validation. Their known limitations are explicit in tests:
 spacing counts twice at simultaneous A/T attacks; leading-tone resolution checks
 global degree rather than a stepwise upward motion, and penalizes repetition;
 the octave rule handles exact positive octaves, not compound/negative octaves.
-These remain experimental hypotheses until the development comparison is read.
+The [completed development comparison](discovery-round-001.md) provisionally
+retains spacing and leading-tone behavior. These remain experimental hypotheses,
+not independently tested musical discoveries.

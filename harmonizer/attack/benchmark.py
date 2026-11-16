@@ -5,6 +5,8 @@ from dataclasses import replace
 from fractions import Fraction
 from hashlib import sha256
 import json
+import inspect
+from itertools import combinations
 from pathlib import Path
 from time import perf_counter
 import numpy as np
@@ -42,7 +44,8 @@ def validate_manifest(manifest):
 
 
 def cached_candidates(score, rules, domains, start, cache_dir, cache_namespace):
-  identity = sha256(f"{cache_namespace}|{score.source}|{start}".encode()).hexdigest()
+  domain_key=json.dumps({v.name:list(map(str,pool)) for v,pool in domains.items()},sort_keys=True)
+  identity = sha256(f"{cache_namespace}|{score.source}|{start}|{domain_key}".encode()).hexdigest()
   path = cache_dir / f"{identity}.npz"
   if path.exists():
     with np.load(path, allow_pickle=False) as data:
@@ -61,7 +64,7 @@ def cached_candidates(score, rules, domains, start, cache_dir, cache_namespace):
   return table
 
 
-def evaluate_models(records, seed, melodic, proposed):
+def evaluate_models(records, seed, melodic, proposed, include_pairs=False):
   rules = seed + melodic + proposed
   train = [(s,t) for p,s,t in records if p["split"] == "train"]
   dev = [(p,s,t) for p,s,t in records if p["split"] == "development"]
@@ -75,6 +78,9 @@ def evaluate_models(records, seed, melodic, proposed):
     inventories[f"base+proposal:{r.title}"] = base+[i]
   if proposed:
     inventories["base+all-proposals"] = list(range(len(rules)))
+  if include_pairs:
+    for pair in combinations(range(len(base),len(rules)),2):
+      inventories["base+pair:"+" | ".join(rules[i].title for i in pair)]=base+list(pair)
   fitted = {name: fit([subset(t, indices) for _,t in train]) for name,indices in inventories.items()}
   rows = []
   for p, score, table in dev:
@@ -94,13 +100,14 @@ def evaluate_models(records, seed, melodic, proposed):
                    "mean_nll_single_attack":float(np.mean([r["models"][name]["first_choice_nll"] for r in rows if r["attacks"]==1])),
                    "mean_nll_joint_attack":float(np.mean([r["models"][name]["first_choice_nll"] for r in rows if r["attacks"]==2]))}
              for name in names}
-  activity = {r.title:sum(np.ptp(t.features[:,i]) > 0 for _,t in train) for i,r in enumerate(rules)}
+  activity = {r.title:int(sum(np.ptp(t.features[:,i]) > 0 for _,t in train)) for i,r in enumerate(rules)}
   return {"summary":summary,"by_piece":by_piece,"development":rows,
+          "added_rules":{name:[rules[i].title for i in indices if i>=len(base)] for name,indices in inventories.items()},
           "weights":{name:{rules[i].title:float(w) for i,w in zip(inventories[name],weights)} for name,weights in fitted.items()},
           "training_windows_with_varying_feature":activity}
 
 
-def run(manifest_path, rules_path, proposals_path=None, cache_dir=Path("artifacts/feature-cache")):
+def run(manifest_path, rules_path, proposals_path=None, cache_dir=Path("artifacts/feature-cache"), include_pairs=False):
   began=perf_counter()
   manifest=json.loads(Path(manifest_path).read_text())
   validate_manifest(manifest)
@@ -115,7 +122,12 @@ def run(manifest_path, rules_path, proposals_path=None, cache_dir=Path("artifact
   domains={Voice.A:pitch_domain(48,79),Voice.T:pitch_domain(36,72)}
   source_files=("score.py","dsl.py","inference.py","import_score.py","benchmark.py","pilot.py")
   code_hash=sha256(b"".join(Path(__file__).with_name(name).read_bytes() for name in source_files)).hexdigest()
-  cache_namespace=sha256((json.dumps(manifest,sort_keys=True)+str([r.id for r in rules])+code_hash).encode()).hexdigest()
+  # Feature caches depend on scoring semantics, not report formatting or the
+  # weight loader. Keep the full pipeline hash separately for provenance.
+  feature_source=b"".join(Path(__file__).with_name(name).read_bytes() for name in ("score.py","dsl.py","import_score.py"))
+  feature_source+=inspect.getsource(candidates).encode()+inspect.getsource(pitch_domain).encode()
+  feature_hash=sha256(feature_source).hexdigest()
+  cache_namespace=sha256((json.dumps(manifest,sort_keys=True)+str([r.id for r in rules])+feature_hash).encode()).hexdigest()
   records=[]; coverage=[]
   for piece in manifest["pieces"]:
     path=Path(corpus.getWork(piece["source"]))
@@ -129,8 +141,8 @@ def run(manifest_path, rules_path, proposals_path=None, cache_dir=Path("artifact
       coverage.append({"source":piece["source"],"split":piece["split"],"start":str(start),
                        "attacks":table.first_width,"candidates":len(table.choices),"gold_covered":True})
     print(f"{piece['split']}: {piece['source']}: {len(starts)} decisions",flush=True)
-  results=evaluate_models(records,seed,melodic,proposed)
-  return {"manifest_sha256":sha256(Path(manifest_path).read_bytes()).hexdigest(),"code_sha256":code_hash,
+  results=evaluate_models(records,seed,melodic,proposed,include_pairs)
+  return {"manifest_sha256":sha256(Path(manifest_path).read_bytes()).hexdigest(),"code_sha256":code_hash,"feature_code_sha256":feature_hash,
           "rules":[{"id":r.id,"title":r.title} for r in rules],"coverage":coverage,"results":results,
           "domains":{v.name:list(map(str,p)) for v,p in domains.items()},
           "policy":"One exact event; supplied global key, S/B, rhythm and past inner pitches. Fit on training only. L2=0.1, nonnegative weights. Equal-piece NLL is primary; development only, no final test.",
@@ -143,8 +155,9 @@ def main():
   p.add_argument("--rules",default="rules/seed.harmony")
   p.add_argument("--proposals")
   p.add_argument("--output",default="artifacts/bach-development.json")
+  p.add_argument("--pairs",action="store_true",help="Exploratory pairwise pruning after the initial round")
   args=p.parse_args()
-  report=run(args.manifest,args.rules,args.proposals)
+  report=run(args.manifest,args.rules,args.proposals,include_pairs=args.pairs)
   path=Path(args.output);path.parent.mkdir(parents=True,exist_ok=True)
   path.write_text(json.dumps(report,indent=2,allow_nan=False)+"\n")
   print(json.dumps(report["results"]["summary"],indent=2))

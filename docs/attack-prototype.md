@@ -4,6 +4,9 @@ This branch adds a small experimental implementation alongside the original
 notebook tools. Start with [the seven seed rules](../rules/seed.harmony).
 They are handwritten hypotheses, not discoveries. The older API is unchanged.
 
+**Latest milestone:** [a complete proposal-and-evaluation cycle](discovery-round-001.md)
+on 15 chorales, with a saved fitted model and less than one cent of API usage.
+
 ## Run without installing anything on your computer
 
 Open the repository's **Actions → Attack DSL prototype** workflow. Each branch
@@ -128,11 +131,11 @@ marginals or report per-decision joint NLL with its distinct conditioning.
 - Traces record bindings, expression, line, contribution or skip reason, but
   do not yet capture every intermediate measurement. Rule IDs survive title
   changes, but are not a semantic-equivalence hash.
-- A small pinned Bach pilot now includes learned pitch and melodic baselines;
-  see its results and limitations above. Still needed: tune-aware corpus splits,
-  corpus-scale benchmarks, durable spend accounting, bounded provider adapters,
-  and the development-only rule discovery loop. Never expose a final test split
-  to a proposal model.
+- The expanded benchmark now includes 15 pieces, title/fingerprint split guards,
+  learned baselines, saved fitted models, and a development-only proposal round.
+  A bounded OpenAI adapter and durable ledger are implemented. Still needed:
+  broader tune-family auditing, corpus-scale evaluation, a U-M adapter, and
+  independent final testing. Never expose a final test split to a proposal model.
 
 ## Credentials and approved budget
 
@@ -142,11 +145,11 @@ provider quota. **The initial project ceiling is $10 total across providers**,
 not $10 per run or key. A separate OpenAI development key may live in an ignored
 workspace env file. Keys must never enter source, artifacts, logs or chat.
 
-No paid calls have been made by this prototype and none of its commands can
-make them. Before enabling live calls, implement durable reservations before
-each request, known model prices, token/retry caps and response checkpoints.
-Unknown charges remain reserved. A missing ledger or unpriced model must stop
-the run. Do not rely on a prepaid balance or expiring CI artifact as the ledger.
+The first bounded OpenAI request is complete; the conservative ledger accounts
+$0.005758. [API experiment instructions](api-experiments.md) describe reservations,
+pricing, single-use tickets and response checkpoints. Unknown charges remain
+reserved. A missing ledger, stale prices or unpriced model stops paid work.
+CI, scoring and fitting remain offline; they do not use the API.
 
 ## Next reproducible milestone
 

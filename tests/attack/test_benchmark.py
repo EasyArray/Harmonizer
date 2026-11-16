@@ -21,6 +21,8 @@ def test_stratified_selection_and_cache_roundtrip(tmp_path):
   assert first.choices==second.choices
   assert first.features.tolist()==second.features.tolist()
   assert first.note_ids==second.note_ids and first.decision_times==second.decision_times
+  larger={Voice.A:domains[Voice.A]+(Pitch.parse("E4"),)}
+  assert len(cached_candidates(score,rules,larger,F(1),tmp_path,"test").choices)==3
 
 
 def test_group_split_guard():
@@ -51,3 +53,19 @@ def test_generated_leading_tone_rule_has_documented_global_and_octave_scope():
   assert list(evaluate(rules,score).totals.values())==[0]
   repetition=replace(score,notes=(score.notes[0],replace(score.notes[1],pitch=Pitch.parse("B4"))))
   assert list(evaluate(rules,repetition).totals.values())==[1]
+
+
+def test_benchmark_metrics_are_json_serializable(tmp_path):
+  import json
+  from harmonizer.attack.benchmark import evaluate_models
+  from harmonizer.attack.pilot import MELODIC, pitch_domain
+  from harmonizer.attack.inference import candidates
+  seed=parse('At attack n:\n  Rule "large":\n    if distance(n.previous,n)>7:\n      penalty 1')
+  melodic=parse(MELODIC)
+  score=Score((note("a0","A","C4",0,1),note("a1","A","D4",1,2),note("a2","A","E4",2,3),
+               note("t0","T","C3",0,2),note("t1","T","D3",2,3)),Key(Pitch.parse("C4"),"major"))
+  domains={Voice.A:tuple(map(Pitch.parse,("C4","D4","E4"))),Voice.T:tuple(map(Pitch.parse,("C3","D3")))}
+  tables=[candidates(score,seed+melodic,domains,F(i)) for i in (1,2)]
+  records=[({"source":split,"split":split},score,t) for split in ("train","development") for t in tables]
+  report=evaluate_models(records,seed,melodic,())
+  assert json.loads(json.dumps(report,allow_nan=False))["training_windows_with_varying_feature"]["large"]==0

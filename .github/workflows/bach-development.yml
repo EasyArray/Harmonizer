@@ -10,10 +10,16 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: bach-development-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   benchmark:
     runs-on: ubuntu-latest
     timeout-minutes: 25
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -25,9 +31,14 @@ jobs:
         with:
           path: artifacts/feature-cache
           key: bach-features-${{ runner.os }}-${{ hashFiles('harmonizer/attack/*.py', 'rules/**/*.harmony', 'rules/*.harmony', 'experiments/bach-development.json') }}
-      - run: python -m harmonizer.attack.benchmark --proposals rules/proposals/round-001.harmony
+      - run: python -m harmonizer.attack.benchmark --proposals rules/proposals/round-001.harmony --pairs
+      - run: python -m harmonizer.attack.select_model --rules-output artifacts/round-001.harmony --model-output artifacts/round-001-model.json
+      - run: python -m harmonizer.attack.select_model --policy experiments/pruning-policy.json --rules-output artifacts/round-001-pruned.harmony --model-output artifacts/round-001-pruned-model.json
       - uses: actions/upload-artifact@v4
         with:
           name: bach-development
-          path: artifacts/bach-development.json
+          path: |
+            artifacts/bach-development.json
+            artifacts/*model.json
+            artifacts/*.harmony
           retention-days: 14

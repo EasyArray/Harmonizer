@@ -25,3 +25,14 @@ def test_majority_and_minimum_gain_required():
   results["summary"]["base+proposal:simple"]["mean_piece_nll"]=3.99
   results["summary"]["base+all-proposals"]["mean_piece_nll"]=3.99
   assert choose(results,policy)=="seed+melodic"
+
+
+def test_pair_pruning_is_explicitly_opt_in():
+  results,policy=fixture()
+  results["summary"]["base+proposal:simple"]["mean_piece_nll"]=4
+  results["summary"]["base+pair:a | b"]={"mean_piece_nll":3.905}
+  results["added_rules"]={"base+pair:a | b":["a","b"],"base+all-proposals":["a","b","c"]}
+  for piece in results["by_piece"].values():piece["base+pair:a | b"]=3.905
+  assert choose(results,policy)=="base+all-proposals"
+  policy["allow_pair_models"]=True
+  assert choose(results,policy)=="base+pair:a | b"
