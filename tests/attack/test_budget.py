@@ -57,3 +57,36 @@ def test_corrupt_or_changed_limits_fail_closed(tmp_path):
   path.write_text(json.dumps(data))
   with pytest.raises(ValueError, match="changed"):
     read_ledger(path)
+
+
+def test_one_shot_send_and_unknown_transport_stays_reserved(tmp_path, monkeypatch):
+  import harmonizer.attack.proposals as api
+  monkeypatch.chdir(tmp_path)
+  monkeypatch.setattr(api, "require_durable", lambda: None)
+  Path("experiments").mkdir()
+  path=ledger(tmp_path)
+  path.rename("experiments/api-ledger.json")
+  Path(".env.local").write_text("OPENAI_API_KEY=fake-test-credential\n")
+  prompt=Path("prompt.txt");prompt.write_text("three rules")
+  api.reserve("once",prompt)
+  class Reply:
+    def __enter__(self):return self
+    def __exit__(self,*args):pass
+    def read(self):return json.dumps({"status":"completed","usage":{"input_tokens":10,"output_tokens":10}}).encode()
+  monkeypatch.setattr(api.urllib.request,"urlopen",lambda *a,**kw:Reply())
+  assert api.send("once",prompt)["status"]=="completed"
+  with pytest.raises(ValueError,match="unspent"):
+    api.send("once",prompt)
+  reserved=api.reserve("uncertain",prompt)["reserved_micro_usd"]
+  def timeout(*a,**kw):raise TimeoutError("not printed")
+  monkeypatch.setattr(api.urllib.request,"urlopen",timeout)
+  result=api.send("uncertain",prompt)
+  assert result["status"]=="unknown" and result["accounted_micro_usd"]==reserved
+  with pytest.raises(ValueError,match="unspent"):
+    api.send("uncertain",prompt)
+
+
+def test_saved_model_response_replays_without_a_paid_request():
+  from harmonizer.attack.proposals import validate_response
+  result=validate_response(Path("experiments/api-responses/round-001.json"))
+  assert len(result["accepted"])==3 and not result["rejected"]

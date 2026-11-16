@@ -1,0 +1,180 @@
+{
+  "version": 1,
+  "selection": "First 16 Riemenschneider entries, MusicXML encoding; exclude unsupported imports explicitly. Per piece, at most three single and three simultaneous inner-attack events at first/middle/last positions, excluding initial decision. Rhythm-only selection.",
+  "grouping": "Normalized chorale title and exact transposition-invariant soprano pitch-sequence fingerprints; matching either groups pieces together. This does not guarantee detection of all related tune variants.",
+  "music21_version": "8.3.0",
+  "pieces": [
+    {
+      "source": "bach/bwv269.mxl",
+      "riemenschneider": 1,
+      "title": "Aus meines Herzens Grunde",
+      "title_group": "ausmeinesherzensgrunde",
+      "melody_group": "5b87f5a4fa1fc28c2fc18483b82ccd058d07f70d03a07629eaf58e5b81d646b1",
+      "split": "train",
+      "tonic": "G4",
+      "mode": "major",
+      "sha256": "9676f11a2b26488bcf30db90c15576caa1ea2a616b909e376d44b8b804e9d138"
+    },
+    {
+      "source": "bach/bwv347.mxl",
+      "riemenschneider": 2,
+      "title": "Ich dank’ dir, lieber Herre",
+      "title_group": "ichdankdirlieberherre",
+      "melody_group": "356d4d0c8ee7cb1fb70f8f8f63de6a9c9fc1c96bca4d418412cb0582c6057955",
+      "split": "train",
+      "tonic": "A4",
+      "mode": "major",
+      "sha256": "a017649b259ceda9c0ee8a74909893a69d01163c5f60ae5e631dc3d2ac58bcb5"
+    },
+    {
+      "source": "bach/bwv153.1.mxl",
+      "riemenschneider": 3,
+      "title": "Ach Gott, vom Himmel sieh’ darein",
+      "title_group": "achgottvomhimmelsiehdarein",
+      "melody_group": "c49c936b2c0e3ab9f2c56ccaf36ffc92225ac777a08e624bb1cf14cf61d15b3f",
+      "split": "development",
+      "tonic": "E4",
+      "mode": "minor",
+      "sha256": "49553bbbfa8e79ddac3b35232608c9db07c3bf2582a161b805e6eec891e1fe8e"
+    },
+    {
+      "source": "bach/bwv86.6.mxl",
+      "riemenschneider": 4,
+      "title": "Es ist das Heil uns kommen her",
+      "title_group": "esistdasheilunskommenher",
+      "melody_group": "f3a01fa7dff303efa200e939c524170b17d16ec2ab9b0e07f1863d017d2fb464",
+      "split": "development",
+      "tonic": "E4",
+      "mode": "major",
+      "sha256": "5b9a0acc0010297e9f49f8c43d098361deb28f67dfc13f9f6b682cff9ec1003e"
+    },
+    {
+      "source": "bach/bwv267.mxl",
+      "riemenschneider": 5,
+      "title": "An Wasserflüssen Babylon",
+      "title_group": "anwasserflssenbabylon",
+      "melody_group": "5bcb66fd2934abdca7770c4b562ae381c7781aa131764bfab30d4ca28a27b69b",
+      "split": "train",
+      "tonic": "G4",
+      "mode": "major",
+      "sha256": "8fd35db74f930089746d03248b8267882c9508d8f005aec67e9f4e23d74c27e4"
+    },
+    {
+      "source": "bach/bwv281.mxl",
+      "riemenschneider": 6,
+      "title": "Christus, der ist mein Leben",
+      "title_group": "christusderistmeinleben",
+      "melody_group": "11c49f1067d2354b58ec41f8719e73d7a43fdaf607626e9a510c072b90024aa4",
+      "split": "train",
+      "tonic": "F4",
+      "mode": "major",
+      "sha256": "3946fb6c7dc6a0fe772f88aaefa5d32f9b42f9fcc476e9a3070f9e5b33ea760a"
+    },
+    {
+      "source": "bach/bwv17.7.mxl",
+      "riemenschneider": 7,
+      "title": "Nun lob’, mein’ Seel’, den Herren",
+      "title_group": "nunlobmeinseeldenherren",
+      "melody_group": "94bc0f1a5425bf32afc620b23c5264366eee5baf7db2d1be6c0cb8bf411a4f09",
+      "split": "train",
+      "tonic": "A4",
+      "mode": "major",
+      "sha256": "a2f0dde7a8a4005571326e78f0e1fa10b418477e0d7f765e68048901202d1994"
+    },
+    {
+      "source": "bach/bwv40.8.mxl",
+      "riemenschneider": 8,
+      "title": "Freuet euch, ihr Christen alle",
+      "title_group": "freueteuchihrchristenalle",
+      "melody_group": "38c701cf60c9167f3b99c95de1cd9524fbfe81c6b64cd239ae6d274c4734b0c9",
+      "split": "development",
+      "tonic": "C4",
+      "mode": "minor",
+      "sha256": "89b527da3439fcfaf49e22ebba367bdcedbd1c624bf49759f2b30f7db789be4c"
+    },
+    {
+      "source": "bach/bwv248.12-2.mxl",
+      "riemenschneider": 9,
+      "title": "Ermuntre dich, mein schwacher Geist",
+      "title_group": "ermuntredichmeinschwachergeist",
+      "melody_group": "69c5105d91ceb9c6a0485633f1b4454d1ca72f2b356947fc1e206e5b90e45086",
+      "split": "train",
+      "tonic": "G4",
+      "mode": "major",
+      "sha256": "03f27251df1e731d9f0ba2ce61c5768dccda2894517e6a9b658b1fbea2f004af"
+    },
+    {
+      "source": "bach/bwv38.6.mxl",
+      "riemenschneider": 10,
+      "title": "Aus tiefer Not schrei’ ich zu dir",
+      "title_group": "austiefernotschreiichzudir",
+      "melody_group": "5869b8f79fe10d36d17e2f2df01e39bcd0bcab95823d2dfa771fbbf770550e7b",
+      "split": "train",
+      "tonic": "A4",
+      "mode": "minor",
+      "sha256": "3d7f458d1f7588de2c664a9aaefe287937be807355eeb708db38caab98d3bef7"
+    },
+    {
+      "source": "bach/bwv65.2.mxl",
+      "riemenschneider": 12,
+      "title": "Puer natus in Bethlehem",
+      "title_group": "puernatusinbethlehem",
+      "melody_group": "cf3ae88688fb16110e409bb3613026f11f0595e8598730393041bd50316c3f7e",
+      "split": "development",
+      "tonic": "C4",
+      "mode": "major",
+      "sha256": "b3c3257ceec1d28f6d7408dc34f5ffc8876fa985aa864f7e7af1287aba626925"
+    },
+    {
+      "source": "bach/bwv33.6.mxl",
+      "riemenschneider": 13,
+      "title": "Allein zu dir, Herr Jesu Christ",
+      "title_group": "alleinzudirherrjesuchrist",
+      "melody_group": "cf42ca756bfc2b78498c7d327e5a3cfb7d664bf177004da128a5afbe3c5bb2a6",
+      "split": "train",
+      "tonic": "C4",
+      "mode": "major",
+      "sha256": "b1a1a662561edcdd36ab6da4be1512878f06b5bd1173e9d6c6c8df549b418a89"
+    },
+    {
+      "source": "bach/bwv184.5.mxl",
+      "riemenschneider": 14,
+      "title": "O Herre Gott, dein göttlich Wort",
+      "title_group": "oherregottdeingttlichwort",
+      "melody_group": "c85cd264f1a488d69b5a36c1311c75c166e2c5ebd6e994ddd5fba9a3a2740568",
+      "split": "train",
+      "tonic": "D4",
+      "mode": "major",
+      "sha256": "dcf30e49205b570fbf7f7039f0ce5af42a41e3a021f5653dc2f0683d292ee9b4"
+    },
+    {
+      "source": "bach/bwv277.mxl",
+      "riemenschneider": 15,
+      "title": "Christ lag in Todesbanden",
+      "title_group": "christlagintodesbanden",
+      "melody_group": "158c7ff4c18dc574feaeb16f2c63867fdcd9a3f4ce47e6514b6392dcdce9f745",
+      "split": "train",
+      "tonic": "A4",
+      "mode": "minor",
+      "sha256": "61744d6c58bf64b29c7424f8347323466957b35d83071bfe8b7ba6f0a0bfdf8b"
+    },
+    {
+      "source": "bach/bwv311.mxl",
+      "riemenschneider": 16,
+      "title": "Es woll’ uns Gott genädig sein",
+      "title_group": "eswollunsgottgendigsein",
+      "melody_group": "597e0387b7745d66c79fa02553e075b7eccd59623ad0b3153e3716297a7651c4",
+      "split": "development",
+      "tonic": "B4",
+      "mode": "minor",
+      "sha256": "c59e795c3a5ad1a8adde9e6a096029bcd9b39dffb2497c3fa64d62746244e8af"
+    }
+  ],
+  "excluded": [
+    {
+      "source": "bach/bwv41.6.mxl",
+      "reason": "Exactly four parts with an explicit SATB mapping are required"
+    }
+  ],
+  "test_policy": "No final test partition selected or evaluated in this development experiment."
+}

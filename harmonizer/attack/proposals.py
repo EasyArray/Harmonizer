@@ -1,5 +1,6 @@
 """One-shot proposal requests with durable reservations; never executes model code."""
 import argparse
+from datetime import date
 from decimal import Decimal, ROUND_CEILING
 from hashlib import sha256
 import json
@@ -67,6 +68,8 @@ def require_durable(path=LEDGER):
 
 
 def reserve(identity, prompt_path, ledger_path=LEDGER, tickets=Path("artifacts/api-tickets")):
+  if (date.today() - date.fromisoformat(PRICE_CHECKED)).days > 7:
+    raise ValueError("Model prices need review before another paid request")
   if not identity or any(c not in "abcdefghijklmnopqrstuvwxyz0123456789-" for c in identity):
     raise ValueError("Request ID must use lowercase letters, digits and hyphens")
   data = read_ledger(ledger_path)
@@ -95,6 +98,31 @@ def reserve(identity, prompt_path, ledger_path=LEDGER, tickets=Path("artifacts/a
   data["entries"].append(entry)
   save_json(ledger_path, data)
   return entry
+
+
+def validate_response(path):
+  """Treat model output only as bounded DSL data; report rejected proposals."""
+  from .dsl import parse
+  result = json.loads(Path(path).read_text())
+  if result.get("status") != "completed":
+    raise ValueError("Incomplete model response; do not evaluate partial rules")
+  text = "\n".join(c["text"] for item in result.get("output", [])
+                   for c in item.get("content", []) if c.get("type") == "output_text")
+  proposals = json.loads(text)["rules"]
+  if not isinstance(proposals, list) or not 1 <= len(proposals) <= 3:
+    raise ValueError("Expected one to three proposals")
+  accepted, rejected, ids = [], [], set()
+  for item in proposals:
+    try:
+      rules = parse(item["dsl"])
+      if len(rules) != 1 or rules[0].title != item["title"] or rules[0].id in ids:
+        raise ValueError("Expected a single distinct named rule matching its title")
+      ids.add(rules[0].id)
+      accepted.append(item)
+    except (ValueError, KeyError, TypeError) as error:
+      rejected.append({"title": item.get("title") if isinstance(item, dict) else None,
+                       "reason": str(error)})
+  return {"accepted": accepted, "rejected": rejected}
 
 
 def settle(data, entry, response):

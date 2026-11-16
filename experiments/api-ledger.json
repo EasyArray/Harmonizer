@@ -7,16 +7,34 @@
       "id": "round-001",
       "provider": "openai",
       "model": "gpt-6.1-terra",
-      "status": "reserved",
+      "status": "completed",
       "prompt_sha256": "3ef7a191768827ff5d207f95b9a7a159ebdf36dfc4e035404257af9e65df4577",
       "ticket_sha256": "77b185ef18e9c817974a52e8f8c0a38b0a68d09587174989125ab42093535918",
       "max_output_tokens": 6000,
       "reserved_micro_usd": 50873,
-      "accounted_micro_usd": 50873,
+      "accounted_micro_usd": 5758,
       "pricing_checked": "2026-11-16",
       "pricing_source": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
       "input_micro_usd_per_token_ceiling": "2.5",
-      "output_micro_usd_per_token_ceiling": "5"
+      "output_micro_usd_per_token_ceiling": "5",
+      "response_path": "experiments/api-responses/round-001.json",
+      "response_sha256": "9b88b144b2e199e732cd947917c51f21850059b5600c9328a6b6cd0d847eecb8",
+      "usage": {
+        "input_tokens": 1025,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          },
+          "cached_tokens": 0
+        },
+        "output_tokens": 639,
+        "output_tokens_details": {
+          "reasoning_tokens": 314
+        },
+        "total_tokens": 1664
+      }
     }
   ]
 }

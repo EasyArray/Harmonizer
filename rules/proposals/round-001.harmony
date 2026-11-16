@@ -1,0 +1,22 @@
+At attack n:
+  Rule "Inner-voice spacing":
+    if n.voice == A or n.voice == T:
+      if distance((T at n), (A at n)) > 12:
+        penalty 1
+
+At attack n:
+  Rule "Inner leading-tone resolution":
+    if n.voice == A or n.voice == T:
+      if key.mode == "major" and degree(n.previous) == 7:
+        if degree(n) != 1:
+          penalty 1
+      if key.mode == "minor" and degree(n.previous) == #7:
+        if degree(n) != 1:
+          penalty 1
+
+At attack (upper, lower):
+  Rule "Parallel octaves involving inner voices":
+    if upper.voice == A or upper.voice == T or lower.voice == A or lower.voice == T:
+      if distance(upper.previous, upper) > 0:
+        if interval(lower.previous, upper.previous) == P8 and interval(lower, upper) == P8:
+          penalty 1
