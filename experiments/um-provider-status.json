@@ -1,0 +1,6 @@
+{
+  "status": "probe-failed",
+  "error_type": "HTTPError",
+  "http_status": 999,
+  "paid_requests_in_probe": 0
+}
