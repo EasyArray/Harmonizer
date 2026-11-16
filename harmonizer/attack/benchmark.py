@@ -64,7 +64,7 @@ def cached_candidates(score, rules, domains, start, cache_dir, cache_namespace):
   return table
 
 
-def evaluate_models(records, seed, melodic, proposed, include_pairs=False):
+def evaluate_models(records, seed, melodic, proposed, include_pairs=False, inventories_override=None):
   rules = seed + melodic + proposed
   train = [(s,t) for p,s,t in records if p["split"] == "train"]
   dev = [(p,s,t) for p,s,t in records if p["split"] == "development"]
@@ -81,6 +81,8 @@ def evaluate_models(records, seed, melodic, proposed, include_pairs=False):
   if include_pairs:
     for pair in combinations(range(len(base),len(rules)),2):
       inventories["base+pair:"+" | ".join(rules[i].title for i in pair)]=base+list(pair)
+  if inventories_override is not None:
+    inventories = inventories_override
   fitted = {name: fit([subset(t, indices) for _,t in train]) for name,indices in inventories.items()}
   rows = []
   for p, score, table in dev:
@@ -90,6 +92,7 @@ def evaluate_models(records, seed, melodic, proposed, include_pairs=False):
     models = {"uniform":(table,np.zeros(len(rules))), "pitch":(pitch_table(score,table,counts),[1])}
     models.update({name:(subset(table,indices),fitted[name]) for name,indices in inventories.items()})
     rows.append({"source":p["source"],"start":str(table.decision_times[0]),"context":context,"attacks":table.first_width,
+                 "sounding":{v.name:str(score.at(v,table.decision_times[0]).pitch) if score.at(v,table.decision_times[0]) else None for v in Voice},
                  "models":{name:first_metrics(t,w) for name,(t,w) in models.items()}})
   names = list(rows[0]["models"])
   sources = sorted({r["source"] for r in rows})

@@ -66,7 +66,17 @@ def first_metrics(table, weights):
   probabilities = table.first_choice_probabilities(weights)
   gold = table.choices[table.gold][:table.first_width]
   p = probabilities[gold]
+  sounding_gold = tuple(pitch.semitones for pitch in gold)
+  sounding = {}
+  for choice, probability in probabilities.items():
+    identity = tuple(pitch.semitones for pitch in choice)
+    sounding[identity] = sounding.get(identity, 0.0) + probability
+  sound_p = sounding[sounding_gold]
   return {
+    "sounding_gold_probability": sound_p,
+    "sounding_gold_nll": float(-np.log(sound_p)),
+    "gold_spelling_given_sounding": p / sound_p,
+    "distinct_sounding_choices": len(sounding),
     "gold_first_choice": list(map(str, gold)),
     "first_choice_count": len(probabilities),
     "gold_probability": p,

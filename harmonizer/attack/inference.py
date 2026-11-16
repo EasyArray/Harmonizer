@@ -50,6 +50,8 @@ class CandidateTable:
   def first_choice_probabilities(self, weights):
     count = len(self.choices[0]) if len(self.decision_times) == 1 else self.first_width
     logp, groups = self.log_probabilities(weights), {}
+    if len(self.decision_times) == 1:
+      return {choice: float(p) for choice, p in zip(self.choices, np.exp(logp))}
     for choice, value in zip(self.choices, logp):
       prefix = choice[:count]
       groups.setdefault(prefix, []).append(value)

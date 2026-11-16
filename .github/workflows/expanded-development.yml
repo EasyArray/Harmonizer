@@ -1,0 +1,61 @@
+name: Expanded development and architecture
+on:
+  push:
+    branches: [attack-dsl-prototype]
+    paths:
+      - '.github/workflows/expanded-development.yml'
+      - 'experiments/requests/expanded-development.json'
+permissions:
+  contents: write
+concurrency:
+  group: expanded-development
+  cancel-in-progress: false
+jobs:
+  experiment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: attack-dsl-prototype
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: python -m pip install -e '.[dev,experiment]'
+      - run: python -m pytest -q
+      - uses: actions/cache@v4
+        with:
+          path: artifacts/expanded-cache
+          key: expanded-features-${{ runner.os }}-${{ hashFiles('harmonizer/attack/*.py', 'rules/*.harmony', 'rules/proposals/round-001.harmony') }}
+      - name: Expand dataset, compare architectures and audit key sensitivity
+        run: python -m harmonizer.attack.expanded --workers 2
+      - name: Export key-independent provisional model from preserved round 001
+        run: >-
+          python -m harmonizer.attack.select_model
+          --report experiments/results/round-001-summary.json
+          --policy experiments/key-independent-policy.json
+          --rules-output rules/learned/current.harmony
+          --model-output experiments/models/current.json
+      - name: Publish readable report and reproducibility records
+        run: |
+          cat docs/expanded-development.md >> "$GITHUB_STEP_SUMMARY"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python -c 'from harmonizer.attack.cloud_proposals import checkpoint; checkpoint(["experiments/bach-expanded.json", "experiments/results/expanded-summary.json", "docs/expanded-development.md", "rules/architecture-controls.harmony", "rules/learned/current.harmony", "experiments/models/current.json"], "Publish expanded development, key sensitivity and architecture report")'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: expanded-development
+          path: |
+            artifacts/bach-expanded.json
+            docs/expanded-development.md
+            experiments/bach-expanded.json
+            experiments/results/expanded-summary.json
+            experiments/models/current.json
+            rules/learned/current.harmony
+          retention-days: 30
