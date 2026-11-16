@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "stage": "Frozen before viewing expanded development results",
+  "reference": "seed+melodic",
+  "comparisons": [
+    "spacing-shared",
+    "spacing-once",
+    "spacing-separate"
+  ],
+  "primary_metric": "Equal-piece exact-spelling NLL; sounding-pitch score is diagnostic only",
+  "minimum_improvement_nats": 0.02,
+  "minimum_piece_win_fraction": 0.6,
+  "simplicity_tolerance_nats": 0.01,
+  "added_weights": {
+    "spacing-shared": 1,
+    "spacing-once": 1,
+    "spacing-separate": 2
+  },
+  "notes": "Prefer fewer added weights within tolerance. Key-dependent rules remain exploratory. Bootstrap intervals quantify family sampling, not repeated selection uncertainty. No final test set."
+}

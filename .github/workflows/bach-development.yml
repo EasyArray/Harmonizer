@@ -3,10 +3,8 @@ on:
   push:
     branches: [main, attack-dsl-prototype]
     paths:
-      - 'harmonizer/attack/**'
-      - 'rules/**'
+      - 'experiments/requests/bach-development.json'
       - 'experiments/bach-development.json'
-      - '.github/workflows/bach-development.yml'
   workflow_dispatch:
 permissions:
   contents: read

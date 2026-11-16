@@ -2,8 +2,9 @@
 
 The user authorized a $10 initial **total** API budget across providers, with no
 automatic reset. U-M's reported $25/month quota is a separate backstop. The
-current development adapter uses the separately authorized OpenAI key; U-M
-cloud execution is not yet wired. No CI job runs paid requests.
+local development adapter uses the separately authorized OpenAI key. A separate
+one-shot Actions workflow now supports a bounded U-M Astra request. Ordinary
+CI and benchmark jobs remain offline.
 
 The provider proposes DSL text only. It receives a small explicit prompt, no
 shell, credentials, tools, corpus files, or final test data. Parsed proposals are
@@ -13,8 +14,10 @@ evaluated by the same deterministic implementation as handwritten rules.
 
 - Ledger: `experiments/api-ledger.json`, committed on `attack-dsl-prototype`.
   Missing, corrupt, changed-limit, or unsynchronized accounting stops a request.
-- One outstanding reservation, unique request IDs, maximum 25 cents per request,
-  maximum 64 KB of prompt and 6,000 output tokens (including reasoning).
+- One outstanding reservation and unique request IDs. The original local Terra
+  adapter caps requests at 25 cents, 64 KB and 6,000 output tokens. The explicitly
+  authorized stronger-model cloud adapter caps a request at $2, 40 KB and 12,000
+  output tokens, still within the same $10 total project ceiling.
 - Reserve a conservative token-cost ceiling before sending. The ledger must be
   checkpointed to GitHub before `send` can proceed. Fetching the latest ledger is
   read-only and never exposes a key.
@@ -34,8 +37,9 @@ evaluated by the same deterministic implementation as handwritten rules.
   <https://developers.openai.com/api/docs/models/gpt-6.1-terra>.
 
 This is a serialized development workflow, not a distributed transaction system.
-Do not run paid jobs from multiple clones/workers. Before enabling U-M or cloud
-paid jobs, route them through the same durable reservation process. User/API
+Do not run paid jobs from multiple clones/workers. The U-M Actions job uses a
+single concurrency group and the same ledger. It commits an unknown/claimed
+entry before sending; another run refuses to resend that request ID. User/API
 activity outside this project is not covered by this ledger. Provider billing
 controls remain independent.
 
@@ -61,5 +65,24 @@ spacing counts twice at simultaneous A/T attacks; leading-tone resolution checks
 global degree rather than a stepwise upward motion, and penalizes repetition;
 the octave rule handles exact positive octaves, not compound/negative octaves.
 The [completed development comparison](discovery-round-001.md) provisionally
-retains spacing and leading-tone behavior. These remain experimental hypotheses,
-not independently tested musical discoveries.
+retained spacing and leading-tone behavior before the key-label audit. The
+key-independent policy now excludes leading-tone behavior from the current
+model. These remain experimental hypotheses, not independently tested musical
+discoveries.
+
+## Stronger-model round 002
+
+The prepared request uses `gpt-6-astra` with high reasoning. U-M published
+standard rates checked November 16, 2026 are $10 input / $50 output per million
+tokens. The adapter conservatively accounts input at $25 to allow cache-write
+premiums; it caps output at 12,000 tokens. The exact prompt currently reserves
+less than $1, although the per-request safety ceiling is $2.
+
+The read-only provider probe returned HTTP 999. No paid request was sent and
+no round-002 reservation was created. See [execution status](cloud-experiment-status.md).
+A successful probe or workflow execution is not evidence of a generated proposal:
+the saved response, validation file and ledger entry establish that.
+
+The existing OpenAI key is in the temporarily unavailable development workspace.
+Keys are never placed in prompts, source files, logs or reports. GitHub secrets
+are consumed only within the dedicated proposal job.
