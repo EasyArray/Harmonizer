@@ -83,3 +83,18 @@ def test_constant_rules_are_reported():
   table = candidates(score, rules, domains, F(1))
   assert table.metrics([1])["constant_rules"] == [rules[0].id]
   np.testing.assert_allclose(table.log_probabilities([100]), table.log_probabilities([0]))
+
+
+def test_saved_weights_require_matching_rules(tmp_path):
+  import json
+  from hashlib import sha256
+  from harmonizer.attack.inference import load_weights
+  rules_path=tmp_path/"rules.harmony"
+  rules_path.write_text('At attack n:\n  Rule "motion":\n    penalty distance(n.previous,n)')
+  rules=parse(rules_path.read_text())
+  path=tmp_path/"weights.json"
+  path.write_text(json.dumps({"rules_sha256":sha256(rules_path.read_bytes()).hexdigest(),"rule_weights":{rules[0].id:1.5}}))
+  assert load_weights(path,rules_path,rules).tolist()==[1.5]
+  rules_path.write_text(rules_path.read_text()+"\n//changed")
+  with pytest.raises(ValueError,match="does not match"):
+    load_weights(path,rules_path,rules)

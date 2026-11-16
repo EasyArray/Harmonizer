@@ -7,7 +7,7 @@ import sys
 import numpy as np
 from .dsl import evaluate, parse
 from .import_score import read_musicxml
-from .inference import candidates, fit
+from .inference import candidates, fit, load_weights
 from .score import Key, Note, Pitch, Score, Voice
 
 
@@ -56,6 +56,7 @@ def main(argv=None):
   parser.add_argument("--horizon", type=int, default=1)
   parser.add_argument("--alto", help="Comma-separated declared candidate pitches")
   parser.add_argument("--tenor", help="Comma-separated declared candidate pitches")
+  parser.add_argument("--weights", help="Saved fitted model JSON, checked against the rule file")
   parser.add_argument("--output", help="Write a JSON report instead of stdout")
   args = parser.parse_args(argv)
   try:
@@ -77,11 +78,11 @@ def main(argv=None):
             parser.error("--alto and --tenor must declare pitch domains")
           domains = {Voice.A: tuple(map(Pitch.parse, args.alto.split(","))), Voice.T: tuple(map(Pitch.parse, args.tenor.split(",")))}
           table = candidates(score, rules, domains, Fraction(args.start), args.horizon)
-          weights = np.ones(len(rules))
+          weights = load_weights(args.weights,args.rules,rules) if args.weights else np.ones(len(rules))
           logp = table.log_probabilities(weights)
           top = np.argsort(-logp, kind="stable")[:10]
           report = {
-            "source": score.source, "weights": "All ones for inspection; not fitted",
+            "source": score.source, "weights": args.weights or "All ones for inspection; not fitted",
             "figure_import": "not implemented", "metrics": table.metrics(weights),
             "scoring_window": [str(args.start), str(table.stop)],
             "top": [{"pitches": list(map(str, table.choices[i])), "probability": float(np.exp(logp[i]))} for i in top],

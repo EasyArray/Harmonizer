@@ -2,6 +2,9 @@
 from dataclasses import dataclass, replace
 from itertools import product
 from math import prod
+from hashlib import sha256
+import json
+from pathlib import Path
 import numpy as np
 from scipy.optimize import minimize
 from scipy.special import logsumexp
@@ -120,3 +123,15 @@ def fit(tables, regularization=0.1, nonnegative=True):
   if not result.success:
     raise RuntimeError(f"Weight fitting failed: {result.message}")
   return result.x
+
+
+def load_weights(path, rules_path, rules):
+  model = json.loads(Path(path).read_text())
+  if model["rules_sha256"] != sha256(Path(rules_path).read_bytes()).hexdigest():
+    raise ValueError("Rule file does not match fitted model")
+  if set(model["rule_weights"]) != {r.id for r in rules}:
+    raise ValueError("Fitted model has a different rule inventory")
+  weights = np.asarray([model["rule_weights"][r.id] for r in rules], dtype=float)
+  if not np.isfinite(weights).all():
+    raise ValueError("Fitted weights must be finite")
+  return weights

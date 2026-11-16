@@ -60,6 +60,8 @@ def save_json(path, data):
 
 
 def require_durable(path=LEDGER):
+  if (date.today() - date.fromisoformat(PRICE_CHECKED)).days > 7:
+    raise ValueError("Model prices need review before another paid request")
   # Read-only fetch. Every new request must start from the current remote ledger.
   subprocess.run(["git", "fetch", "origin", "attack-dsl-prototype"], check=True, capture_output=True)
   remote = subprocess.check_output(["git", "show", f"origin/attack-dsl-prototype:{path.as_posix()}"])
@@ -68,8 +70,6 @@ def require_durable(path=LEDGER):
 
 
 def reserve(identity, prompt_path, ledger_path=LEDGER, tickets=Path("artifacts/api-tickets")):
-  if (date.today() - date.fromisoformat(PRICE_CHECKED)).days > 7:
-    raise ValueError("Model prices need review before another paid request")
   if not identity or any(c not in "abcdefghijklmnopqrstuvwxyz0123456789-" for c in identity):
     raise ValueError("Request ID must use lowercase letters, digits and hyphens")
   data = read_ledger(ledger_path)
