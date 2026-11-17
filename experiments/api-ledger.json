@@ -35,6 +35,22 @@
         },
         "total_tokens": 1664
       }
+    },
+    {
+      "id": "round-002",
+      "provider": "openai",
+      "model": "gpt-6-astra",
+      "status": "reserved",
+      "prompt_sha256": "12ff1eb1cc670a9a90c3f6c3462962788bea7e4701b88e3fe1d131a2565fab15",
+      "ticket_sha256": "a6073cd80e51a76d4ea968bc4d17eb0ab2ecbc7e011c86977f4bfabbfcbb05dd",
+      "max_output_tokens": 12000,
+      "reasoning_effort": "high",
+      "reserved_micro_usd": 992950,
+      "accounted_micro_usd": 992950,
+      "pricing_checked": "2026-11-16",
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "input_micro_usd_per_token_ceiling": "25",
+      "output_micro_usd_per_token_ceiling": "50"
     }
   ]
 }
