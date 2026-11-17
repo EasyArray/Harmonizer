@@ -1,0 +1,20 @@
+{
+  "accepted": [
+    {
+      "title": "Whole-tone melodic spelling",
+      "dsl": "At alto or tenor attack n:\n  Rule \"Whole-tone melodic spelling\":\n    let motion = interval(n.previous, n)\n    if motion.semitones == 2 and motion.steps != 1:\n      penalty 1\n    if motion.semitones == -2 and motion.steps != -1:\n      penalty 1",
+      "rationale": "Major-second spelling may be preferred for whole-tone inner-voice motion, distinguishing enharmonic candidates that melodic distance treats identically without constraining repeated pitches or chromatic semitones."
+    },
+    {
+      "title": "Overlap without crossing",
+      "dsl": "At attack (upper, lower):\n  Rule \"Overlap without crossing\":\n    if upper.previous is above lower.previous and upper is above lower:\n      if lower is above upper.previous:\n        penalty 1\n      if upper is below lower.previous:\n        penalty 1",
+      "rationale": "For simultaneously attacking voices that remain strictly ordered, entering the partner's previous register may weaken line independence in a way not captured by present-time crossing penalties."
+    },
+    {
+      "title": "Leaping into a held-note semitone",
+      "dsl": "At attack n1 while n2 holds:\n  Rule \"Leaping into a held-note semitone\":\n    if n1.voice == A or n1.voice == T:\n      if distance(n1, n2) == 1 and distance(n1.previous, n1) > 2:\n        penalty 1",
+      "rationale": "Approaching an exact semitone clash with a sustained voice by more than two semitones may be less typical than stepwise contact, irrespective of crossing and deliberately excluding repeated pitches and compound intervals."
+    }
+  ],
+  "rejected": []
+}

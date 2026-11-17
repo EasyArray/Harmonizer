@@ -1,0 +1,21 @@
+At alto or tenor attack n:
+  Rule "Whole-tone melodic spelling":
+    let motion = interval(n.previous, n)
+    if motion.semitones == 2 and motion.steps != 1:
+      penalty 1
+    if motion.semitones == -2 and motion.steps != -1:
+      penalty 1
+
+At attack (upper, lower):
+  Rule "Overlap without crossing":
+    if upper.previous is above lower.previous and upper is above lower:
+      if lower is above upper.previous:
+        penalty 1
+      if upper is below lower.previous:
+        penalty 1
+
+At attack n1 while n2 holds:
+  Rule "Leaping into a held-note semitone":
+    if n1.voice == A or n1.voice == T:
+      if distance(n1, n2) == 1 and distance(n1.previous, n1) > 2:
+        penalty 1

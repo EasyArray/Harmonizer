@@ -4,8 +4,10 @@ This branch adds a small experimental implementation alongside the original
 notebook tools. Start with [the seven seed rules](../rules/seed.harmony).
 They are handwritten hypotheses, not discoveries. The older API is unchanged.
 
-**Latest milestone:** [a complete proposal-and-evaluation cycle](discovery-round-001.md)
-on 15 chorales, with a saved fitted model and less than one cent of API usage.
+**Latest results:** [60-chorale architecture comparison](expanded-development.md).
+See [current status](project-status.md) for the completed Astra proposal call
+and its offline evaluation. The first 15-chorale experiment is preserved in
+[round 001](discovery-round-001.md).
 
 ## Run without installing anything on your computer
 

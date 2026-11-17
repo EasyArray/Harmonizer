@@ -38,6 +38,12 @@ The once-per-event variant suppresses the tenor contribution when alto also atta
 The separate-weights variant retains note counting but fits alto and tenor independently.
 All three use exactly the same candidate completions and training/development split.
 
+**Comparison caveat:** all fits use the same L2 coefficient, but changing feature
+scale or splitting one weight into two changes the effective regularization.
+These results support retaining the simple shared rule provisionally; they do
+not settle which event-counting convention is intrinsically better. A follow-up
+comparison should match regularization or select it using training data only.
+
 - **spacing-shared:** NLL 4.3403; fitted spacing weights Inner-voice spacing=0.395.
 - **spacing-once:** NLL 4.3538; fitted spacing weights Spacing counted once per event=0.338.
 - **spacing-separate:** NLL 4.3501; fitted spacing weights Spacing at alto attacks=0.222, Spacing at tenor attacks=0.266.

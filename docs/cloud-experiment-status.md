@@ -1,7 +1,12 @@
 # Cloud execution status
 
-The development workspace is temporarily unavailable. Code changes and tests
-continue through GitHub and Actions.
+Update, November 17: the workspace and existing OpenAI development key have
+returned. An authenticated model-access check succeeded. The expanded GitHub
+experiment completed successfully. Astra/high has since returned three valid
+proposals via OpenAI; conservative cumulative API accounting is $0.330158.
+Their offline evaluation runs in GitHub. See [current status](project-status.md).
+
+The following records describe the earlier interruption:
 
 - The U-M secret was supplied to a read-only model-list probe on November 16,
   2026. The gateway returned HTTP 999 before any paid request. This does not

@@ -1,4 +1,4 @@
-> **Attack DSL prototype:** [Latest results and fitted model](docs/discovery-round-001.md) · [Language and cloud test instructions](docs/attack-prototype.md). The original notebook API below remains available.
+> **Current project:** [Resume/status](docs/project-status.md) · [Expanded results](docs/expanded-development.md) · [DSL reference](docs/attack-prototype.md). No local installation is needed to review these reports.
 
 # Harmonizer Workbench
 

@@ -128,7 +128,8 @@ def render(report):
            "The original spacing rule contributes twice when alto and tenor both attack.",
            "The once-per-event variant suppresses the tenor contribution when alto also attacks.",
            "The separate-weights variant retains note counting but fits alto and tenor independently.",
-           "All three use exactly the same candidate completions and training/development split.", ""]
+           "All three use exactly the same candidate completions and training/development split.", "",
+           "**Comparison caveat:** equal L2 coefficients do not equate regularization across different feature scales or parameter counts. These are provisional comparisons; match regularization or select it using training data before settling an event-counting convention.", ""]
   for name in ("spacing-shared","spacing-once","spacing-separate"):
     rows.append(f"- **{name}:** NLL {r['summary'][name]['mean_piece_nll']:.4f}; fitted spacing weights " +
       ", ".join(f"{k}={v:.3f}" for k,v in r["weights"][name].items() if "spacing" in k.lower()) + ".")
