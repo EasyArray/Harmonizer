@@ -52,6 +52,9 @@ $0.330158 of $10. The response and validation are saved: never resend round-002.
 The offline proposal evaluation is launched by the committed evaluation request;
 check that workflow once on resume and read docs/round-002-evaluation.md when
 available. It publishes its own report and fitted candidate model.
+Active evaluation run: https://github.com/EasyArray/Harmonizer/actions/runs/44103341737
+It was confirmed running at this checkpoint. Its dedicated workflow receives no
+API key and makes no paid requests. Do not launch a duplicate evaluation.
 Keep the proposal response and its validation separate from evidence that any
 rule improves predictive probabilities.
 
