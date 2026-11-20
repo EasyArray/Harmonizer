@@ -1,0 +1,35 @@
+{
+  "purpose": "Small engineering pilot, not a scientific benchmark; tune-family grouping has not been audited",
+  "music21_version": "8.3.0",
+  "selection": "First post-initial pair of consecutive decisions with exactly one inner-voice attack at each; selected using rhythm only",
+  "pieces": [
+    {
+      "source": "bach/bwv269",
+      "split": "train",
+      "tonic": "G4",
+      "mode": "major",
+      "sha256": "9676f11a2b26488bcf30db90c15576caa1ea2a616b909e376d44b8b804e9d138"
+    },
+    {
+      "source": "bach/bwv347",
+      "split": "train",
+      "tonic": "A4",
+      "mode": "major",
+      "sha256": "a017649b259ceda9c0ee8a74909893a69d01163c5f60ae5e631dc3d2ac58bcb5"
+    },
+    {
+      "source": "bach/bwv153.1",
+      "split": "development",
+      "tonic": "E4",
+      "mode": "minor",
+      "sha256": "49553bbbfa8e79ddac3b35232608c9db07c3bf2582a161b805e6eec891e1fe8e"
+    },
+    {
+      "source": "bach/bwv86.6",
+      "split": "development",
+      "tonic": "E4",
+      "mode": "major",
+      "sha256": "5b9a0acc0010297e9f49f8c43d098361deb28f67dfc13f9f6b682cff9ec1003e"
+    }
+  ]
+}

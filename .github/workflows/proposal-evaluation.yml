@@ -1,0 +1,52 @@
+name: Offline proposal evaluation
+on:
+  push:
+    branches: [attack-dsl-prototype]
+    paths:
+      - 'experiments/requests/evaluate-proposals.json'
+permissions:
+  contents: write
+concurrency:
+  group: offline-proposal-evaluation
+  cancel-in-progress: false
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: attack-dsl-prototype
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: python -m pip install -e '.[dev,experiment]'
+      - run: python -m pytest -q
+      - run: python -m harmonizer.attack.evaluate_proposals
+      - name: Publish result and model
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          from harmonizer.attack.cloud_proposals import checkpoint
+          identity=json.loads(Path('experiments/requests/evaluate-proposals.json').read_text())['round']
+          report=f'docs/{identity}-evaluation.md'
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as summary:
+            summary.write(Path(report).read_text())
+          checkpoint([report,f'experiments/results/{identity}-summary.json',f'experiments/models/{identity}.json',f'rules/learned/{identity}.harmony'],f'Publish {identity} offline proposal evaluation')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: proposal-evaluation
+          path: |
+            artifacts/*-evaluation.json
+            docs/*-evaluation.md
+          retention-days: 30

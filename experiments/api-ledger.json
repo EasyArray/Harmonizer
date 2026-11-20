@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "ceiling_micro_usd": 10000000,
+  "scope": "Initial Harmonizer API spending across all providers; no automatic reset",
+  "entries": [
+    {
+      "id": "round-001",
+      "provider": "openai",
+      "model": "gpt-6.1-terra",
+      "status": "completed",
+      "prompt_sha256": "3ef7a191768827ff5d207f95b9a7a159ebdf36dfc4e035404257af9e65df4577",
+      "ticket_sha256": "77b185ef18e9c817974a52e8f8c0a38b0a68d09587174989125ab42093535918",
+      "max_output_tokens": 6000,
+      "reserved_micro_usd": 50873,
+      "accounted_micro_usd": 5758,
+      "pricing_checked": "2026-11-16",
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+      "input_micro_usd_per_token_ceiling": "2.5",
+      "output_micro_usd_per_token_ceiling": "5",
+      "response_path": "experiments/api-responses/round-001.json",
+      "response_sha256": "9b88b144b2e199e732cd947917c51f21850059b5600c9328a6b6cd0d847eecb8",
+      "usage": {
+        "input_tokens": 1025,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          },
+          "cached_tokens": 0
+        },
+        "output_tokens": 639,
+        "output_tokens_details": {
+          "reasoning_tokens": 314
+        },
+        "total_tokens": 1664
+      }
+    },
+    {
+      "id": "round-002",
+      "provider": "openai",
+      "model": "gpt-6-astra",
+      "status": "completed",
+      "prompt_sha256": "12ff1eb1cc670a9a90c3f6c3462962788bea7e4701b88e3fe1d131a2565fab15",
+      "ticket_sha256": "a6073cd80e51a76d4ea968bc4d17eb0ab2ecbc7e011c86977f4bfabbfcbb05dd",
+      "max_output_tokens": 12000,
+      "reasoning_effort": "high",
+      "reserved_micro_usd": 992950,
+      "accounted_micro_usd": 324400,
+      "pricing_checked": "2026-11-16",
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "input_micro_usd_per_token_ceiling": "25",
+      "output_micro_usd_per_token_ceiling": "50",
+      "response_path": "experiments/api-responses/round-002.json",
+      "response_sha256": "3356bca9976b8d81d53dd61d6301c98f58b9e16e559c68ab5e410acc9e4f9777",
+      "usage": {
+        "input_tokens": 3242,
+        "input_tokens_details": {
+          "cache_write_tokens": 3239,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 3239
+          },
+          "cached_tokens": 0
+        },
+        "output_tokens": 4867,
+        "output_tokens_details": {
+          "reasoning_tokens": 4464
+        },
+        "total_tokens": 8109
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "stage": "Key-independent deployment guard after key-label audit",
+  "reference_model": "seed+melodic",
+  "primary_metric": "mean of per-piece mean negative log likelihood",
+  "minimum_improvement_nats": 0.02,
+  "minimum_piece_win_fraction": 0.6,
+  "simplicity_tolerance_nats": 0.01,
+  "allow_pair_models": true,
+  "candidates": "Singles, pairs and all three proposals, fitted on the same training windows",
+  "notes": "Key-dependent leading-tone rule remains an exploratory result until analytical key labels are verified. This guard is an architectural restriction, not a fresh test.",
+  "allowed_models": [
+    "base+proposal:Inner-voice spacing",
+    "base+proposal:Parallel octaves involving inner voices",
+    "base+pair:Inner-voice spacing | Parallel octaves involving inner voices"
+  ]
+}

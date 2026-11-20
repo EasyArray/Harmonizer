@@ -1,0 +1,26 @@
+name: Attack DSL prototype
+on:
+  push:
+    branches: [main, attack-dsl-prototype]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: python -m pip install -e '.[dev,experiment]'
+      - run: python -m pytest -q
+      - run: python -m harmonizer.attack.cli demo --output artifacts/attack-demo.json
+      - run: python -m harmonizer.attack.pilot --output artifacts/bach-pilot.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: attack-reports
+          path: artifacts/*.json

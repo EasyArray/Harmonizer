@@ -1,0 +1,31 @@
+At alto attack a:
+  Rule "Alto range":
+    if a is below G3:
+      penalty distance(a, G3)
+    if a is above D5:
+      penalty distance(a, D5)
+  Rule "Alto motion":
+    penalty distance(a.previous, a)
+
+At tenor attack t:
+  Rule "Tenor range":
+    if t is below C3:
+      penalty distance(t, C3)
+    if t is above G4:
+      penalty distance(t, G4)
+  Rule "Tenor motion":
+    penalty distance(t.previous, t)
+
+At alto or tenor attack n:
+  Rule "Large leaps":
+    let leap = distance(n.previous, n)
+    if leap > 7:
+      penalty leap - 7
+  Rule "Global diatonicity":
+    if not in_scale(n):
+      penalty 1
+  Rule "Outer consonance":
+    if dissonant(n, B at n):
+      penalty 1
+    if dissonant(n, S at n):
+      penalty 1

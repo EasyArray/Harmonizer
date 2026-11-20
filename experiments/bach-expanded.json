@@ -1,0 +1,1769 @@
+{
+  "version": 2,
+  "music21_version": "8.3.0",
+  "selection": "First 64 Riemenschneider entries; same first/middle/last single and joint attack selection as round 001.",
+  "grouping": "Connected components of normalized titles, transposition-invariant full soprano sequences, and content hashes. Old train/development assignments preserved. New families assigned development iff smallest Riemenschneider number is divisible by three. Related variants may remain undetected.",
+  "pieces": [
+    {
+      "source": "bach/bwv269.mxl",
+      "riemenschneider": 1,
+      "title": "Aus meines Herzens Grunde",
+      "title_group": "ausmeinesherzensgrunde",
+      "melody_group": "5b87f5a4fa1fc28c2fc18483b82ccd058d07f70d03a07629eaf58e5b81d646b1",
+      "tonic": "G4",
+      "mode": "major",
+      "sha256": "9676f11a2b26488bcf30db90c15576caa1ea2a616b909e376d44b8b804e9d138",
+      "outer_key_estimate": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "split": "train",
+      "family_group": "071dea927d59614c"
+    },
+    {
+      "source": "bach/bwv347.mxl",
+      "riemenschneider": 2,
+      "title": "Ich dank\u2019 dir, lieber Herre",
+      "title_group": "ichdankdirlieberherre",
+      "melody_group": "356d4d0c8ee7cb1fb70f8f8f63de6a9c9fc1c96bca4d418412cb0582c6057955",
+      "tonic": "A4",
+      "mode": "major",
+      "sha256": "a017649b259ceda9c0ee8a74909893a69d01163c5f60ae5e631dc3d2ac58bcb5",
+      "outer_key_estimate": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "split": "train",
+      "family_group": "c5a72c6f276c9400"
+    },
+    {
+      "source": "bach/bwv153.1.mxl",
+      "riemenschneider": 3,
+      "title": "Ach Gott, vom Himmel sieh\u2019 darein",
+      "title_group": "achgottvomhimmelsiehdarein",
+      "melody_group": "c49c936b2c0e3ab9f2c56ccaf36ffc92225ac777a08e624bb1cf14cf61d15b3f",
+      "tonic": "E4",
+      "mode": "minor",
+      "sha256": "49553bbbfa8e79ddac3b35232608c9db07c3bf2582a161b805e6eec891e1fe8e",
+      "outer_key_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "split": "development",
+      "family_group": "70770ab67421babd"
+    },
+    {
+      "source": "bach/bwv86.6.mxl",
+      "riemenschneider": 4,
+      "title": "Es ist das Heil uns kommen her",
+      "title_group": "esistdasheilunskommenher",
+      "melody_group": "f3a01fa7dff303efa200e939c524170b17d16ec2ab9b0e07f1863d017d2fb464",
+      "tonic": "E4",
+      "mode": "major",
+      "sha256": "5b9a0acc0010297e9f49f8c43d098361deb28f67dfc13f9f6b682cff9ec1003e",
+      "outer_key_estimate": {
+        "tonic": "E4",
+        "mode": "major"
+      },
+      "split": "development",
+      "family_group": "f830a4c921432b47"
+    },
+    {
+      "source": "bach/bwv267.mxl",
+      "riemenschneider": 5,
+      "title": "An Wasserfl\u00fcssen Babylon",
+      "title_group": "anwasserflssenbabylon",
+      "melody_group": "5bcb66fd2934abdca7770c4b562ae381c7781aa131764bfab30d4ca28a27b69b",
+      "tonic": "G4",
+      "mode": "major",
+      "sha256": "8fd35db74f930089746d03248b8267882c9508d8f005aec67e9f4e23d74c27e4",
+      "outer_key_estimate": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "split": "train",
+      "family_group": "9d2d446f366613d1"
+    },
+    {
+      "source": "bach/bwv281.mxl",
+      "riemenschneider": 6,
+      "title": "Christus, der ist mein Leben",
+      "title_group": "christusderistmeinleben",
+      "melody_group": "11c49f1067d2354b58ec41f8719e73d7a43fdaf607626e9a510c072b90024aa4",
+      "tonic": "F4",
+      "mode": "major",
+      "sha256": "3946fb6c7dc6a0fe772f88aaefa5d32f9b42f9fcc476e9a3070f9e5b33ea760a",
+      "outer_key_estimate": {
+        "tonic": "F4",
+        "mode": "major"
+      },
+      "split": "train",
+      "family_group": "e904f0fc8965327d"
+    },
+    {
+      "source": "bach/bwv17.7.mxl",
+      "riemenschneider": 7,
+      "title": "Nun lob\u2019, mein\u2019 Seel\u2019, den Herren",
+      "title_group": "nunlobmeinseeldenherren",
+      "melody_group": "94bc0f1a5425bf32afc620b23c5264366eee5baf7db2d1be6c0cb8bf411a4f09",
+      "tonic": "A4",
+      "mode": "major",
+      "sha256": "a2f0dde7a8a4005571326e78f0e1fa10b418477e0d7f765e68048901202d1994",
+      "outer_key_estimate": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "split": "train",
+      "family_group": "b6d0c228595e46f0"
+    },
+    {
+      "source": "bach/bwv40.8.mxl",
+      "riemenschneider": 8,
+      "title": "Freuet euch, ihr Christen alle",
+      "title_group": "freueteuchihrchristenalle",
+      "melody_group": "38c701cf60c9167f3b99c95de1cd9524fbfe81c6b64cd239ae6d274c4734b0c9",
+      "tonic": "C4",
+      "mode": "minor",
+      "sha256": "89b527da3439fcfaf49e22ebba367bdcedbd1c624bf49759f2b30f7db789be4c",
+      "outer_key_estimate": {
+        "tonic": "F4",
+        "mode": "minor"
+      },
+      "split": "development",
+      "family_group": "8b532ad4ed143682"
+    },
+    {
+      "source": "bach/bwv248.12-2.mxl",
+      "riemenschneider": 9,
+      "title": "Ermuntre dich, mein schwacher Geist",
+      "title_group": "ermuntredichmeinschwachergeist",
+      "melody_group": "69c5105d91ceb9c6a0485633f1b4454d1ca72f2b356947fc1e206e5b90e45086",
+      "tonic": "G4",
+      "mode": "major",
+      "sha256": "03f27251df1e731d9f0ba2ce61c5768dccda2894517e6a9b658b1fbea2f004af",
+      "outer_key_estimate": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "split": "train",
+      "family_group": "f146475200f44e3f"
+    },
+    {
+      "source": "bach/bwv38.6.mxl",
+      "riemenschneider": 10,
+      "title": "Aus tiefer Not schrei\u2019 ich zu dir",
+      "title_group": "austiefernotschreiichzudir",
+      "melody_group": "5869b8f79fe10d36d17e2f2df01e39bcd0bcab95823d2dfa771fbbf770550e7b",
+      "tonic": "A4",
+      "mode": "minor",
+      "sha256": "3d7f458d1f7588de2c664a9aaefe287937be807355eeb708db38caab98d3bef7",
+      "outer_key_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "split": "train",
+      "family_group": "0a706e03f7bbc6c7"
+    },
+    {
+      "source": "bach/bwv65.2.mxl",
+      "riemenschneider": 12,
+      "title": "Puer natus in Bethlehem",
+      "title_group": "puernatusinbethlehem",
+      "melody_group": "cf3ae88688fb16110e409bb3613026f11f0595e8598730393041bd50316c3f7e",
+      "tonic": "C4",
+      "mode": "major",
+      "sha256": "b3c3257ceec1d28f6d7408dc34f5ffc8876fa985aa864f7e7af1287aba626925",
+      "outer_key_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "split": "development",
+      "family_group": "a15d34df40dfa495"
+    },
+    {
+      "source": "bach/bwv33.6.mxl",
+      "riemenschneider": 13,
+      "title": "Allein zu dir, Herr Jesu Christ",
+      "title_group": "alleinzudirherrjesuchrist",
+      "melody_group": "cf42ca756bfc2b78498c7d327e5a3cfb7d664bf177004da128a5afbe3c5bb2a6",
+      "tonic": "C4",
+      "mode": "major",
+      "sha256": "b1a1a662561edcdd36ab6da4be1512878f06b5bd1173e9d6c6c8df549b418a89",
+      "outer_key_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "split": "train",
+      "family_group": "06a0c11b8eb9ccfa"
+    },
+    {
+      "source": "bach/bwv184.5.mxl",
+      "riemenschneider": 14,
+      "title": "O Herre Gott, dein g\u00f6ttlich Wort",
+      "title_group": "oherregottdeingttlichwort",
+      "melody_group": "c85cd264f1a488d69b5a36c1311c75c166e2c5ebd6e994ddd5fba9a3a2740568",
+      "tonic": "D4",
+      "mode": "major",
+      "sha256": "dcf30e49205b570fbf7f7039f0ce5af42a41e3a021f5653dc2f0683d292ee9b4",
+      "outer_key_estimate": {
+        "tonic": "D4",
+        "mode": "major"
+      },
+      "split": "train",
+      "family_group": "5a7a973b83251b11"
+    },
+    {
+      "source": "bach/bwv277.mxl",
+      "riemenschneider": 15,
+      "title": "Christ lag in Todesbanden",
+      "title_group": "christlagintodesbanden",
+      "melody_group": "158c7ff4c18dc574feaeb16f2c63867fdcd9a3f4ce47e6514b6392dcdce9f745",
+      "tonic": "A4",
+      "mode": "minor",
+      "sha256": "61744d6c58bf64b29c7424f8347323466957b35d83071bfe8b7ba6f0a0bfdf8b",
+      "outer_key_estimate": {
+        "tonic": "D4",
+        "mode": "minor"
+      },
+      "split": "train",
+      "family_group": "468ad251d0cdacd3"
+    },
+    {
+      "source": "bach/bwv311.mxl",
+      "riemenschneider": 16,
+      "title": "Es woll\u2019 uns Gott gen\u00e4dig sein",
+      "title_group": "eswollunsgottgendigsein",
+      "melody_group": "597e0387b7745d66c79fa02553e075b7eccd59623ad0b3153e3716297a7651c4",
+      "tonic": "B4",
+      "mode": "minor",
+      "sha256": "c59e795c3a5ad1a8adde9e6a096029bcd9b39dffb2497c3fa64d62746244e8af",
+      "outer_key_estimate": {
+        "tonic": "B4",
+        "mode": "minor"
+      },
+      "split": "development",
+      "family_group": "c4c71cba8bded8d1"
+    },
+    {
+      "source": "bach/bwv145.5.mxl",
+      "riemenschneider": 17,
+      "title": "Erschienen ist der herrliche Tag",
+      "title_group": "erschienenistderherrlichetag",
+      "melody_group": "7d8af1bae061ca82a60e5a7361406d1a5ec8332ed73bf2c246bff90ecfa65ebb",
+      "tonic": "B4",
+      "mode": "minor",
+      "sha256": "4b6b18d986993ed94c98cc9108912440c3d4c91ee676fe053d875e51ab9809f3",
+      "outer_key_estimate": {
+        "tonic": "F#4",
+        "mode": "minor"
+      },
+      "split": "train",
+      "family_group": "d9386dedbfb2d5de"
+    },
+    {
+      "source": "bach/bwv318.mxl",
+      "riemenschneider": 18,
+      "title": "Gottes Sohn ist kommen",
+      "title_group": "gottessohnistkommen",
+      "melody_group": "a3d8998fe3acee2ae720ccc07c90a870c3141c62193e3d645beffd3b97fd0504",
+      "tonic": "G4",
+      "mode": "major",
+      "sha256": "e2d2baa4f9215f6db06eee3e589d1fba68bc98536e55a82fb287752d64f436e2",
+      "outer_key_estimate": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "split": "development",
+      "family_group": "e3217f96dd95dfa4"
+    },
+    {
+      "source": "bach/bwv351.mxl",
+      "riemenschneider": 19,
+      "title": "Ich hab\u2019 mein\u2019 Sach\u2019 Gott heimgestellt",
+      "title_group": "ichhabmeinsachgottheimgestellt",
+      "melody_group": "c650c2f765002a3813488388e6416a16aa26545df5152581fb5bad23d5be09b7",
+      "tonic": "D4",
+      "mode": "minor",
+      "sha256": "94c548efe4ae90dbbf557b1ead77f0a99f9474be2869c93ccfb007b097503a4f",
+      "outer_key_estimate": {
+        "tonic": "G4",
+        "mode": "minor"
+      },
+      "split": "train",
+      "family_group": "4fb158690072be46"
+    },
+    {
+      "source": "bach/bwv302.mxl",
+      "riemenschneider": 20,
+      "title": "Ein\u2019 feste Burg ist unser Gott",
+      "title_group": "einfesteburgistunsergott",
+      "melody_group": "f7bd1a2ea0ef95d3d860d20f9a86550ac1ea8a8be3fb3b5db7f98485c2f74d7f",
+      "tonic": "D4",
+      "mode": "major",
+      "sha256": "0b16559b20595697aa796aed77f71c7291e008f30a82ebe228a5b1b7c0d9ea4b",
+      "outer_key_estimate": {
+        "tonic": "D4",
+        "mode": "major"
+      },
+      "split": "train",
+      "family_group": "f947eebc65e61862"
+    },
+    {
+      "source": "bach/bwv153.5.mxl",
+      "riemenschneider": 21,
+      "title": "Herzlich tut mich verlangen",
+      "title_group": "herzlichtutmichverlangen",
+      "melody_group": "68d84e63ddd3448edc816e073ef876044e0daa007b84779b47de9184906b79a6",
+      "tonic": "A4",
+      "mode": "minor",
+      "sha256": "f3432eb2e814b8668e5dcf2d7c7a532b576d058c7c5449726ca0f6f7c4a94310",
+      "outer_key_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "split": "development",
+      "family_group": "00c03585d42645a4"
+    },
+    {
+      "source": "bach/bwv180.7.mxl",
+      "riemenschneider": 22,
+      "title": "Schm\u00fccke dich, o liebe Seele",
+      "title_group": "schmckedicholiebeseele",
+      "melody_group": "400ab3d0972c20495573d6dadd707880c37433c7aa1b7e3661c330fd5ac69769",
+      "tonic": "F4",
+      "mode": "major",
+      "sha256": "d3136648f7fa02b7d69ff7d61b249128be92374905ac69a05b1470071fd28acf",
+      "outer_key_estimate": {
+        "tonic": "F4",
+        "mode": "major"
+      },
+      "split": "train",
+      "family_group": "2db21ec65cdfb2e4"
+    },
+    {
+      "source": "bach/bwv28.6.mxl",
+      "riemenschneider": 23,
+      "title": "Zeuch ein zu deinen Toren",
+      "title_group": "zeucheinzudeinentoren",
+      "melody_group": "1e861a818ce2403e83cb8c8101235a538a620375a4adf4ba827ad4154fc74db9",
+      "tonic": "A4",
+      "mode": "minor",
+      "sha256": "7e0ce1bf478ee1358ff1b5523aca07d847a2dc9d05921e7b23fc4ea89f2c16aa",
+      "outer_key_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "split": "train",
+      "family_group": "89ad9bc99f262a15"
+    },
+    {
+      "source": "bach/bwv415.mxl",
+      "riemenschneider": 24,
+      "title": "Valet will ich dir geben",
+      "title_group": "valetwillichdirgeben",
+      "melody_group": "bd92187d01fc94399d478a725b587e51a2b7bf73b80d1ebd184ece92c4e63a2a",
+      "tonic": "D4",
+      "mode": "major",
+      "sha256": "1c266d51e2536aa7cbadfd842a8d1d04e04e78fe665b0f512d38b8d1bcf70b58",
+      "outer_key_estimate": {
+        "tonic": "D4",
+        "mode": "major"
+      },
+      "split": "development",
+      "family_group": "94374aa134f0979d"
+    },
+    {
+      "source": "bach/bwv148.6.mxl",
+      "riemenschneider": 25,
+      "title": "Wo soll ich fliehen hin",
+      "title_group": "wosollichfliehenhin",
+      "melody_group": "70d85d20c719b0d9e414d2ff79ab7b849ac6694a2fe57077b7550a5810476a52",
+      "tonic": "F#4",
+      "mode": "minor",
+      "sha256": "65de0cab98fbfee1b76feab800f8e2df820ae9c653492acc502b1c838692a810",
+      "outer_key_estimate": {
+        "tonic": "F#4",
+        "mode": "minor"
+      },
+      "split": "train",
+      "family_group": "1cc7bc7507e57f10"
+    },
+    {
+      "source": "bach/bwv20.11.mxl",
+      "riemenschneider": 26,
+      "title": "O Ewigkeit, du Donnerwort",
+      "title_group": "oewigkeitdudonnerwort",
+      "melody_group": "415785d5bc69175cce5e266ea78bcd791610500c6a3b2ba71e796b4f8debcf23",
+      "tonic": "F4",
+      "mode": "major",
+      "sha256": "28f7dde915d2671fda40529cd4483fb11807f52ffa1113a1ec5fee79dde856fd",
+      "outer_key_estimate": {
+        "tonic": "F4",
+        "mode": "major"
+      },
+      "split": "train",
+      "family_group": "3035c161cb681010"
+    },
+    {
+      "source": "bach/bwv308.mxl",
+      "riemenschneider": 27,
+      "title": "Es spricht der Unweisen Mund",
+      "title_group": "essprichtderunweisenmund",
+      "melody_group": "dd15084154639d2705b21bda912a5270d876487d9e741b4e16ba2d70f890c013",
+      "tonic": "Bb4",
+      "mode": "major",
+      "sha256": "43c6aaace26a9750b7d818cbd898ecca08479cd4deaeee82eee108c19ccdc025",
+      "outer_key_estimate": {
+        "tonic": "Bb4",
+        "mode": "major"
+      },
+      "split": "development",
+      "family_group": "4b3532c39ee21051"
+    },
+    {
+      "source": "bach/bwv36.8-2.mxl",
+      "riemenschneider": 28,
+      "title": "Nun komm, der Heiden Heiland",
+      "title_group": "nunkommderheidenheiland",
+      "melody_group": "a553962f5382f9d84cb98d87b897a8b6d5d52de79014465e8941ebaf72b1277f",
+      "tonic": "B4",
+      "mode": "minor",
+      "sha256": "2f6d4e612404ae5813763cec5b0c21e8b89c5493002f577252bc05a01eea9290",
+      "outer_key_estimate": {
+        "tonic": "B4",
+        "mode": "minor"
+      },
+      "split": "train",
+      "family_group": "752275fb04cac1c8"
+    },
+    {
+      "source": "bach/bwv32.6.mxl",
+      "riemenschneider": 29,
+      "title": "Freu\u2019 dich sehr, o meine Seele",
+      "title_group": "freudichsehromeineseele",
+      "melody_group": "d47141480d623f7c1b174f8a47ef61b7505725a87398b20bf4ddbf0a7fa9d209",
+      "tonic": "G4",
+      "mode": "major",
+      "sha256": "f51928d8870a15825c61fb6bd480d8644da772c990f6cc9f74d0c57116fc72a2",
+      "outer_key_estimate": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "split": "train",
+      "family_group": "d525f14389a8ae3c"
+    },
+    {
+      "source": "bach/bwv363.mxl",
+      "riemenschneider": 30,
+      "title": "Jesus Christus, unser Heiland",
+      "title_group": "jesuschristusunserheiland",
+      "melody_group": "a95ab0f8a383607fbffad84dc86a776b5e39c5ea2f72b4053e5a8f64f50cac59",
+      "tonic": "E4",
+      "mode": "minor",
+      "sha256": "72c5faafe829687f45d7cad7c1280903a096548b2053111565b8b83d8a4f2db2",
+      "outer_key_estimate": {
+        "tonic": "E4",
+        "mode": "minor"
+      },
+      "split": "development",
+      "family_group": "173546f99ec8debb"
+    },
+    {
+      "source": "bach/bwv256.mxl",
+      "riemenschneider": 31,
+      "title": "Ach lieben Christen, seid getrost",
+      "title_group": "achliebenchristenseidgetrost",
+      "melody_group": "88f783b5109be5bb8d219bf902012e87d353d0c149eda62f111e0e9087901c04",
+      "tonic": "A4",
+      "mode": "minor",
+      "sha256": "eafe5dc24fa6e4daed7aff617d337e507cc9c6fde3cd1eb3ba47f1d343a8f5ac",
+      "outer_key_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "split": "train",
+      "family_group": "94b0c530aec418d5"
+    },
+    {
+      "source": "bach/bwv386.mxl",
+      "riemenschneider": 32,
+      "title": "Nun danket alle Gott",
+      "title_group": "nundanketallegott",
+      "melody_group": "aff4bb09bb2928ab42b5e80bc5c94fccb00174f37f034d75b1decea6a507191e",
+      "tonic": "A4",
+      "mode": "major",
+      "sha256": "c8bd74a5d9089ad8ca7edafc90e61c810b0d840bc5750105675d9ba46938b56d",
+      "outer_key_estimate": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "split": "train",
+      "family_group": "44ad40b7c3790380"
+    },
+    {
+      "source": "bach/bwv330.mxl",
+      "riemenschneider": 33,
+      "title": "Herr, ich habe mi\u00dfgehandelt",
+      "title_group": "herrichhabemigehandelt",
+      "melody_group": "8b9c166e434579e66d10e7112215f381a7dd7e8d93a426139fc0afb80ac8e6ab",
+      "tonic": "A4",
+      "mode": "minor",
+      "sha256": "bbcde3f8caf7bf4c822d370e0b9b16bb3cdd85745c6efdd3a0e5593870219c99",
+      "outer_key_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "split": "development",
+      "family_group": "25309de47f169551"
+    },
+    {
+      "source": "bach/bwv305.mxl",
+      "riemenschneider": 34,
+      "title": "Erbarm\u2019 dich mein, o Herre Gott",
+      "title_group": "erbarmdichmeinoherregott",
+      "melody_group": "5fb78121ac9acb9657c455dac1c8cd7c11ea43a71830c8f3e7a09ebcddce39a6",
+      "tonic": "A4",
+      "mode": "minor",
+      "sha256": "56c644161c59f00dbef5b8166dbd28c493943d6cc0ffa9fa964bb7c655b4d9cb",
+      "outer_key_estimate": {
+        "tonic": "C4",
+        "mode": "major"
+      },
+      "split": "train",
+      "family_group": "d79934ba267a8c01"
+    },
+    {
+      "source": "bach/bwv248.53-5.mxl",
+      "riemenschneider": 35,
+      "title": "Gott des Himmels und der Erden",
+      "title_group": "gottdeshimmelsunddererden",
+      "melody_group": "48a79b98b1faad3378f235f97df8183be8bb25340dd6f4bca224942ef58837b2",
+      "tonic": "A4",
+      "mode": "major",
+      "sha256": "0ff3fe876e209e9b22e23476d11880569755df7d4e66c2d314ac58671d9e7dc9",
+      "outer_key_estimate": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "split": "train",
+      "family_group": "06a8b6add376ff44"
+    },
+    {
+      "source": "bach/bwv385.mxl",
+      "riemenschneider": 36,
+      "title": "Nun bitten wir den heiligen Geist",
+      "title_group": "nunbittenwirdenheiligengeist",
+      "melody_group": "03a12a69789fd5cea59a132f69edaabd1630f10b7d4af36ee1fb7767f245f553",
+      "tonic": "A4",
+      "mode": "major",
+      "sha256": "2fb5b486d54dd7fcadf3f7499ac07c030e7063f5006a0caa446977a52e97e075",
+      "outer_key_estimate": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "split": "development",
+      "family_group": "b6690b581df1622a"
+    },
+    {
+      "source": "bach/bwv352.mxl",
+      "riemenschneider": 37,
+      "title": "Jesu, der du meine Seele",
+      "title_group": "jesuderdumeineseele",
+      "melody_group": "7acb87280687ef9c57b45112fd55f907e9934cdc2eef587941b840bdc97270e0",
+      "tonic": "A4",
+      "mode": "minor",
+      "sha256": "a033aabcb798a424662e69f5c6419bd0c3859419ac67bff09dd066d06328cfe2",
+      "outer_key_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "split": "train",
+      "family_group": "18218e62596ceab8"
+    },
+    {
+      "source": "bach/bwv115.6.mxl",
+      "riemenschneider": 38,
+      "title": "Straf\u2019 mich nicht in deinem Zorn",
+      "title_group": "strafmichnichtindeinemzorn",
+      "melody_group": "56d396bfee5d956070dd53009dd3f64f98b778c1f72d5b85b18604ac75d9e8a8",
+      "tonic": "G4",
+      "mode": "major",
+      "sha256": "a2b0861ea963ec7aa5fef77b4dcc57de3118b96984949e781b2d60e31d4a465a",
+      "outer_key_estimate": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "split": "train",
+      "family_group": "e4f3871ffed6ef61"
+    },
+    {
+      "source": "bach/bwv259.mxl",
+      "riemenschneider": 39,
+      "title": "Ach was soll ich S\u00fcnder machen",
+      "title_group": "achwassollichsndermachen",
+      "melody_group": "809bf1cddad9385551ab249543c8996c62e955c373ac01c27b577381d0cdd503",
+      "tonic": "E4",
+      "mode": "minor",
+      "sha256": "9b6bb9662a1dfcf9abbb3760e7afea13873e6ca56a8e82ff1d19e59c7f5342f9",
+      "outer_key_estimate": {
+        "tonic": "E4",
+        "mode": "minor"
+      },
+      "split": "development",
+      "family_group": "742e6f5254f08435"
+    },
+    {
+      "source": "bach/bwv255.mxl",
+      "riemenschneider": 40,
+      "title": "Ach Gott und Herr",
+      "title_group": "achgottundherr",
+      "melody_group": "238d4a34219506a53bd30bfc3885ba48b6ca2eaa9374a09716e479ddcbaea057",
+      "tonic": "C4",
+      "mode": "major",
+      "sha256": "138406552e49aa9b9ce333cb17820aac846f96c42419791cd62d206e24061129",
+      "outer_key_estimate": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "split": "train",
+      "family_group": "c6430625e2d14c25"
+    },
+    {
+      "source": "bach/bwv65.7.mxl",
+      "riemenschneider": 41,
+      "title": "Was mein Gott will, das g\u2019scheh\u2019 allzeit",
+      "title_group": "wasmeingottwilldasgschehallzeit",
+      "melody_group": "c791204dd20bc05b881d0a4d7aebcc17b43230933edacda70c36641e6bda788d",
+      "tonic": "A4",
+      "mode": "minor",
+      "sha256": "424c840abd974114040e06291df3e975d752121ec9ffa3c92fc0854b8c542989",
+      "outer_key_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "split": "train",
+      "family_group": "77f6586ce6df332b"
+    },
+    {
+      "source": "bach/bwv67.7.mxl",
+      "riemenschneider": 42,
+      "title": "Du Friedef\u00fcrst, Herr Jesu Christ",
+      "title_group": "dufriedefrstherrjesuchrist",
+      "melody_group": "34e4a597b204209a23d9d535d9483a3ee6b90b317275c151ab4bf6078a124c92",
+      "tonic": "A4",
+      "mode": "major",
+      "sha256": "bf1dc2632d7f1ea66ce08e0a044883cf841f5c1d8cf63ee5f35449d99cc1c13d",
+      "outer_key_estimate": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "split": "development",
+      "family_group": "c2a05cef0437e83e"
+    },
+    {
+      "source": "bach/bwv377.mxl",
+      "riemenschneider": 44,
+      "title": "Mach\u2019s mit mir, Gott, nach deiner G\u00fct\u2019",
+      "title_group": "machsmitmirgottnachdeinergt",
+      "melody_group": "35c7e366afd8af2fa161fc5991b8086f42dcbbc61a5fd33cff1eadc8f3f1fbf8",
+      "tonic": "D4",
+      "mode": "major",
+      "sha256": "353f2d93ac556cedad5474e355b00cc5b152f298d55877e19cab720d6d0185c5",
+      "outer_key_estimate": {
+        "tonic": "D4",
+        "mode": "major"
+      },
+      "split": "train",
+      "family_group": "9d9f4a32685d8b31"
+    },
+    {
+      "source": "bach/bwv108.6.mxl",
+      "riemenschneider": 45,
+      "title": "Kommt her zu mir, spricht Gottes Sohn",
+      "title_group": "kommtherzumirsprichtgottessohn",
+      "melody_group": "1657569c7a39fa6b62a412e8db4e6e2854b2a85688245ed5c94dc3fd26371747",
+      "tonic": "B4",
+      "mode": "minor",
+      "sha256": "88f77ee050bb90af656c887a53254e55143abcbbcf4bf440f8d44ab4fd415038",
+      "outer_key_estimate": {
+        "tonic": "B4",
+        "mode": "minor"
+      },
+      "split": "development",
+      "family_group": "2911804328ecb9a3"
+    },
+    {
+      "source": "bach/bwv416.mxl",
+      "riemenschneider": 47,
+      "title": "Vater unser im Himmelreich",
+      "title_group": "vaterunserimhimmelreich",
+      "melody_group": "b689340f8bbc116ba18b7522d99173c3b1814a60f5906ef65aa8999003b9fe41",
+      "tonic": "D4",
+      "mode": "minor",
+      "sha256": "b49c48b49ee18dc63aa0a7de4050b39baaddc6811f823d70c1305f6372d5fd34",
+      "outer_key_estimate": {
+        "tonic": "D4",
+        "mode": "minor"
+      },
+      "split": "train",
+      "family_group": "91f30a1d9035f813"
+    },
+    {
+      "source": "bach/bwv26.6.mxl",
+      "riemenschneider": 48,
+      "title": "Ach wie nichtig, ach wie fl\u00fcchtig",
+      "title_group": "achwienichtigachwieflchtig",
+      "melody_group": "57aaf2fd0ca7a69a7dc9b9a9c34eeacb914c17b57829f25add13a15bf1c2710a",
+      "tonic": "A4",
+      "mode": "minor",
+      "sha256": "b73dae968f9dba2146007d97767394bcbc011c74444a7f7729186f0497d62410",
+      "outer_key_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "split": "development",
+      "family_group": "4401de10b46b80dc"
+    },
+    {
+      "source": "bach/bwv382.mxl",
+      "riemenschneider": 49,
+      "title": "Mit Fried\u2019 und Freud\u2019 ich fahr\u2019 dahin",
+      "title_group": "mitfriedundfreudichfahrdahin",
+      "melody_group": "7a0e5bc2bad4ccb314dca81814a41cd9fb1ca57bad123907eec7fcc2dc8e0f81",
+      "tonic": "A4",
+      "mode": "minor",
+      "sha256": "e08f1f05f2b994301bb92e89ece8bc9e6cb5290eaf22433aee81e59d7a4be21e",
+      "outer_key_estimate": {
+        "tonic": "D4",
+        "mode": "minor"
+      },
+      "split": "train",
+      "family_group": "1937695e164089c5"
+    },
+    {
+      "source": "bach/bwv244.37.mxl",
+      "riemenschneider": 50,
+      "title": "In allen meinen Taten",
+      "title_group": "inallenmeinentaten",
+      "melody_group": "3d9390c7bfee97dddd5ebc682bf017e050e7211fd1117d04cd03939dfdc66e27",
+      "tonic": "F4",
+      "mode": "major",
+      "sha256": "871811537e39ed94af0b00d30ab9fdb9db3689cd0b7936a2f6b166fd3ee4b4b6",
+      "outer_key_estimate": {
+        "tonic": "F4",
+        "mode": "major"
+      },
+      "split": "train",
+      "family_group": "ecd5859e3a137f0f"
+    },
+    {
+      "source": "bach/bwv429.mxl",
+      "riemenschneider": 52,
+      "title": "Wenn mein St\u00fcndlein vorhanden ist",
+      "title_group": "wennmeinstndleinvorhandenist",
+      "melody_group": "a19c8a3498af5dce20be2338d80de3fd9ba7f3e6bd3700474faf79cac865115d",
+      "tonic": "A4",
+      "mode": "major",
+      "sha256": "b626f5635b1b95eb41d4b0efa578c56ede6c6b740bacf3552f940ba67f09c13e",
+      "outer_key_estimate": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "split": "train",
+      "family_group": "faa7ab3e698c0f01"
+    },
+    {
+      "source": "bach/bwv122.6.mxl",
+      "riemenschneider": 53,
+      "title": "Das neugeborne Kindelein",
+      "title_group": "dasneugebornekindelein",
+      "melody_group": "d48fcdfb72cde5ebde5fb8fb23581a2a2ffbfc9667762320146e26661acec8bd",
+      "tonic": "G4",
+      "mode": "minor",
+      "sha256": "a51b81c8f885e0b11d668015d7a76e07c3899d807ff74c3043056b6a142e3a15",
+      "outer_key_estimate": {
+        "tonic": "G4",
+        "mode": "minor"
+      },
+      "split": "train",
+      "family_group": "f16f5b8fe178fb38"
+    },
+    {
+      "source": "bach/bwv151.5.mxl",
+      "riemenschneider": 54,
+      "title": "Lobt Gott, ihr Christen, allzugleich",
+      "title_group": "lobtgottihrchristenallzugleich",
+      "melody_group": "6bc31098e291ea17264b20e9a9761f7e08944935d4888a030308ecd06070a02a",
+      "tonic": "G4",
+      "mode": "major",
+      "sha256": "1c83439a05887d2a7b5003d5fe2eae22bbecdc3738e9895c320e496739ca4c51",
+      "outer_key_estimate": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "split": "development",
+      "family_group": "7352d8b7f0800cc5"
+    },
+    {
+      "source": "bach/bwv110.7.mxl",
+      "riemenschneider": 55,
+      "title": "Wir Christenleut\u2019",
+      "title_group": "wirchristenleut",
+      "melody_group": "42f0540332d9bf75c4ce14aae19217a1d1cdddcc13d95d1dbc3537c72ffff1b5",
+      "tonic": "B4",
+      "mode": "minor",
+      "sha256": "4cdecb4c8675d7645528e34527080a2889fd3d10059ed727d152515e3d530bac",
+      "outer_key_estimate": {
+        "tonic": "B4",
+        "mode": "minor"
+      },
+      "split": "train",
+      "family_group": "6705d07bc488e001"
+    },
+    {
+      "source": "bach/bwv121.6.mxl",
+      "riemenschneider": 56,
+      "title": "Christum wir sollen loben schon",
+      "title_group": "christumwirsollenlobenschon",
+      "melody_group": "860fcdd9057859e45c9497546774d1f3625899dc59ad54af0bf7e79dc99eb756",
+      "tonic": "B4",
+      "mode": "minor",
+      "sha256": "1d47eda517de0aa1da187d2fa9a2fcca24e03677e83d2577441e231ab110f8cc",
+      "outer_key_estimate": {
+        "tonic": "B4",
+        "mode": "minor"
+      },
+      "split": "train",
+      "family_group": "518b724811aeefbe"
+    },
+    {
+      "source": "bach/bwv404.mxl",
+      "riemenschneider": 57,
+      "title": "O Traurigkeit, o Herzeleid",
+      "title_group": "otraurigkeitoherzeleid",
+      "melody_group": "45d44da384c4f68077a5bb6853a41ba99eb971376aeef1e29d57e2e18940cd91",
+      "tonic": "A4",
+      "mode": "minor",
+      "sha256": "8ac61c93e9f46a3cff96654651fe25c73b3b18f887f8106e48d4e03194d05550",
+      "outer_key_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "split": "development",
+      "family_group": "bcdc4225d2294279"
+    },
+    {
+      "source": "bach/bwv174.5.mxl",
+      "riemenschneider": 58,
+      "title": "Herzlich lieb hab\u2019 ich dich, o Herr",
+      "title_group": "herzlichliebhabichdichoherr",
+      "melody_group": "341f8a302cdbc5cf3d3e76c51ea6c71410c2a453f0778b75059ec722c76a892b",
+      "tonic": "D4",
+      "mode": "major",
+      "sha256": "90ac5ec3887e35563f538443bf01d5cb769e7933a2a1b21851eea0154816dae2",
+      "outer_key_estimate": {
+        "tonic": "B4",
+        "mode": "minor"
+      },
+      "split": "train",
+      "family_group": "1eb699fee9b1e4e3"
+    },
+    {
+      "source": "bach/bwv245.3.mxl",
+      "riemenschneider": 59,
+      "title": "Herzliebster Jesu, was hast du verbrochen",
+      "title_group": "herzliebsterjesuwashastduverbrochen",
+      "melody_group": "f19f85b5f5a224ab7c69128f68bd5eafe46e496997ad7c79cbb12329ef37cd03",
+      "tonic": "Bb4",
+      "mode": "major",
+      "sha256": "8f01458271bea522a7d589c4191b7ecb46f60d6d739932fd704f37e37ec1e4ad",
+      "outer_key_estimate": {
+        "tonic": "G4",
+        "mode": "minor"
+      },
+      "split": "train",
+      "family_group": "6870eae40c0f862f"
+    },
+    {
+      "source": "bach/bwv133.6.mxl",
+      "riemenschneider": 60,
+      "title": "Ich freue mich in dir",
+      "title_group": "ichfreuemichindir",
+      "melody_group": "0097329f61e8ccdf441ae2c39d0462520152cf5343c8a884d34a2728159a27a8",
+      "tonic": "D4",
+      "mode": "major",
+      "sha256": "7a7b587c2cdbe263d9f0b54a731face5f6992341aebacae66d1375f7d561a47f",
+      "outer_key_estimate": {
+        "tonic": "D4",
+        "mode": "major"
+      },
+      "split": "development",
+      "family_group": "90ee02de29877f24"
+    },
+    {
+      "source": "bach/bwv159.5.mxl",
+      "riemenschneider": 61,
+      "title": "Jesu Leiden, Pein und Tod",
+      "title_group": "jesuleidenpeinundtod",
+      "melody_group": "c3ff3cbae9bea9e7d4323aff44a757f76c1fbbf2f4c3f97e6950772a6feb50af",
+      "tonic": "Eb4",
+      "mode": "major",
+      "sha256": "8d376911e54c4117f889e5efaca1d69929af127a220246d0408a45ff50bebff4",
+      "outer_key_estimate": {
+        "tonic": "Eb4",
+        "mode": "major"
+      },
+      "split": "train",
+      "family_group": "bedd8130f10efd38"
+    },
+    {
+      "source": "bach/bwv197.10.mxl",
+      "riemenschneider": 62,
+      "title": "Wer nur den lieben Gott l\u00e4\u00dft walten",
+      "title_group": "wernurdenliebengottltwalten",
+      "melody_group": "b5f932e78ba86efe230ae6511c7579d761d3a384cb7b32f314ad497bcf6f4298",
+      "tonic": "B4",
+      "mode": "minor",
+      "sha256": "078b086efcba3e6a6fd69d025228a513e5cc6eed7d9dba6ce46600da62d94c21",
+      "outer_key_estimate": {
+        "tonic": "B4",
+        "mode": "minor"
+      },
+      "split": "train",
+      "family_group": "4368f200f2599463"
+    },
+    {
+      "source": "bach/bwv245.11.mxl",
+      "riemenschneider": 63,
+      "title": "Nun ruhen alle W\u00e4lder",
+      "title_group": "nunruhenallewlder",
+      "melody_group": "40f22cf2a076a407b235630273e16f980c5a257541664b8943ef95eec0c42721",
+      "tonic": "A4",
+      "mode": "major",
+      "sha256": "9f28c677955959cb9e8608b4948127c254c1151a71019b0c6d377baab96c0641",
+      "outer_key_estimate": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "split": "development",
+      "family_group": "fe027e036e2621f7"
+    },
+    {
+      "source": "bach/bwv194.6.mxl",
+      "riemenschneider": 64,
+      "title": "Freu\u2019 dich sehr, o meine Seele",
+      "title_group": "freudichsehromeineseele",
+      "melody_group": "cfa9047e0c555340cbee76faf7df29f20c7923e8952ba462766607a41491be6f",
+      "tonic": "Bb4",
+      "mode": "major",
+      "sha256": "56cc4b4cea771bf3cccd18bda1bf2f81bf80f7ad480734ada9c85271cf6436a2",
+      "outer_key_estimate": {
+        "tonic": "Bb4",
+        "mode": "major"
+      },
+      "split": "train",
+      "family_group": "d525f14389a8ae3c"
+    }
+  ],
+  "excluded": [
+    {
+      "source": "bach/bwv41.6.mxl",
+      "reason": "Exactly four SATB parts required"
+    },
+    {
+      "source": "bach/bwv8.6.mxl",
+      "reason": "Exactly four SATB parts required"
+    },
+    {
+      "source": "bach/bwv248.9-1.mxl",
+      "reason": "Exactly four SATB parts required"
+    },
+    {
+      "source": "bach/bwv91.6.mxl",
+      "reason": "Exactly four SATB parts required"
+    }
+  ],
+  "test_policy": "Expanded development only. No final test partition selected or opened.",
+  "key_audit": [
+    {
+      "source": "bach/bwv269.mxl",
+      "encoded": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "G2"
+    },
+    {
+      "source": "bach/bwv347.mxl",
+      "encoded": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "A2"
+    },
+    {
+      "source": "bach/bwv153.1.mxl",
+      "encoded": {
+        "tonic": "E4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "disagreement": true,
+      "final_bass": "E3"
+    },
+    {
+      "source": "bach/bwv86.6.mxl",
+      "encoded": {
+        "tonic": "E4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "E4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "E2"
+    },
+    {
+      "source": "bach/bwv267.mxl",
+      "encoded": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "G2"
+    },
+    {
+      "source": "bach/bwv281.mxl",
+      "encoded": {
+        "tonic": "F4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "F4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "F2"
+    },
+    {
+      "source": "bach/bwv17.7.mxl",
+      "encoded": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "A2"
+    },
+    {
+      "source": "bach/bwv40.8.mxl",
+      "encoded": {
+        "tonic": "C4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "F4",
+        "mode": "minor"
+      },
+      "disagreement": true,
+      "final_bass": "F3"
+    },
+    {
+      "source": "bach/bwv248.12-2.mxl",
+      "encoded": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "G2"
+    },
+    {
+      "source": "bach/bwv38.6.mxl",
+      "encoded": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "disagreement": false,
+      "final_bass": "E2"
+    },
+    {
+      "source": "bach/bwv65.2.mxl",
+      "encoded": {
+        "tonic": "C4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "disagreement": true,
+      "final_bass": "A2"
+    },
+    {
+      "source": "bach/bwv33.6.mxl",
+      "encoded": {
+        "tonic": "C4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "disagreement": true,
+      "final_bass": "A2"
+    },
+    {
+      "source": "bach/bwv184.5.mxl",
+      "encoded": {
+        "tonic": "D4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "D4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "A3"
+    },
+    {
+      "source": "bach/bwv277.mxl",
+      "encoded": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "D4",
+        "mode": "minor"
+      },
+      "disagreement": true,
+      "final_bass": "D2"
+    },
+    {
+      "source": "bach/bwv311.mxl",
+      "encoded": {
+        "tonic": "B4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "B4",
+        "mode": "minor"
+      },
+      "disagreement": false,
+      "final_bass": "F#2"
+    },
+    {
+      "source": "bach/bwv145.5.mxl",
+      "encoded": {
+        "tonic": "B4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "F#4",
+        "mode": "minor"
+      },
+      "disagreement": true,
+      "final_bass": "F#3"
+    },
+    {
+      "source": "bach/bwv318.mxl",
+      "encoded": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "G3"
+    },
+    {
+      "source": "bach/bwv351.mxl",
+      "encoded": {
+        "tonic": "D4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "G4",
+        "mode": "minor"
+      },
+      "disagreement": true,
+      "final_bass": "G2"
+    },
+    {
+      "source": "bach/bwv302.mxl",
+      "encoded": {
+        "tonic": "D4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "D4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "D2"
+    },
+    {
+      "source": "bach/bwv153.5.mxl",
+      "encoded": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "disagreement": false,
+      "final_bass": "E3"
+    },
+    {
+      "source": "bach/bwv180.7.mxl",
+      "encoded": {
+        "tonic": "F4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "F4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "F2"
+    },
+    {
+      "source": "bach/bwv28.6.mxl",
+      "encoded": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "disagreement": false,
+      "final_bass": "A2"
+    },
+    {
+      "source": "bach/bwv415.mxl",
+      "encoded": {
+        "tonic": "D4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "D4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "D2"
+    },
+    {
+      "source": "bach/bwv148.6.mxl",
+      "encoded": {
+        "tonic": "F#4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "F#4",
+        "mode": "minor"
+      },
+      "disagreement": false,
+      "final_bass": "F#2"
+    },
+    {
+      "source": "bach/bwv20.11.mxl",
+      "encoded": {
+        "tonic": "F4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "F4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "F2"
+    },
+    {
+      "source": "bach/bwv308.mxl",
+      "encoded": {
+        "tonic": "Bb4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "Bb4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "Bb2"
+    },
+    {
+      "source": "bach/bwv36.8-2.mxl",
+      "encoded": {
+        "tonic": "B4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "B4",
+        "mode": "minor"
+      },
+      "disagreement": false,
+      "final_bass": "B2"
+    },
+    {
+      "source": "bach/bwv32.6.mxl",
+      "encoded": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "G2"
+    },
+    {
+      "source": "bach/bwv363.mxl",
+      "encoded": {
+        "tonic": "E4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "E4",
+        "mode": "minor"
+      },
+      "disagreement": false,
+      "final_bass": "E2"
+    },
+    {
+      "source": "bach/bwv256.mxl",
+      "encoded": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "disagreement": false,
+      "final_bass": "A2"
+    },
+    {
+      "source": "bach/bwv386.mxl",
+      "encoded": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "A2"
+    },
+    {
+      "source": "bach/bwv330.mxl",
+      "encoded": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "disagreement": false,
+      "final_bass": "A2"
+    },
+    {
+      "source": "bach/bwv305.mxl",
+      "encoded": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "C4",
+        "mode": "major"
+      },
+      "disagreement": true,
+      "final_bass": "E3"
+    },
+    {
+      "source": "bach/bwv248.53-5.mxl",
+      "encoded": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "A2"
+    },
+    {
+      "source": "bach/bwv385.mxl",
+      "encoded": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "A2"
+    },
+    {
+      "source": "bach/bwv352.mxl",
+      "encoded": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "disagreement": false,
+      "final_bass": "A2"
+    },
+    {
+      "source": "bach/bwv115.6.mxl",
+      "encoded": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "G2"
+    },
+    {
+      "source": "bach/bwv259.mxl",
+      "encoded": {
+        "tonic": "E4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "E4",
+        "mode": "minor"
+      },
+      "disagreement": false,
+      "final_bass": "E2"
+    },
+    {
+      "source": "bach/bwv255.mxl",
+      "encoded": {
+        "tonic": "C4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "disagreement": true,
+      "final_bass": "C3"
+    },
+    {
+      "source": "bach/bwv65.7.mxl",
+      "encoded": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "disagreement": false,
+      "final_bass": "A2"
+    },
+    {
+      "source": "bach/bwv67.7.mxl",
+      "encoded": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "A2"
+    },
+    {
+      "source": "bach/bwv377.mxl",
+      "encoded": {
+        "tonic": "D4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "D4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "D2"
+    },
+    {
+      "source": "bach/bwv108.6.mxl",
+      "encoded": {
+        "tonic": "B4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "B4",
+        "mode": "minor"
+      },
+      "disagreement": false,
+      "final_bass": "B2"
+    },
+    {
+      "source": "bach/bwv416.mxl",
+      "encoded": {
+        "tonic": "D4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "D4",
+        "mode": "minor"
+      },
+      "disagreement": false,
+      "final_bass": "D3"
+    },
+    {
+      "source": "bach/bwv26.6.mxl",
+      "encoded": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "disagreement": false,
+      "final_bass": "A2"
+    },
+    {
+      "source": "bach/bwv382.mxl",
+      "encoded": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "D4",
+        "mode": "minor"
+      },
+      "disagreement": true,
+      "final_bass": "D2"
+    },
+    {
+      "source": "bach/bwv244.37.mxl",
+      "encoded": {
+        "tonic": "F4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "F4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "F2"
+    },
+    {
+      "source": "bach/bwv429.mxl",
+      "encoded": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "A2"
+    },
+    {
+      "source": "bach/bwv122.6.mxl",
+      "encoded": {
+        "tonic": "G4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "G4",
+        "mode": "minor"
+      },
+      "disagreement": false,
+      "final_bass": "G2"
+    },
+    {
+      "source": "bach/bwv151.5.mxl",
+      "encoded": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "G4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "G2"
+    },
+    {
+      "source": "bach/bwv110.7.mxl",
+      "encoded": {
+        "tonic": "B4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "B4",
+        "mode": "minor"
+      },
+      "disagreement": false,
+      "final_bass": "B2"
+    },
+    {
+      "source": "bach/bwv121.6.mxl",
+      "encoded": {
+        "tonic": "B4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "B4",
+        "mode": "minor"
+      },
+      "disagreement": false,
+      "final_bass": "F#2"
+    },
+    {
+      "source": "bach/bwv404.mxl",
+      "encoded": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "A4",
+        "mode": "minor"
+      },
+      "disagreement": false,
+      "final_bass": "A2"
+    },
+    {
+      "source": "bach/bwv174.5.mxl",
+      "encoded": {
+        "tonic": "D4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "B4",
+        "mode": "minor"
+      },
+      "disagreement": true,
+      "final_bass": "D3"
+    },
+    {
+      "source": "bach/bwv245.3.mxl",
+      "encoded": {
+        "tonic": "Bb4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "G4",
+        "mode": "minor"
+      },
+      "disagreement": true,
+      "final_bass": "G2"
+    },
+    {
+      "source": "bach/bwv133.6.mxl",
+      "encoded": {
+        "tonic": "D4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "D4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "D3"
+    },
+    {
+      "source": "bach/bwv159.5.mxl",
+      "encoded": {
+        "tonic": "Eb4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "Eb4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "Eb2"
+    },
+    {
+      "source": "bach/bwv197.10.mxl",
+      "encoded": {
+        "tonic": "B4",
+        "mode": "minor"
+      },
+      "outer_estimate": {
+        "tonic": "B4",
+        "mode": "minor"
+      },
+      "disagreement": false,
+      "final_bass": "B2"
+    },
+    {
+      "source": "bach/bwv245.11.mxl",
+      "encoded": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "A4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "A2"
+    },
+    {
+      "source": "bach/bwv194.6.mxl",
+      "encoded": {
+        "tonic": "Bb4",
+        "mode": "major"
+      },
+      "outer_estimate": {
+        "tonic": "Bb4",
+        "mode": "major"
+      },
+      "disagreement": false,
+      "final_bass": "Bb2"
+    }
+  ]
+}

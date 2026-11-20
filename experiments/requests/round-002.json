@@ -1,0 +1,5 @@
+{
+  "id": "round-002",
+  "model": "gpt-6-astra",
+  "prompt": "experiments/prompts/round-002.txt"
+}

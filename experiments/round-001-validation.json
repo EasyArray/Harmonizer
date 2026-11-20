@@ -1,0 +1,21 @@
+{
+  "accepted": 3,
+  "rejected": [],
+  "proposals": [
+    {
+      "title": "Inner-voice spacing",
+      "dsl": "At attack n:\n  Rule \"Inner-voice spacing\":\n    if n.voice == A or n.voice == T:\n      if distance((T at n), (A at n)) > 12:\n        penalty 1",
+      "rationale": "Wide alto-tenor spacing may make the inner texture less cohesive."
+    },
+    {
+      "title": "Inner leading-tone resolution",
+      "dsl": "At attack n:\n  Rule \"Inner leading-tone resolution\":\n    if n.voice == A or n.voice == T:\n      if key.mode == \"major\" and degree(n.previous) == 7:\n        if degree(n) != 1:\n          penalty 1\n      if key.mode == \"minor\" and degree(n.previous) == #7:\n        if degree(n) != 1:\n          penalty 1",
+      "rationale": "An inner-voice leading tone may tend to resolve to the tonic."
+    },
+    {
+      "title": "Parallel octaves involving inner voices",
+      "dsl": "At attack (upper, lower):\n  Rule \"Parallel octaves involving inner voices\":\n    if upper.voice == A or upper.voice == T or lower.voice == A or lower.voice == T:\n      if distance(upper.previous, upper) > 0:\n        if interval(lower.previous, upper.previous) == P8 and interval(lower, upper) == P8:\n          penalty 1",
+      "rationale": "Parallel octaves may reduce the independence of an inner voice from another part."
+    }
+  ]
+}

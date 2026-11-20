@@ -7,7 +7,7 @@ name = "harmonizer-workbench"
 version = "0.1.0"
 description = "Notebook-first tools for experimenting with Bach chorale harmonization from soprano plus figured bass."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = { file = "LICENSE" }
 dependencies = [
     "music21>=8.3,<9",
@@ -22,9 +22,17 @@ classifiers = [
 ]
 
 [project.optional-dependencies]
+experiment = [
+  "lark>=1.2,<2",
+  "numpy>=1.24,<3",
+  "scipy>=1.10,<2",
+]
 dev = [
     "pytest>=7,<9",
 ]
+
+[project.scripts]
+harmony-attack = "harmonizer.attack.cli:main"
 
 [tool.setuptools.packages.find]
 include = ["harmonizer*"]

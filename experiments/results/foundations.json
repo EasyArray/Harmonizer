@@ -1,0 +1,2839 @@
+{
+  "manifest_sha256": "1724ca9c14a729cfb9a7a0daa75d5c358b981cff6b7cd287943c2b02badc6cd6",
+  "rules_sha256": "48ec6d38f8c9204c9b27e767cd7522c85cec45d6f62fbad3549b800e31293f86",
+  "examples": {
+    "2": {
+      "source": "bach/bwv86.6.mxl",
+      "start": "1",
+      "bach": [
+        "F#4",
+        "F#4"
+      ],
+      "sounding": {
+        "S": "B4",
+        "A": "F#4",
+        "T": "F#4",
+        "B": "D#3"
+      },
+      "previous": {
+        "A": "G#4",
+        "T": "E4"
+      },
+      "models": {
+        "uniform": {
+          "written_nll": 8.199738960630786,
+          "sound_nll": 6.813444599510895,
+          "sound_strict_win": 0.4327979712595097,
+          "strict_win": 0.0,
+          "tie": 1.0
+        },
+        "range": {
+          "written_nll": 7.23264433736569,
+          "sound_nll": 5.846349976245799,
+          "sound_strict_win": 0.8233305156382079,
+          "strict_win": 0.6732618851332783,
+          "tie": 0.3267381148667216
+        },
+        "motion": {
+          "written_nll": 5.925777074849462,
+          "sound_nll": 4.539482713729571,
+          "sound_strict_win": 0.9771766694843618,
+          "strict_win": 0.9700467161308052,
+          "tie": 0.003022808463863699
+        },
+        "large leap": {
+          "written_nll": 6.63773090876816,
+          "sound_nll": 5.251436547648269,
+          "sound_strict_win": 0.8985629754860525,
+          "strict_win": 0.8145094806265457,
+          "tie": 0.18549051937345423
+        },
+        "diatonicity": {
+          "written_nll": 7.536730439307603,
+          "sound_nll": 6.150436078187712,
+          "sound_strict_win": 0.757396449704142,
+          "strict_win": 0.6358889804891453,
+          "tie": 0.3641110195108546
+        },
+        "outer consonance": {
+          "written_nll": 6.750319851578077,
+          "sound_nll": 5.364025490458186,
+          "sound_strict_win": 0.9332206255283179,
+          "strict_win": 0.8801868645232207,
+          "tie": 0.11981313547677934
+        },
+        "full": {
+          "written_nll": 4.126540365326406,
+          "sound_nll": 2.7402460042065155,
+          "sound_strict_win": 0.9974640743871513,
+          "strict_win": 0.9958779884583677,
+          "tie": 0.0008244023083264633
+        },
+        "without range": {
+          "written_nll": 4.156654314406319,
+          "sound_nll": 2.7703599532864285,
+          "sound_strict_win": 0.9974640743871513,
+          "strict_win": 0.9958779884583677,
+          "tie": 0.0008244023083264633
+        },
+        "without motion": {
+          "written_nll": 4.606410424812242,
+          "sound_nll": 3.220116063692351,
+          "sound_strict_win": 0.9932375316990701,
+          "strict_win": 0.9903819730695246,
+          "tie": 0.009618026930475405
+        },
+        "without large leap": {
+          "written_nll": 4.142473503665508,
+          "sound_nll": 2.7561791425456175,
+          "sound_strict_win": 0.9974640743871513,
+          "strict_win": 0.9958779884583677,
+          "tie": 0.0008244023083264633
+        },
+        "without diatonicity": {
+          "written_nll": 4.38237618199158,
+          "sound_nll": 2.996081820871689,
+          "sound_strict_win": 0.9966187658495351,
+          "strict_win": 0.9942291838417148,
+          "tie": 0.0008244023083264633
+        },
+        "without outer consonance": {
+          "written_nll": 5.335355283098127,
+          "sound_nll": 3.949060921978236,
+          "sound_strict_win": 0.9898562975486053,
+          "strict_win": 0.9859851607584501,
+          "tie": 0.0008244023083264633
+        }
+      }
+    },
+    "1": {
+      "source": "bach/bwv86.6.mxl",
+      "start": "3/2",
+      "bach": [
+        "G#4"
+      ],
+      "sounding": {
+        "S": "B4",
+        "A": "G#4",
+        "T": "F#4",
+        "B": "D#3"
+      },
+      "previous": {
+        "A": "F#4"
+      },
+      "models": {
+        "uniform": {
+          "written_nll": 4.02535169073515,
+          "sound_nll": 3.3322045101752042,
+          "sound_strict_win": 0.25806451612903225,
+          "strict_win": 0.0,
+          "tie": 1.0
+        },
+        "range": {
+          "written_nll": 3.6082912154337725,
+          "sound_nll": 2.915144034873827,
+          "sound_strict_win": 0.5806451612903226,
+          "strict_win": 0.4,
+          "tie": 0.6
+        },
+        "motion": {
+          "written_nll": 2.967024881475854,
+          "sound_nll": 2.2738777009159086,
+          "sound_strict_win": 0.9032258064516129,
+          "strict_win": 0.8545454545454545,
+          "tie": 0.05454545454545454
+        },
+        "large leap": {
+          "written_nll": 3.346849694349178,
+          "sound_nll": 2.6537025137892325,
+          "sound_strict_win": 0.6451612903225806,
+          "strict_win": 0.5272727272727272,
+          "tie": 0.4727272727272727
+        },
+        "diatonicity": {
+          "written_nll": 3.6973884660261858,
+          "sound_nll": 3.0042412854662404,
+          "sound_strict_win": 0.5161290322580645,
+          "strict_win": 0.4,
+          "tie": 0.6
+        },
+        "outer consonance": {
+          "written_nll": 4.523531705346573,
+          "sound_nll": 3.830384524786628,
+          "sound_strict_win": 0.3548387096774194,
+          "strict_win": 0.2545454545454545,
+          "tie": 0.4
+        },
+        "full": {
+          "written_nll": 3.355969750293826,
+          "sound_nll": 2.6628225697338808,
+          "sound_strict_win": 0.9032258064516129,
+          "strict_win": 0.8545454545454545,
+          "tie": 0.05454545454545454
+        },
+        "without range": {
+          "written_nll": 3.3609202300107808,
+          "sound_nll": 2.6677730494508354,
+          "sound_strict_win": 0.9032258064516129,
+          "strict_win": 0.8545454545454545,
+          "tie": 0.05454545454545454
+        },
+        "without motion": {
+          "written_nll": 3.5631043871032153,
+          "sound_nll": 2.86995720654327,
+          "sound_strict_win": 0.8387096774193549,
+          "strict_win": 0.7818181818181819,
+          "tie": 0.05454545454545454
+        },
+        "without large leap": {
+          "written_nll": 3.3792771559950543,
+          "sound_nll": 2.686129975435109,
+          "sound_strict_win": 0.9032258064516129,
+          "strict_win": 0.8545454545454545,
+          "tie": 0.05454545454545454
+        },
+        "without diatonicity": {
+          "written_nll": 3.584091637474084,
+          "sound_nll": 2.8909444569141387,
+          "sound_strict_win": 0.8709677419354839,
+          "strict_win": 0.8545454545454545,
+          "tie": 0.05454545454545454
+        },
+        "without outer consonance": {
+          "written_nll": 2.6679701393197717,
+          "sound_nll": 1.9748229587598263,
+          "sound_strict_win": 0.9354838709677419,
+          "strict_win": 0.9090909090909091,
+          "tie": 0.05454545454545454
+        }
+      }
+    }
+  },
+  "domain": {
+    "A": [
+      "B#2",
+      "C3",
+      "C#3",
+      "Db3",
+      "D3",
+      "D#3",
+      "Eb3",
+      "E3",
+      "Fb3",
+      "E#3",
+      "F3",
+      "F#3",
+      "Gb3",
+      "G3",
+      "G#3",
+      "Ab3",
+      "A3",
+      "A#3",
+      "Bb3",
+      "B3",
+      "Cb4",
+      "B#3",
+      "C4",
+      "C#4",
+      "Db4",
+      "D4",
+      "D#4",
+      "Eb4",
+      "E4",
+      "Fb4",
+      "E#4",
+      "F4",
+      "F#4",
+      "Gb4",
+      "G4",
+      "G#4",
+      "Ab4",
+      "A4",
+      "A#4",
+      "Bb4",
+      "B4",
+      "Cb5",
+      "B#4",
+      "C5",
+      "C#5",
+      "Db5",
+      "D5",
+      "D#5",
+      "Eb5",
+      "E5",
+      "Fb5",
+      "E#5",
+      "F5",
+      "F#5",
+      "Gb5",
+      "G5"
+    ],
+    "T": [
+      "B#1",
+      "C2",
+      "C#2",
+      "Db2",
+      "D2",
+      "D#2",
+      "Eb2",
+      "E2",
+      "Fb2",
+      "E#2",
+      "F2",
+      "F#2",
+      "Gb2",
+      "G2",
+      "G#2",
+      "Ab2",
+      "A2",
+      "A#2",
+      "Bb2",
+      "B2",
+      "Cb3",
+      "B#2",
+      "C3",
+      "C#3",
+      "Db3",
+      "D3",
+      "D#3",
+      "Eb3",
+      "E3",
+      "Fb3",
+      "E#3",
+      "F3",
+      "F#3",
+      "Gb3",
+      "G3",
+      "G#3",
+      "Ab3",
+      "A3",
+      "A#3",
+      "Bb3",
+      "B3",
+      "Cb4",
+      "B#3",
+      "C4",
+      "C#4",
+      "Db4",
+      "D4",
+      "D#4",
+      "Eb4",
+      "E4",
+      "Fb4",
+      "E#4",
+      "F4",
+      "F#4",
+      "Gb4",
+      "G4",
+      "G#4",
+      "Ab4",
+      "A4",
+      "A#4",
+      "Bb4",
+      "B4",
+      "Cb5",
+      "B#4",
+      "C5"
+    ]
+  },
+  "decisions": {
+    "train": 240,
+    "development": 120
+  },
+  "candidate_count": 666297,
+  "key_screen": {
+    "bach/bwv269.mxl": true,
+    "bach/bwv347.mxl": true,
+    "bach/bwv153.1.mxl": false,
+    "bach/bwv86.6.mxl": true,
+    "bach/bwv267.mxl": true,
+    "bach/bwv281.mxl": true,
+    "bach/bwv17.7.mxl": true,
+    "bach/bwv40.8.mxl": false,
+    "bach/bwv248.12-2.mxl": true,
+    "bach/bwv38.6.mxl": false,
+    "bach/bwv65.2.mxl": false,
+    "bach/bwv33.6.mxl": false,
+    "bach/bwv184.5.mxl": false,
+    "bach/bwv277.mxl": false,
+    "bach/bwv311.mxl": false,
+    "bach/bwv145.5.mxl": false,
+    "bach/bwv318.mxl": true,
+    "bach/bwv351.mxl": false,
+    "bach/bwv302.mxl": true,
+    "bach/bwv153.5.mxl": false,
+    "bach/bwv180.7.mxl": true,
+    "bach/bwv28.6.mxl": true,
+    "bach/bwv415.mxl": true,
+    "bach/bwv148.6.mxl": true,
+    "bach/bwv20.11.mxl": true,
+    "bach/bwv308.mxl": true,
+    "bach/bwv36.8-2.mxl": true,
+    "bach/bwv32.6.mxl": true,
+    "bach/bwv363.mxl": true,
+    "bach/bwv256.mxl": true,
+    "bach/bwv386.mxl": true,
+    "bach/bwv330.mxl": true,
+    "bach/bwv305.mxl": false,
+    "bach/bwv248.53-5.mxl": true,
+    "bach/bwv385.mxl": true,
+    "bach/bwv352.mxl": true,
+    "bach/bwv115.6.mxl": true,
+    "bach/bwv259.mxl": true,
+    "bach/bwv255.mxl": false,
+    "bach/bwv65.7.mxl": true,
+    "bach/bwv67.7.mxl": true,
+    "bach/bwv377.mxl": true,
+    "bach/bwv108.6.mxl": true,
+    "bach/bwv416.mxl": true,
+    "bach/bwv26.6.mxl": true,
+    "bach/bwv382.mxl": false,
+    "bach/bwv244.37.mxl": true,
+    "bach/bwv429.mxl": true,
+    "bach/bwv122.6.mxl": true,
+    "bach/bwv151.5.mxl": true,
+    "bach/bwv110.7.mxl": true,
+    "bach/bwv121.6.mxl": false,
+    "bach/bwv404.mxl": true,
+    "bach/bwv174.5.mxl": false,
+    "bach/bwv245.3.mxl": false,
+    "bach/bwv133.6.mxl": true,
+    "bach/bwv159.5.mxl": true,
+    "bach/bwv197.10.mxl": true,
+    "bach/bwv245.11.mxl": true,
+    "bach/bwv194.6.mxl": true
+  },
+  "summary": {
+    "uniform": {
+      "written_nll": 6.149804220473091,
+      "sound_nll": 5.41622345438048,
+      "sound_strict_win": 0.21146426980794225,
+      "strict_win": 0.0,
+      "tie": 1.0
+    },
+    "range": {
+      "written_nll": 5.424483253024267,
+      "sound_nll": 4.690902486931659,
+      "sound_strict_win": 0.6484977089815799,
+      "strict_win": 0.5538184425666391,
+      "tie": 0.44618155743336085
+    },
+    "motion": {
+      "written_nll": 4.44610813889337,
+      "sound_nll": 3.7125273728007615,
+      "sound_strict_win": 0.9139022072955074,
+      "strict_win": 0.9093719950171544,
+      "tie": 0.0216781830568671
+    },
+    "large leap": {
+      "written_nll": 5.080820074328905,
+      "sound_nll": 4.347239308236295,
+      "sound_strict_win": 0.7526339768585426,
+      "strict_win": 0.6901122714677692,
+      "tie": 0.3016153666196174
+    },
+    "diatonicity": {
+      "written_nll": 5.840417307013697,
+      "sound_nll": 5.106836540921089,
+      "sound_strict_win": 0.4985718944000582,
+      "strict_win": 0.3865654568406655,
+      "tie": 0.5731056858777387
+    },
+    "outer consonance": {
+      "written_nll": 5.542520416760604,
+      "sound_nll": 4.808939650667995,
+      "sound_strict_win": 0.6482959193412048,
+      "strict_win": 0.6000084060150142,
+      "tie": 0.28867332446996763
+    },
+    "full": {
+      "written_nll": 3.679731687347325,
+      "sound_nll": 2.946150921254716,
+      "sound_strict_win": 0.9406793435174328,
+      "strict_win": 0.945261263058241,
+      "tie": 0.011688907052803383
+    },
+    "without range": {
+      "written_nll": 3.6922741303974087,
+      "sound_nll": 2.9586933643047995,
+      "sound_strict_win": 0.9402083579502936,
+      "strict_win": 0.9438489373849792,
+      "tie": 0.011958483745118122
+    },
+    "without motion": {
+      "written_nll": 4.225157383546857,
+      "sound_nll": 3.4915766174542484,
+      "sound_strict_win": 0.9003343235663334,
+      "strict_win": 0.8864617175984909,
+      "tie": 0.05179150519519181
+    },
+    "without large leap": {
+      "written_nll": 3.669448938419083,
+      "sound_nll": 2.935868172326475,
+      "sound_strict_win": 0.9414762008279378,
+      "strict_win": 0.9463611459816633,
+      "tie": 0.011688907052803383
+    },
+    "without diatonicity": {
+      "written_nll": 3.837628774204359,
+      "sound_nll": 3.1040480081117496,
+      "sound_strict_win": 0.9310899960713857,
+      "strict_win": 0.9306463419489621,
+      "tie": 0.014519307486447327
+    },
+    "without outer consonance": {
+      "written_nll": 4.152149144272498,
+      "sound_nll": 3.418568378179889,
+      "sound_strict_win": 0.9384045344188022,
+      "strict_win": 0.9338364327789435,
+      "tie": 0.016190057130455418
+    }
+  },
+  "strata": {
+    "uniform": {
+      "2 attacking": {
+        "written_nll": 8.199738960630784,
+        "sound_nll": 7.1715706428002,
+        "sound_strict_win": 0.26136939983093826,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "key screened out": {
+        "written_nll": 6.162223852069796,
+        "sound_nll": 5.399761953453857,
+        "sound_strict_win": 0.2284562211981567,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "1 attacking": {
+        "written_nll": 4.099869480315393,
+        "sound_nll": 3.6608762659607614,
+        "sound_strict_win": 0.1615591397849462,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "key screened in": {
+        "written_nll": 6.145664343274187,
+        "sound_nll": 5.421710621356022,
+        "sound_strict_win": 0.20580028601120412,
+        "strict_win": 0.0,
+        "tie": 1.0
+      }
+    },
+    "range": {
+      "2 attacking": {
+        "written_nll": 7.23264433736569,
+        "sound_nll": 6.204476019535104,
+        "sound_strict_win": 0.7575091575091574,
+        "strict_win": 0.6732618851332783,
+        "tie": 0.32673811486672155
+      },
+      "key screened out": {
+        "written_nll": 5.4258217452324455,
+        "sound_nll": 4.6633598466165065,
+        "sound_strict_win": 0.6575222613063805,
+        "strict_win": 0.5595476092333058,
+        "tie": 0.4404523907666941
+      },
+      "1 attacking": {
+        "written_nll": 3.616322168682845,
+        "sound_nll": 3.1773289543282135,
+        "sound_strict_win": 0.5394862604540024,
+        "strict_win": 0.4343749999999999,
+        "tie": 0.5656250000000002
+      },
+      "key screened in": {
+        "written_nll": 5.424037088954876,
+        "sound_nll": 4.700083367036708,
+        "sound_strict_win": 0.6454895248733131,
+        "strict_win": 0.551908720344417,
+        "tie": 0.448091279655583
+      }
+    },
+    "motion": {
+      "2 attacking": {
+        "written_nll": 5.817287528617101,
+        "sound_nll": 4.789119210786514,
+        "sound_strict_win": 0.9622428853198085,
+        "strict_win": 0.9627828157918842,
+        "tie": 0.0023999267197948146
+      },
+      "key screened out": {
+        "written_nll": 4.001829662077397,
+        "sound_nll": 3.2393677634614586,
+        "sound_strict_win": 0.9335409742357632,
+        "strict_win": 0.9293690433810489,
+        "tie": 0.020728156982021365
+      },
+      "1 attacking": {
+        "written_nll": 3.074928749169641,
+        "sound_nll": 2.6359355348150086,
+        "sound_strict_win": 0.8655615292712067,
+        "strict_win": 0.8559611742424241,
+        "tie": 0.040956439393939385
+      },
+      "key screened in": {
+        "written_nll": 4.594200964498694,
+        "sound_nll": 3.87024724258053,
+        "sound_strict_win": 0.9073559516487557,
+        "strict_win": 0.9027063122291895,
+        "tie": 0.02199485841514901
+      }
+    },
+    "large leap": {
+      "2 attacking": {
+        "written_nll": 6.745517388393257,
+        "sound_nll": 5.717349070562672,
+        "sound_strict_win": 0.8555367709213864,
+        "strict_win": 0.8086241641476596,
+        "tie": 0.1852477786937803
+      },
+      "key screened out": {
+        "written_nll": 4.991485003261392,
+        "sound_nll": 4.229023104645452,
+        "sound_strict_win": 0.7604895265565238,
+        "strict_win": 0.6966534366750772,
+        "tie": 0.30334656332492277
+      },
+      "1 attacking": {
+        "written_nll": 3.4161227602645505,
+        "sound_nll": 2.9771295459099183,
+        "sound_strict_win": 0.649731182795699,
+        "strict_win": 0.5716003787878788,
+        "tie": 0.41798295454545453
+      },
+      "key screened in": {
+        "written_nll": 5.110598431351409,
+        "sound_nll": 4.386644709433243,
+        "sound_strict_win": 0.750015460292549,
+        "strict_win": 0.6879318830653331,
+        "tie": 0.30103830105118234
+      }
+    },
+    "diatonicity": {
+      "2 attacking": {
+        "written_nll": 7.793878282019809,
+        "sound_nll": 6.765709964189224,
+        "sound_strict_win": 0.5779233586925894,
+        "strict_win": 0.45542731519648255,
+        "tie": 0.5003022808463864
+      },
+      "key screened out": {
+        "written_nll": 6.162223852069796,
+        "sound_nll": 5.399761953453857,
+        "sound_strict_win": 0.2284562211981567,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "1 attacking": {
+        "written_nll": 3.886956332007586,
+        "sound_nll": 3.4479631176529537,
+        "sound_strict_win": 0.4192204301075268,
+        "strict_win": 0.3177035984848484,
+        "tie": 0.6459090909090909
+      },
+      "key screened in": {
+        "written_nll": 5.733148458661664,
+        "sound_nll": 5.009194736743499,
+        "sound_strict_win": 0.5886104521340254,
+        "strict_win": 0.5154206091208874,
+        "tie": 0.4308075811703182
+      }
+    },
+    "outer consonance": {
+      "2 attacking": {
+        "written_nll": 6.94731245734514,
+        "sound_nll": 5.919144139514553,
+        "sound_strict_win": 0.8346294730910115,
+        "strict_win": 0.7996427589997253,
+        "tie": 0.18100668681872312
+      },
+      "key screened out": {
+        "written_nll": 5.607300057893686,
+        "sound_nll": 4.844838159277747,
+        "sound_strict_win": 0.6393649430249927,
+        "strict_win": 0.587500944627645,
+        "tie": 0.2853173506499455
+      },
+      "1 attacking": {
+        "written_nll": 4.137728376176067,
+        "sound_nll": 3.698735161821435,
+        "sound_strict_win": 0.4619623655913978,
+        "strict_win": 0.4003740530303031,
+        "tie": 0.3963399621212121
+      },
+      "key screened in": {
+        "written_nll": 5.520927203049575,
+        "sound_nll": 4.796973481131411,
+        "sound_strict_win": 0.6512729114466086,
+        "strict_win": 0.6041775598108038,
+        "tie": 0.289791982409975
+      }
+    },
+    "full": {
+      "2 attacking": {
+        "written_nll": 4.375013623270827,
+        "sound_nll": 3.3468453054402403,
+        "sound_strict_win": 0.9898562975486053,
+        "strict_win": 0.9893056700558762,
+        "tie": 0.0009251625904552531
+      },
+      "key screened out": {
+        "written_nll": 3.500368013309928,
+        "sound_nll": 2.737906114693988,
+        "sound_strict_win": 0.9382577857763962,
+        "strict_win": 0.9440962854014173,
+        "tie": 0.014773086387369157
+      },
+      "1 attacking": {
+        "written_nll": 2.984449751423823,
+        "sound_nll": 2.545456537069191,
+        "sound_strict_win": 0.8915023894862605,
+        "strict_win": 0.9012168560606061,
+        "tie": 0.022452651515151512
+      },
+      "key screened in": {
+        "written_nll": 3.7395195786931237,
+        "sound_nll": 3.0155658567749577,
+        "sound_strict_win": 0.9414865294311118,
+        "strict_win": 0.9456495889438491,
+        "tie": 0.010660847274614794
+      }
+    },
+    "without range": {
+      "2 attacking": {
+        "written_nll": 4.386427951327481,
+        "sound_nll": 3.358259633496897,
+        "sound_strict_win": 0.9893772893772893,
+        "strict_win": 0.9888247687093524,
+        "tie": 0.0009434826417513969
+      },
+      "key screened out": {
+        "written_nll": 3.504737294271743,
+        "sound_nll": 2.7422753956558026,
+        "sound_strict_win": 0.9383423166301577,
+        "strict_win": 0.9425887455553056,
+        "tie": 0.014773086387369157
+      },
+      "1 attacking": {
+        "written_nll": 2.998120309467335,
+        "sound_nll": 2.5591270951127028,
+        "sound_strict_win": 0.8910394265232975,
+        "strict_win": 0.8988731060606061,
+        "tie": 0.022973484848484844
+      },
+      "key screened in": {
+        "written_nll": 3.7547864091059644,
+        "sound_nll": 3.0308326871877984,
+        "sound_strict_win": 0.940830371723672,
+        "strict_win": 0.9442690013282037,
+        "tie": 0.011020282864367776
+      }
+    },
+    "without motion": {
+      "2 attacking": {
+        "written_nll": 5.204405467423159,
+        "sound_nll": 4.176237149592573,
+        "sound_strict_win": 0.9754296985066215,
+        "strict_win": 0.9712283594394063,
+        "tie": 0.018104790693413936
+      },
+      "key screened out": {
+        "written_nll": 4.368857558015614,
+        "sound_nll": 3.6063956593996735,
+        "sound_strict_win": 0.8843556567501977,
+        "strict_win": 0.8644571904119513,
+        "tie": 0.07831061282653408
+      },
+      "1 attacking": {
+        "written_nll": 3.2459092996705556,
+        "sound_nll": 2.8069160853159234,
+        "sound_strict_win": 0.8252389486260454,
+        "strict_win": 0.8016950757575757,
+        "tie": 0.0854782196969697
+      },
+      "key screened in": {
+        "written_nll": 4.177257325390605,
+        "sound_nll": 3.45330360347244,
+        "sound_strict_win": 0.9056605458383788,
+        "strict_win": 0.8937965599940044,
+        "tie": 0.04295180265141106
+      }
+    },
+    "without large leap": {
+      "2 attacking": {
+        "written_nll": 4.362263052208817,
+        "sound_nll": 3.334094734378232,
+        "sound_strict_win": 0.9906734291349676,
+        "strict_win": 0.9902033525693873,
+        "tie": 0.0009251625904552531
+      },
+      "key screened out": {
+        "written_nll": 3.497385793961926,
+        "sound_nll": 2.7349238953459856,
+        "sound_strict_win": 0.9383986705326656,
+        "strict_win": 0.9440962854014173,
+        "tie": 0.014773086387369157
+      },
+      "1 attacking": {
+        "written_nll": 2.976634824629349,
+        "sound_nll": 2.5376416102747172,
+        "sound_strict_win": 0.892278972520908,
+        "strict_win": 0.9025189393939395,
+        "tie": 0.022452651515151512
+      },
+      "key screened in": {
+        "written_nll": 3.726803319904803,
+        "sound_nll": 3.002849597986637,
+        "sound_strict_win": 0.9425020442596951,
+        "strict_win": 0.9471160995084119,
+        "tie": 0.010660847274614794
+      }
+    },
+    "without diatonicity": {
+      "2 attacking": {
+        "written_nll": 4.543392773678801,
+        "sound_nll": 3.515224455848217,
+        "sound_strict_win": 0.9889123696816005,
+        "strict_win": 0.9885133278373179,
+        "tie": 0.001126683154712833
+      },
+      "key screened out": {
+        "written_nll": 3.4802313725386425,
+        "sound_nll": 2.7177694739227034,
+        "sound_strict_win": 0.9410637405054278,
+        "strict_win": 0.9430546187347506,
+        "tie": 0.014773086387369157
+      },
+      "1 attacking": {
+        "written_nll": 3.1318647747299164,
+        "sound_nll": 2.6928715603752837,
+        "sound_strict_win": 0.8732676224611707,
+        "strict_win": 0.872779356060606,
+        "tie": 0.027911931818181815
+      },
+      "key screened in": {
+        "written_nll": 3.9567612414262636,
+        "sound_nll": 3.2328075195080985,
+        "sound_strict_win": 0.9277654145933716,
+        "strict_win": 0.9265102496870323,
+        "tie": 0.014434714519473379
+      }
+    },
+    "without outer consonance": {
+      "2 attacking": {
+        "written_nll": 5.433201003643236,
+        "sound_nll": 4.405032685812651,
+        "sound_strict_win": 0.9735981966751197,
+        "strict_win": 0.9737382064669781,
+        "tie": 0.0013053036548502336
+      },
+      "key screened out": {
+        "written_nll": 4.013969618706661,
+        "sound_nll": 3.2515077200907205,
+        "sound_strict_win": 0.9334000894794937,
+        "strict_win": 0.929533923842714,
+        "tie": 0.02069151687942908
+      },
+      "1 attacking": {
+        "written_nll": 2.8710972849017584,
+        "sound_nll": 2.432104070547126,
+        "sound_strict_win": 0.9032108721624852,
+        "strict_win": 0.8939346590909092,
+        "tie": 0.031074810606060602
+      },
+      "key screened in": {
+        "written_nll": 4.198208986127776,
+        "sound_nll": 3.474255264209611,
+        "sound_strict_win": 0.9400726827319053,
+        "strict_win": 0.9352706024243534,
+        "tie": 0.014689570547464198
+      }
+    }
+  },
+  "weights": {
+    "uniform": {},
+    "range": {
+      "Alto range": 0.8560078456122872,
+      "Tenor range": 0.8951941555692488
+    },
+    "motion": {
+      "Alto motion": 0.4649385475436992,
+      "Tenor motion": 0.5055206492270677
+    },
+    "large leap": {
+      "Large leaps": 1.1553497332842995
+    },
+    "diatonicity": {
+      "Global diatonicity": 1.2438778175524738
+    },
+    "outer consonance": {
+      "Outer consonance": 1.2310673068622433
+    },
+    "full": {
+      "Alto range": 0.1823231517347168,
+      "Tenor range": 0.21358351766539752,
+      "Alto motion": 0.41954264820647474,
+      "Tenor motion": 0.46240690973638193,
+      "Large leaps": 0.3104024265930489,
+      "Global diatonicity": 0.9359930900039671,
+      "Outer consonance": 1.1271619804748394
+    },
+    "without range": {
+      "Alto motion": 0.4262384885213352,
+      "Tenor motion": 0.46982565327663595,
+      "Large leaps": 0.3352633320443601,
+      "Global diatonicity": 0.9349988353094834,
+      "Outer consonance": 1.1282186324850882
+    },
+    "without motion": {
+      "Alto range": 0.39187771398281324,
+      "Tenor range": 0.46982051893473215,
+      "Large leaps": 1.079211238823795,
+      "Global diatonicity": 0.9671892389460721,
+      "Outer consonance": 1.1194979099289015
+    },
+    "without large leap": {
+      "Alto range": 0.22148422274393564,
+      "Tenor range": 0.23639739390476694,
+      "Alto motion": 0.4440717994935792,
+      "Tenor motion": 0.4825935118132176,
+      "Global diatonicity": 0.9324905385316907,
+      "Outer consonance": 1.1292981392968249
+    },
+    "without diatonicity": {
+      "Alto range": 0.17551905894034403,
+      "Tenor range": 0.21297121835374397,
+      "Alto motion": 0.4335021931824215,
+      "Tenor motion": 0.4792607946635383,
+      "Large leaps": 0.2982968742934579,
+      "Outer consonance": 1.2179068743600048
+    },
+    "without outer consonance": {
+      "Alto range": 0.18436983847290667,
+      "Tenor range": 0.2298414158017853,
+      "Alto motion": 0.41623644979115704,
+      "Tenor motion": 0.4546013373884986,
+      "Large leaps": 0.31303271135488847,
+      "Global diatonicity": 1.1988318336366726
+    }
+  },
+  "against_uniform": {
+    "uniform": {
+      "gain_nats": 0.0,
+      "interval95": [
+        0.0,
+        0.0
+      ],
+      "development_families": 20
+    },
+    "range": {
+      "gain_nats": 0.7253209674488215,
+      "interval95": [
+        0.7175641698768521,
+        0.7330777650207921
+      ],
+      "development_families": 20
+    },
+    "motion": {
+      "gain_nats": 1.7036960815797189,
+      "interval95": [
+        1.5069114359419966,
+        1.8933740589985641
+      ],
+      "development_families": 20
+    },
+    "large leap": {
+      "gain_nats": 1.0689841461441851,
+      "interval95": [
+        0.9164350344152624,
+        1.1723448987778426
+      ],
+      "development_families": 20
+    },
+    "diatonicity": {
+      "gain_nats": 0.3093869134593916,
+      "interval95": [
+        0.19840686089552384,
+        0.4152100664065328
+      ],
+      "development_families": 20
+    },
+    "outer consonance": {
+      "gain_nats": 0.6072838037124857,
+      "interval95": [
+        0.4502069626102271,
+        0.7394220973436869
+      ],
+      "development_families": 20
+    },
+    "full": {
+      "gain_nats": 2.4700725331257645,
+      "interval95": [
+        2.263743765607255,
+        2.667456532575055
+      ],
+      "development_families": 20
+    },
+    "without range": {
+      "gain_nats": 2.457530090075681,
+      "interval95": [
+        2.24575710068045,
+        2.6610000770353572
+      ],
+      "development_families": 20
+    },
+    "without motion": {
+      "gain_nats": 1.924646836926232,
+      "interval95": [
+        1.703946692147876,
+        2.101046783912824
+      ],
+      "development_families": 20
+    },
+    "without large leap": {
+      "gain_nats": 2.4803552820540054,
+      "interval95": [
+        2.3007239691405448,
+        2.6655747876977847
+      ],
+      "development_families": 20
+    },
+    "without diatonicity": {
+      "gain_nats": 2.3121754462687307,
+      "interval95": [
+        2.0961652605314387,
+        2.530625213276054
+      ],
+      "development_families": 20
+    },
+    "without outer consonance": {
+      "gain_nats": 1.9976550762005916,
+      "interval95": [
+        1.8155117571718244,
+        2.164109201841008
+      ],
+      "development_families": 20
+    }
+  },
+  "against_full": {
+    "uniform": {
+      "gain_nats": -2.4700725331257645,
+      "interval95": [
+        -2.667456532575055,
+        -2.2637437656072557
+      ],
+      "development_families": 20
+    },
+    "range": {
+      "gain_nats": -1.744751565676943,
+      "interval95": [
+        -1.9417250559491401,
+        -1.5397318124061343
+      ],
+      "development_families": 20
+    },
+    "motion": {
+      "gain_nats": -0.7663764515460456,
+      "interval95": [
+        -0.9197885723452498,
+        -0.5883855738848829
+      ],
+      "development_families": 20
+    },
+    "large leap": {
+      "gain_nats": -1.4010883869815793,
+      "interval95": [
+        -1.5597372651406136,
+        -1.2492456995241183
+      ],
+      "development_families": 20
+    },
+    "diatonicity": {
+      "gain_nats": -2.160685619666373,
+      "interval95": [
+        -2.3937332074455075,
+        -1.926613965763621
+      ],
+      "development_families": 20
+    },
+    "outer consonance": {
+      "gain_nats": -1.8627887294132788,
+      "interval95": [
+        -2.0264400024151685,
+        -1.6776396636057516
+      ],
+      "development_families": 20
+    },
+    "full": {
+      "gain_nats": 0.0,
+      "interval95": [
+        0.0,
+        0.0
+      ],
+      "development_families": 20
+    },
+    "without range": {
+      "gain_nats": -0.012542443050083563,
+      "interval95": [
+        -0.019532620121948095,
+        -0.005943289913010238
+      ],
+      "development_families": 20
+    },
+    "without motion": {
+      "gain_nats": -0.5454256961995325,
+      "interval95": [
+        -0.696947800253124,
+        -0.388827456853609
+      ],
+      "development_families": 20
+    },
+    "without large leap": {
+      "gain_nats": 0.010282748928240881,
+      "interval95": [
+        -0.015522303373258366,
+        0.04676053471109747
+      ],
+      "development_families": 20
+    },
+    "without diatonicity": {
+      "gain_nats": -0.15789708685703374,
+      "interval95": [
+        -0.22875383483052367,
+        -0.08359952600173783
+      ],
+      "development_families": 20
+    },
+    "without outer consonance": {
+      "gain_nats": -0.4724174569251729,
+      "interval95": [
+        -0.6006192092330834,
+        -0.3355080735860038
+      ],
+      "development_families": 20
+    }
+  },
+  "by_piece": {
+    "bach/bwv153.1.mxl": {
+      "uniform": {
+        "written_nll": 6.162223852069796,
+        "sound_nll": 5.584601201603175,
+        "sound_strict_win": 0.15440969287123132,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "range": {
+        "written_nll": 5.425821745232446,
+        "sound_nll": 4.848199094765825,
+        "sound_strict_win": 0.61104723325567,
+        "strict_win": 0.5595476092333058,
+        "tie": 0.4404523907666942
+      },
+      "motion": {
+        "written_nll": 4.28320086595142,
+        "sound_nll": 3.7055782154847985,
+        "sound_strict_win": 0.8987177467326352,
+        "strict_win": 0.9114431620408537,
+        "tie": 0.01734747516383955
+      },
+      "large leap": {
+        "written_nll": 4.9859986909952365,
+        "sound_nll": 4.408376040528615,
+        "sound_strict_win": 0.7288857177194646,
+        "strict_win": 0.6989072245538651,
+        "tie": 0.30109277544613483
+      },
+      "diatonicity": {
+        "written_nll": 6.162223852069796,
+        "sound_nll": 5.584601201603175,
+        "sound_strict_win": 0.15440969287123132,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "outer consonance": {
+        "written_nll": 5.39668086494753,
+        "sound_nll": 4.819058214480909,
+        "sound_strict_win": 0.6230003453948864,
+        "strict_win": 0.6145344755260769,
+        "tie": 0.3026530244739231
+      },
+      "full": {
+        "written_nll": 3.5774809881946825,
+        "sound_nll": 2.9998583377280617,
+        "sound_strict_win": 0.8931973618698184,
+        "strict_win": 0.9352270255106713,
+        "tie": 0.010920468077310617
+      },
+      "without range": {
+        "written_nll": 3.5920688300973267,
+        "sound_nll": 3.014446179630705,
+        "sound_strict_win": 0.8931973618698184,
+        "strict_win": 0.930018692177338,
+        "tie": 0.010920468077310617
+      },
+      "without motion": {
+        "written_nll": 4.134786323120015,
+        "sound_nll": 3.557163672653394,
+        "sound_strict_win": 0.8668651677336542,
+        "strict_win": 0.8679096196923896,
+        "tie": 0.08138015303488304
+      },
+      "without large leap": {
+        "written_nll": 3.588386335039304,
+        "sound_nll": 3.0107636845726824,
+        "sound_strict_win": 0.8929155923572797,
+        "strict_win": 0.9349522247412292,
+        "tie": 0.010920468077310617
+      },
+      "without diatonicity": {
+        "written_nll": 3.5518221990075047,
+        "sound_nll": 2.974199548540883,
+        "sound_strict_win": 0.897826991499448,
+        "strict_win": 0.930018692177338,
+        "tie": 0.010920468077310617
+      },
+      "without outer consonance": {
+        "written_nll": 4.25809437296898,
+        "sound_nll": 3.680471722502359,
+        "sound_strict_win": 0.8989995162451739,
+        "strict_win": 0.9119011633232573,
+        "tie": 0.01734747516383955
+      }
+    },
+    "bach/bwv86.6.mxl": {
+      "uniform": {
+        "written_nll": 6.1125453256829685,
+        "sound_nll": 5.0728245548430495,
+        "sound_strict_win": 0.345431243694271,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "range": {
+        "written_nll": 5.4204677763997315,
+        "sound_nll": 4.380747005559813,
+        "sound_strict_win": 0.7019878384642652,
+        "strict_win": 0.5366309425666391,
+        "tie": 0.4633690574333608
+      },
+      "motion": {
+        "written_nll": 4.99709756286983,
+        "sound_nll": 3.957376792029912,
+        "sound_strict_win": 0.9143238895099938,
+        "strict_win": 0.8846627861467103,
+        "tie": 0.02575382847435609
+      },
+      "large leap": {
+        "written_nll": 5.9612051431650555,
+        "sound_nll": 4.921484372325138,
+        "sound_strict_win": 0.7297830374753452,
+        "strict_win": 0.6356399943374387,
+        "tie": 0.30307943407696086
+      },
+      "diatonicity": {
+        "written_nll": 5.824372422258974,
+        "sound_nll": 4.784651651419055,
+        "sound_strict_win": 0.582099455548587,
+        "strict_win": 0.4381606668498672,
+        "tie": 0.5011083631034167
+      },
+      "outer consonance": {
+        "written_nll": 5.453355011067605,
+        "sound_nll": 4.413634240227687,
+        "sound_strict_win": 0.6895036311909761,
+        "strict_win": 0.6029961611165239,
+        "tie": 0.2909432328228701
+      },
+      "full": {
+        "written_nll": 4.41057061759708,
+        "sound_nll": 3.3708498467571624,
+        "sound_strict_win": 0.9292576736745471,
+        "strict_win": 0.9079442404256914,
+        "tie": 0.021807522879245877
+      },
+      "without range": {
+        "written_nll": 4.455259203406725,
+        "sound_nll": 3.4155384325668083,
+        "sound_strict_win": 0.9270035175742373,
+        "strict_win": 0.9053336331159909,
+        "tie": 0.021990723392207312
+      },
+      "without motion": {
+        "written_nll": 5.045858850188066,
+        "sound_nll": 4.006138079348147,
+        "sound_strict_win": 0.8551841045637572,
+        "strict_win": 0.8319035366026298,
+        "tie": 0.06293437257987958
+      },
+      "without large leap": {
+        "written_nll": 4.18060227280792,
+        "sound_nll": 3.140881501968002,
+        "sound_strict_win": 0.9402466846635581,
+        "strict_win": 0.919760673511704,
+        "tie": 0.021807522879245877
+      },
+      "without diatonicity": {
+        "written_nll": 4.528280103803858,
+        "sound_nll": 3.48855933296394,
+        "sound_strict_win": 0.92740344849526,
+        "strict_win": 0.9090359489370208,
+        "tie": 0.024837825909548906
+      },
+      "without outer consonance": {
+        "written_nll": 4.92986979926555,
+        "sound_nll": 3.8901490284256313,
+        "sound_strict_win": 0.9219771130441106,
+        "strict_win": 0.90440930325514,
+        "tie": 0.021990723392207312
+      }
+    },
+    "bach/bwv40.8.mxl": {
+      "uniform": {
+        "written_nll": 6.137384588876382,
+        "sound_nll": 5.328712878223112,
+        "sound_strict_win": 0.22010857215571858,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "range": {
+        "written_nll": 5.423144760816089,
+        "sound_nll": 4.614473050162819,
+        "sound_strict_win": 0.6619823747615311,
+        "strict_win": 0.5480892758999725,
+        "tie": 0.45191072410002747
+      },
+      "motion": {
+        "written_nll": 3.658742740211991,
+        "sound_nll": 2.8500710295587215,
+        "sound_strict_win": 0.957116119336963,
+        "strict_win": 0.937436920732469,
+        "tie": 0.0240771534387569
+      },
+      "large leap": {
+        "written_nll": 4.99751558480423,
+        "sound_nll": 4.188843874150961,
+        "sound_strict_win": 0.7531670034771771,
+        "strict_win": 0.6795890427356833,
+        "tie": 0.3204109572643167
+      },
+      "diatonicity": {
+        "written_nll": 6.137384588876382,
+        "sound_nll": 5.328712878223112,
+        "sound_strict_win": 0.22010857215571858,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "outer consonance": {
+        "written_nll": 6.411797686293414,
+        "sound_nll": 5.603125975640144,
+        "sound_strict_win": 0.42661141358411836,
+        "strict_win": 0.321227318527401,
+        "tie": 0.4093887790726723
+      },
+      "full": {
+        "written_nll": 3.95414944473996,
+        "sound_nll": 3.145477734086691,
+        "sound_strict_win": 0.9528895766488819,
+        "strict_win": 0.9318418105207059,
+        "tie": 0.023802352669314745
+      },
+      "without range": {
+        "written_nll": 3.9577479537854754,
+        "sound_nll": 3.1490762431322055,
+        "sound_strict_win": 0.9533122309176899,
+        "strict_win": 0.9295124446234814,
+        "tie": 0.023802352669314745
+      },
+      "without motion": {
+        "written_nll": 5.095944752647468,
+        "sound_nll": 4.287273041994198,
+        "sound_strict_win": 0.8476241729963815,
+        "strict_win": 0.7956573281246095,
+        "tie": 0.10336161231024175
+      },
+      "without large leap": {
+        "written_nll": 3.9376200508692647,
+        "sound_nll": 3.128948340215995,
+        "sound_strict_win": 0.9540166546990368,
+        "strict_win": 0.932116611290148,
+        "tie": 0.023802352669314745
+      },
+      "without diatonicity": {
+        "written_nll": 3.9819395300629683,
+        "sound_nll": 3.1732678194096997,
+        "sound_strict_win": 0.9527486918926126,
+        "strict_win": 0.9318418105207059,
+        "tie": 0.023802352669314745
+      },
+      "without outer consonance": {
+        "written_nll": 3.7038149620312892,
+        "sound_nll": 2.8951432513780198,
+        "sound_strict_win": 0.957116119336963,
+        "strict_win": 0.937436920732469,
+        "tie": 0.0240771534387569
+      }
+    },
+    "bach/bwv65.2.mxl": {
+      "uniform": {
+        "written_nll": 6.162223852069796,
+        "sound_nll": 5.353552141416528,
+        "sound_strict_win": 0.27061007644134194,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "range": {
+        "written_nll": 5.425821745232446,
+        "sound_nll": 4.617150034579176,
+        "sound_strict_win": 0.6772037355163906,
+        "strict_win": 0.5595476092333058,
+        "tie": 0.4404523907666942
+      },
+      "motion": {
+        "written_nll": 3.826710665096536,
+        "sound_nll": 3.0180389544432664,
+        "sound_strict_win": 0.9394711872999714,
+        "strict_win": 0.9255097476204753,
+        "tie": 0.02517391037331268
+      },
+      "large leap": {
+        "written_nll": 4.980334129040333,
+        "sound_nll": 4.171662418387064,
+        "sound_strict_win": 0.7865632552357118,
+        "strict_win": 0.7027479946830214,
+        "tie": 0.29725200531697854
+      },
+      "diatonicity": {
+        "written_nll": 6.162223852069796,
+        "sound_nll": 5.353552141416528,
+        "sound_strict_win": 0.27061007644134194,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "outer consonance": {
+        "written_nll": 5.165834349014663,
+        "sound_nll": 4.357162638361392,
+        "sound_strict_win": 0.7984329221922274,
+        "strict_win": 0.7526061704222772,
+        "tie": 0.24739382957772282
+      },
+      "full": {
+        "written_nll": 2.8827703607707353,
+        "sound_nll": 2.074098650117466,
+        "sound_strict_win": 0.9803544034313264,
+        "strict_win": 0.9701952282511845,
+        "tie": 0.013813370722892569
+      },
+      "without range": {
+        "written_nll": 2.8766147258149104,
+        "sound_nll": 2.0679430151616405,
+        "sound_strict_win": 0.9803544034313264,
+        "strict_win": 0.9701952282511845,
+        "tie": 0.013813370722892569
+      },
+      "without motion": {
+        "written_nll": 4.002172234654822,
+        "sound_nll": 3.1935005240015513,
+        "sound_strict_win": 0.9525546597506896,
+        "strict_win": 0.9268182911139423,
+        "tie": 0.07318170888605761
+      },
+      "without large leap": {
+        "written_nll": 2.8663246267284914,
+        "sound_nll": 2.0576529160752215,
+        "sound_strict_win": 0.9803544034313264,
+        "strict_win": 0.9701952282511845,
+        "tie": 0.013813370722892569
+      },
+      "without diatonicity": {
+        "written_nll": 2.8205358013931523,
+        "sound_nll": 2.011864090739883,
+        "sound_strict_win": 0.9804952881875958,
+        "strict_win": 0.9701952282511845,
+        "tie": 0.013813370722892569
+      },
+      "without outer consonance": {
+        "written_nll": 3.8652928139889844,
+        "sound_nll": 3.056621103335715,
+        "sound_strict_win": 0.9383441092498165,
+        "strict_win": 0.9255097476204753,
+        "tie": 0.02517391037331268
+      }
+    },
+    "bach/bwv311.mxl": {
+      "uniform": {
+        "written_nll": 6.187063115263211,
+        "sound_nll": 5.378391404609942,
+        "sound_strict_win": 0.25806565229642153,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "range": {
+        "written_nll": 5.428498729648804,
+        "sound_nll": 4.619827018995534,
+        "sound_strict_win": 0.6709245170783632,
+        "strict_win": 0.5710059425666392,
+        "tie": 0.42899405743336083
+      },
+      "motion": {
+        "written_nll": 4.067521466491025,
+        "sound_nll": 3.2588497558377547,
+        "sound_strict_win": 0.9389499389499388,
+        "strict_win": 0.9393978428139599,
+        "tie": 0.016724203077768618
+      },
+      "large leap": {
+        "written_nll": 5.004700426078591,
+        "sound_nll": 4.19602871542532,
+        "sound_strict_win": 0.7623861181553488,
+        "strict_win": 0.7019248935147018,
+        "tie": 0.29807510648529817
+      },
+      "diatonicity": {
+        "written_nll": 6.187063115263211,
+        "sound_nll": 5.378391404609942,
+        "sound_strict_win": 0.25806565229642153,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "outer consonance": {
+        "written_nll": 5.372096911011308,
+        "sound_nll": 4.563425200358038,
+        "sound_strict_win": 0.7500430481199712,
+        "strict_win": 0.7060519144453604,
+        "tie": 0.16634391888797287
+      },
+      "full": {
+        "written_nll": 3.340968710082292,
+        "sound_nll": 2.5322969994290223,
+        "sound_strict_win": 0.9299920165304781,
+        "strict_win": 0.9515219955115874,
+        "tie": 0.008682702436566823
+      },
+      "without range": {
+        "written_nll": 3.3476222100864703,
+        "sound_nll": 2.5389504994332004,
+        "sound_strict_win": 0.9299920165304781,
+        "strict_win": 0.9515219955115874,
+        "tie": 0.008682702436566823
+      },
+      "without motion": {
+        "written_nll": 4.164760358937079,
+        "sound_nll": 3.356088648283809,
+        "sound_strict_win": 0.903462634231865,
+        "strict_win": 0.8916984405056335,
+        "tie": 0.05100989282769992
+      },
+      "without large leap": {
+        "written_nll": 3.3379267521389604,
+        "sound_nll": 2.529255041485691,
+        "sound_strict_win": 0.9299920165304781,
+        "strict_win": 0.9515219955115874,
+        "tie": 0.008682702436566823
+      },
+      "without diatonicity": {
+        "written_nll": 3.3064614614255063,
+        "sound_nll": 2.497789750772237,
+        "sound_strict_win": 0.9392512757897373,
+        "strict_win": 0.9515219955115874,
+        "tie": 0.008682702436566823
+      },
+      "without outer consonance": {
+        "written_nll": 4.071105600705838,
+        "sound_nll": 3.2624338900525682,
+        "sound_strict_win": 0.9389499389499388,
+        "strict_win": 0.9393978428139599,
+        "tie": 0.016724203077768618
+      }
+    },
+    "bach/bwv318.mxl": {
+      "uniform": {
+        "written_nll": 6.137384588876382,
+        "sound_nll": 5.444237408316437,
+        "sound_strict_win": 0.1784419054890519,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "range": {
+        "written_nll": 5.423144760816089,
+        "sound_nll": 4.729997580256144,
+        "sound_strict_win": 0.638834226613383,
+        "strict_win": 0.5480892758999725,
+        "tie": 0.45191072410002747
+      },
+      "motion": {
+        "written_nll": 4.623488302516649,
+        "sound_nll": 3.9303411219567046,
+        "sound_strict_win": 0.9011019308786059,
+        "strict_win": 0.8981207114425377,
+        "tie": 0.02205445322974177
+      },
+      "large leap": {
+        "written_nll": 4.984698153149588,
+        "sound_nll": 4.291550972589643,
+        "sound_strict_win": 0.7515805350792943,
+        "strict_win": 0.6895362190536861,
+        "tie": 0.31046378094631394
+      },
+      "diatonicity": {
+        "written_nll": 5.537607275283204,
+        "sound_nll": 4.844460094723258,
+        "sound_strict_win": 0.6780347788412304,
+        "strict_win": 0.5915677540033476,
+        "tie": 0.40843224599665245
+      },
+      "outer consonance": {
+        "written_nll": 5.337136825103847,
+        "sound_nll": 4.643989644543901,
+        "sound_strict_win": 0.6905193648369826,
+        "strict_win": 0.6256449360671846,
+        "tie": 0.33193082150857295
+      },
+      "full": {
+        "written_nll": 3.441492936850556,
+        "sound_nll": 2.7483457562906106,
+        "sound_strict_win": 0.957242991362098,
+        "strict_win": 0.9528771718628994,
+        "tie": 0.009503110245072322
+      },
+      "without range": {
+        "written_nll": 3.449944113054457,
+        "sound_nll": 2.756796932494512,
+        "sound_strict_win": 0.9571021066058286,
+        "strict_win": 0.9475772382730853,
+        "tie": 0.009503110245072322
+      },
+      "without motion": {
+        "written_nll": 3.713920189801979,
+        "sound_nll": 3.0207730092420335,
+        "sound_strict_win": 0.9538757699427675,
+        "strict_win": 0.9326458369765254,
+        "tie": 0.0431117387810504
+      },
+      "without large leap": {
+        "written_nll": 3.4662217151664403,
+        "sound_nll": 2.773074534606495,
+        "sound_strict_win": 0.9571021066058286,
+        "strict_win": 0.947394037760124,
+        "tie": 0.009503110245072322
+      },
+      "without diatonicity": {
+        "written_nll": 3.779145277313846,
+        "sound_nll": 3.0859980967538996,
+        "sound_strict_win": 0.9400291717289235,
+        "strict_win": 0.9334408205092973,
+        "tie": 0.009686310758033759
+      },
+      "without outer consonance": {
+        "written_nll": 4.010976887585236,
+        "sound_nll": 3.317829707025291,
+        "sound_strict_win": 0.9422497477708395,
+        "strict_win": 0.9423699588631576,
+        "tie": 0.009503110245072322
+      }
+    },
+    "bach/bwv153.5.mxl": {
+      "uniform": {
+        "written_nll": 6.162223852069796,
+        "sound_nll": 5.353552141416528,
+        "sound_strict_win": 0.23908711222607004,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "range": {
+        "written_nll": 5.425821745232446,
+        "sound_nll": 4.617150034579176,
+        "sound_strict_win": 0.6664534459199473,
+        "strict_win": 0.5595476092333058,
+        "tie": 0.4404523907666942
+      },
+      "motion": {
+        "written_nll": 4.172972572636023,
+        "sound_nll": 3.3643008619827532,
+        "sound_strict_win": 0.9334498788593083,
+        "strict_win": 0.933057543697486,
+        "tie": 0.02031804285642909
+      },
+      "large leap": {
+        "written_nll": 4.988876185388567,
+        "sound_nll": 4.180204474735297,
+        "sound_strict_win": 0.7714455381949179,
+        "strict_win": 0.7000980278881145,
+        "tie": 0.2999019721118855
+      },
+      "diatonicity": {
+        "written_nll": 6.162223852069796,
+        "sound_nll": 5.353552141416528,
+        "sound_strict_win": 0.23908711222607004,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "outer consonance": {
+        "written_nll": 5.690090478201518,
+        "sound_nll": 4.881418767548247,
+        "sound_strict_win": 0.59873698583376,
+        "strict_win": 0.5430848442171092,
+        "tie": 0.30080720123743615
+      },
+      "full": {
+        "written_nll": 3.746470562761971,
+        "sound_nll": 2.9377988521087013,
+        "sound_strict_win": 0.934855570401476,
+        "strict_win": 0.9316953672129373,
+        "tie": 0.01664653803076103
+      },
+      "without range": {
+        "written_nll": 3.749632751574534,
+        "sound_nll": 2.9409610409212643,
+        "sound_strict_win": 0.934855570401476,
+        "strict_win": 0.9316953672129373,
+        "tie": 0.01664653803076103
+      },
+      "without motion": {
+        "written_nll": 4.446624120718687,
+        "sound_nll": 3.6379524100654166,
+        "sound_strict_win": 0.8512716490383984,
+        "strict_win": 0.8402022726231815,
+        "tie": 0.08261969707378818
+      },
+      "without large leap": {
+        "written_nll": 3.7566712050336104,
+        "sound_nll": 2.947999494380341,
+        "sound_strict_win": 0.9347146856452068,
+        "strict_win": 0.9316953672129373,
+        "tie": 0.01664653803076103
+      },
+      "without diatonicity": {
+        "written_nll": 3.740397870804083,
+        "sound_nll": 2.9317261601508133,
+        "sound_strict_win": 0.9349964551577455,
+        "strict_win": 0.9316953672129373,
+        "tie": 0.01664653803076103
+      },
+      "without outer consonance": {
+        "written_nll": 4.171540343838212,
+        "sound_nll": 3.362868633184943,
+        "sound_strict_win": 0.9335907636155776,
+        "strict_win": 0.9334239447234088,
+        "tie": 0.020134842343467654
+      }
+    },
+    "bach/bwv415.mxl": {
+      "uniform": {
+        "written_nll": 6.187063115263211,
+        "sound_nll": 5.493915934703266,
+        "sound_strict_win": 0.17575373344604114,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "range": {
+        "written_nll": 5.428498729648804,
+        "sound_nll": 4.7353515490888585,
+        "sound_strict_win": 0.6489895432203125,
+        "strict_win": 0.5710059425666392,
+        "tie": 0.42899405743336083
+      },
+      "motion": {
+        "written_nll": 4.719279440035543,
+        "sound_nll": 4.026132259475598,
+        "sound_strict_win": 0.9140133370902602,
+        "strict_win": 0.9159216989557571,
+        "tie": 0.022207337180544105
+      },
+      "large leap": {
+        "written_nll": 4.974102625176394,
+        "sound_nll": 4.280955444616448,
+        "sound_strict_win": 0.7624487336025797,
+        "strict_win": 0.7119422403132729,
+        "tie": 0.2880577596867271
+      },
+      "diatonicity": {
+        "written_nll": 5.555101605455829,
+        "sound_nll": 4.8619544248958855,
+        "sound_strict_win": 0.6952427913966375,
+        "strict_win": 0.6141110195108546,
+        "tie": 0.38588898048914544
+      },
+      "outer consonance": {
+        "written_nll": 5.597075964199589,
+        "sound_nll": 4.903928783639643,
+        "sound_strict_win": 0.6062662408816255,
+        "strict_win": 0.564242551754145,
+        "tie": 0.29252828157918837
+      },
+      "full": {
+        "written_nll": 3.643355409846752,
+        "sound_nll": 2.950208229286807,
+        "sound_strict_win": 0.9500407000407001,
+        "strict_win": 0.956134927177796,
+        "tie": 0.01069146743610882
+      },
+      "without range": {
+        "written_nll": 3.6775355544185504,
+        "sound_nll": 2.984388373858605,
+        "sound_strict_win": 0.9498998152844306,
+        "strict_win": 0.956134927177796,
+        "tie": 0.01069146743610882
+      },
+      "without motion": {
+        "written_nll": 3.77443906528871,
+        "sound_nll": 3.0812918847287647,
+        "sound_strict_win": 0.9189012554397169,
+        "strict_win": 0.8987058601264084,
+        "tie": 0.04660663987359164
+      },
+      "without large leap": {
+        "written_nll": 3.674370950086242,
+        "sound_nll": 2.9812237695262964,
+        "sound_strict_win": 0.9498998152844306,
+        "strict_win": 0.9559517266648346,
+        "tie": 0.01069146743610882
+      },
+      "without diatonicity": {
+        "written_nll": 4.055694228514827,
+        "sound_nll": 3.362547047954882,
+        "sound_strict_win": 0.9288453711530634,
+        "strict_win": 0.9277116538426307,
+        "tie": 0.01608300128240359
+      },
+      "without outer consonance": {
+        "written_nll": 4.062802945151631,
+        "sound_nll": 3.3696557645916863,
+        "sound_strict_win": 0.9633269152499921,
+        "strict_win": 0.9610949379408261,
+        "tie": 0.01078306769258954
+      }
+    },
+    "bach/bwv308.mxl": {
+      "uniform": {
+        "written_nll": 6.162223852069796,
+        "sound_nll": 5.815650261789823,
+        "sound_strict_win": 0.030431107354184278,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "range": {
+        "written_nll": 5.425821745232446,
+        "sound_nll": 5.079248154952474,
+        "sound_strict_win": 0.5659641112494711,
+        "strict_win": 0.5595476092333058,
+        "tie": 0.4404523907666941
+      },
+      "motion": {
+        "written_nll": 4.463288996234246,
+        "sound_nll": 4.116715405954274,
+        "sound_strict_win": 0.8898311503770562,
+        "strict_win": 0.9231159752929127,
+        "tie": 0.017072674394397396
+      },
+      "large leap": {
+        "written_nll": 4.984274769846422,
+        "sound_nll": 4.637701179566449,
+        "sound_strict_win": 0.7063441567163652,
+        "strict_win": 0.7001896281445951,
+        "tie": 0.29981037185540477
+      },
+      "diatonicity": {
+        "written_nll": 5.770245522289366,
+        "sound_nll": 5.423671932009394,
+        "sound_strict_win": 0.4723767409871628,
+        "strict_win": 0.5080066431004189,
+        "tie": 0.4439032222472041
+      },
+      "outer consonance": {
+        "written_nll": 5.127183943472298,
+        "sound_nll": 4.780610353192325,
+        "sound_strict_win": 0.7454045816328696,
+        "strict_win": 0.7502342832696295,
+        "tie": 0.24976571673037049
+      },
+      "full": {
+        "written_nll": 3.245768068641876,
+        "sound_nll": 2.899194478361903,
+        "sound_strict_win": 0.9652570111627184,
+        "strict_win": 0.9836228760190528,
+        "tie": 0.00534573371805441
+      },
+      "without range": {
+        "written_nll": 3.2489697293261464,
+        "sound_nll": 2.9023961390461728,
+        "sound_strict_win": 0.9652570111627184,
+        "strict_win": 0.9834396755060913,
+        "tie": 0.00534573371805441
+      },
+      "without motion": {
+        "written_nll": 3.7198734378892997,
+        "sound_nll": 3.3732998476093274,
+        "sound_strict_win": 0.9406717375079658,
+        "strict_win": 0.9442134530590321,
+        "tie": 0.05386294155487271
+      },
+      "without large leap": {
+        "written_nll": 3.257662452270708,
+        "sound_nll": 2.9110888619907356,
+        "sound_strict_win": 0.9649752416501797,
+        "strict_win": 0.9834396755060913,
+        "tie": 0.00534573371805441
+      },
+      "without diatonicity": {
+        "written_nll": 3.4612933306675466,
+        "sound_nll": 3.1147197403875744,
+        "sound_strict_win": 0.961895344339513,
+        "strict_win": 0.9738016110195109,
+        "tie": 0.00534573371805441
+      },
+      "without outer consonance": {
+        "written_nll": 4.053083209882598,
+        "sound_nll": 3.706509619602626,
+        "sound_strict_win": 0.9338561218213823,
+        "strict_win": 0.9553227295627337,
+        "tie": 0.010645667307868463
+      }
+    },
+    "bach/bwv363.mxl": {
+      "uniform": {
+        "written_nll": 6.137384588876382,
+        "sound_nll": 5.328712878223112,
+        "sound_strict_win": 0.2404311982475754,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "range": {
+        "written_nll": 5.423144760816089,
+        "sound_nll": 4.614473050162819,
+        "sound_strict_win": 0.6613757876164824,
+        "strict_win": 0.5480892758999725,
+        "tie": 0.45191072410002747
+      },
+      "motion": {
+        "written_nll": 4.275799738755133,
+        "sound_nll": 3.4671280281018633,
+        "sound_strict_win": 0.9374541114615554,
+        "strict_win": 0.9322839899406263,
+        "tie": 0.024580954849400847
+      },
+      "large leap": {
+        "written_nll": 4.98999311261925,
+        "sound_nll": 4.18132140196598,
+        "sound_strict_win": 0.7629922003371136,
+        "strict_win": 0.6868404521305386,
+        "tie": 0.31315954786946126
+      },
+      "diatonicity": {
+        "written_nll": 6.15954618405944,
+        "sound_nll": 5.3508744734061695,
+        "sound_strict_win": 0.40517281863435706,
+        "strict_win": 0.3510937643125401,
+        "tie": 0.4189979192169011
+      },
+      "outer consonance": {
+        "written_nll": 5.529522213214537,
+        "sound_nll": 4.720850502561267,
+        "sound_strict_win": 0.6881504558303565,
+        "strict_win": 0.6164045910464914,
+        "tie": 0.3193228008652061
+      },
+      "full": {
+        "written_nll": 3.7835039527199474,
+        "sound_nll": 2.9748322420666775,
+        "sound_strict_win": 0.9611681972103808,
+        "strict_win": 0.9627238611381747,
+        "tie": 0.006793408112451806
+      },
+      "without range": {
+        "written_nll": 3.78411499367748,
+        "sound_nll": 2.97544328302421,
+        "sound_strict_win": 0.9611681972103808,
+        "strict_win": 0.962998661907617,
+        "tie": 0.006793408112451806
+      },
+      "without motion": {
+        "written_nll": 4.429195328591189,
+        "sound_nll": 3.6205236179379194,
+        "sound_strict_win": 0.9240214568998688,
+        "strict_win": 0.9168780498721761,
+        "tie": 0.024206005333633113
+      },
+      "without large leap": {
+        "written_nll": 3.794789551177818,
+        "sound_nll": 2.9861178405245483,
+        "sound_strict_win": 0.9611681972103808,
+        "strict_win": 0.962998661907617,
+        "tie": 0.006793408112451806
+      },
+      "without diatonicity": {
+        "written_nll": 3.703163334371435,
+        "sound_nll": 2.8944916237181655,
+        "sound_strict_win": 0.9567217430120656,
+        "strict_win": 0.9589452724899449,
+        "tie": 0.01200174144578514
+      },
+      "without outer consonance": {
+        "written_nll": 4.267745958241883,
+        "sound_nll": 3.459074247588614,
+        "sound_strict_win": 0.9344868209632478,
+        "strict_win": 0.9228550446759433,
+        "tie": 0.01918942100310608
+      }
+    },
+    "bach/bwv330.mxl": {
+      "uniform": {
+        "written_nll": 6.137384588876382,
+        "sound_nll": 5.5597619384097605,
+        "sound_strict_win": 0.13408706677937446,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "range": {
+        "written_nll": 5.423144760816089,
+        "sound_nll": 4.845522110349467,
+        "sound_strict_win": 0.5974662457292731,
+        "strict_win": 0.5480892758999725,
+        "tie": 0.4519107241000275
+      },
+      "motion": {
+        "written_nll": 5.388932770775065,
+        "sound_nll": 4.811310120308444,
+        "sound_strict_win": 0.7842478723372025,
+        "strict_win": 0.7966379192793558,
+        "tie": 0.02144511635314397
+      },
+      "large leap": {
+        "written_nll": 5.945338692564232,
+        "sound_nll": 5.367716042097612,
+        "sound_strict_win": 0.6638232184137891,
+        "strict_win": 0.6437604221314547,
+        "tie": 0.25207291120187864
+      },
+      "diatonicity": {
+        "written_nll": 5.744920244875281,
+        "sound_nll": 5.167297594408661,
+        "sound_strict_win": 0.5580248260149004,
+        "strict_win": 0.5086695218882976,
+        "tie": 0.44324034345932534
+      },
+      "outer consonance": {
+        "written_nll": 5.431926455488058,
+        "sound_nll": 4.854303805021437,
+        "sound_strict_win": 0.6751119251119251,
+        "strict_win": 0.652899395334216,
+        "tie": 0.2918756427631634
+      },
+      "full": {
+        "written_nll": 4.566704282462264,
+        "sound_nll": 3.9890816319956426,
+        "sound_strict_win": 0.8701337950717604,
+        "strict_win": 0.8891545036098828,
+        "tie": 0.0030163678208298982
+      },
+      "without range": {
+        "written_nll": 4.603928419397146,
+        "sound_nll": 4.026305768930525,
+        "sound_strict_win": 0.8605927662999623,
+        "strict_win": 0.883762969763588,
+        "tie": 0.008224701154163232
+      },
+      "without motion": {
+        "written_nll": 4.878174726507273,
+        "sound_nll": 4.300552076040651,
+        "sound_strict_win": 0.8605309082976578,
+        "strict_win": 0.8595853292821037,
+        "tie": 0.026923202032692963
+      },
+      "without large leap": {
+        "written_nll": 4.363961981197174,
+        "sound_nll": 3.786339330730552,
+        "sound_strict_win": 0.872847341519798,
+        "strict_win": 0.9019921364302547,
+        "tie": 0.0030163678208298982
+      },
+      "without diatonicity": {
+        "written_nll": 4.771877263328062,
+        "sound_nll": 4.1942546128614415,
+        "sound_strict_win": 0.8487693034839437,
+        "strict_win": 0.8655990812910638,
+        "tie": 0.009534975163839549
+      },
+      "without outer consonance": {
+        "written_nll": 5.155632170585925,
+        "sound_nll": 4.578009520119305,
+        "sound_strict_win": 0.8377012657409679,
+        "strict_win": 0.8431792809588049,
+        "tie": 0.009534975163839549
+      }
+    },
+    "bach/bwv385.mxl": {
+      "uniform": {
+        "written_nll": 6.137384588876382,
+        "sound_nll": 5.213188348129788,
+        "sound_strict_win": 0.30242049100609897,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "range": {
+        "written_nll": 5.423144760816089,
+        "sound_nll": 4.4989485200694945,
+        "sound_strict_win": 0.6839173486195819,
+        "strict_win": 0.5480892758999725,
+        "tie": 0.4519107241000275
+      },
+      "motion": {
+        "written_nll": 4.629116522337516,
+        "sound_nll": 3.7049202815909226,
+        "sound_strict_win": 0.9132492014005661,
+        "strict_win": 0.8987291505325307,
+        "tie": 0.018840949686477305
+      },
+      "large leap": {
+        "written_nll": 4.9842726930896495,
+        "sound_nll": 4.060076452343055,
+        "sound_strict_win": 0.7769397912077812,
+        "strict_win": 0.688031255464788,
+        "tie": 0.31196874453521195
+      },
+      "diatonicity": {
+        "written_nll": 5.564060709177116,
+        "sound_nll": 4.63986446843052,
+        "sound_strict_win": 0.6963802211941169,
+        "strict_win": 0.5738345558844837,
+        "tie": 0.42616544411551627
+      },
+      "outer consonance": {
+        "written_nll": 5.216556445544689,
+        "sound_nll": 4.292360204798094,
+        "sound_strict_win": 0.7744628200583535,
+        "strict_win": 0.7195606362470541,
+        "tie": 0.23616853041961242
+      },
+      "full": {
+        "written_nll": 3.3191268632656765,
+        "sound_nll": 2.3949306225190825,
+        "sound_strict_win": 0.9604833407562937,
+        "strict_win": 0.9695376451031334,
+        "tie": 0.011772740804583343
+      },
+      "without range": {
+        "written_nll": 3.3226238435548923,
+        "sound_nll": 2.398427602808299,
+        "sound_strict_win": 0.9604833407562937,
+        "strict_win": 0.9695376451031334,
+        "tie": 0.011772740804583343
+      },
+      "without motion": {
+        "written_nll": 3.7990919155986433,
+        "sound_nll": 2.8748956748520498,
+        "sound_strict_win": 0.9333058380825131,
+        "strict_win": 0.9151136129431162,
+        "tie": 0.06665722039021708
+      },
+      "without large leap": {
+        "written_nll": 3.3390790486651447,
+        "sound_nll": 2.4148828079185507,
+        "sound_strict_win": 0.9603424560000242,
+        "strict_win": 0.9693544445901722,
+        "tie": 0.011772740804583343
+      },
+      "without diatonicity": {
+        "written_nll": 3.5973948634578505,
+        "sound_nll": 2.673198622711256,
+        "sound_strict_win": 0.9489276347216795,
+        "strict_win": 0.9512283672462464,
+        "tie": 0.012139141830506217
+      },
+      "without outer consonance": {
+        "written_nll": 4.080014456769856,
+        "sound_nll": 3.1558182160232615,
+        "sound_strict_win": 0.9422777732331081,
+        "strict_win": 0.9321216597133745,
+        "tie": 0.017833346865189403
+      }
+    },
+    "bach/bwv259.mxl": {
+      "uniform": {
+        "written_nll": 6.137384588876382,
+        "sound_nll": 5.328712878223112,
+        "sound_strict_win": 0.2404311982475754,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "range": {
+        "written_nll": 5.423144760816089,
+        "sound_nll": 4.614473050162819,
+        "sound_strict_win": 0.6613757876164824,
+        "strict_win": 0.5480892758999725,
+        "tie": 0.45191072410002747
+      },
+      "motion": {
+        "written_nll": 4.167684675709651,
+        "sound_nll": 3.359012965056382,
+        "sound_strict_win": 0.9359998172032911,
+        "strict_win": 0.9221246887673104,
+        "tie": 0.024626754977641205
+      },
+      "large leap": {
+        "written_nll": 4.99212036854884,
+        "sound_nll": 4.18344865789557,
+        "sound_strict_win": 0.7639783936309991,
+        "strict_win": 0.6868404521305386,
+        "tie": 0.31315954786946126
+      },
+      "diatonicity": {
+        "written_nll": 5.952233214467362,
+        "sound_nll": 5.143561503814092,
+        "sound_strict_win": 0.5553241561306077,
+        "strict_win": 0.42577128977324774,
+        "tie": 0.4780484409219982
+      },
+      "outer consonance": {
+        "written_nll": 5.224390190933085,
+        "sound_nll": 4.415718480279815,
+        "sound_strict_win": 0.7652825875530591,
+        "strict_win": 0.710332326771424,
+        "tie": 0.2401885065619093
+      },
+      "full": {
+        "written_nll": 3.231618341390007,
+        "sound_nll": 2.422946630736737,
+        "sound_strict_win": 0.9689395821529816,
+        "strict_win": 0.9788829791109778,
+        "tie": 0.006472807214769292
+      },
+      "without range": {
+        "written_nll": 3.232337432103529,
+        "sound_nll": 2.4236657214502593,
+        "sound_strict_win": 0.9689395821529816,
+        "strict_win": 0.9791577798804201,
+        "tie": 0.006472807214769292
+      },
+      "without motion": {
+        "written_nll": 3.9898811523762383,
+        "sound_nll": 3.1812094417229684,
+        "sound_strict_win": 0.9627829435521743,
+        "strict_win": 0.9439142819372622,
+        "tie": 0.027839204597500142
+      },
+      "without large leap": {
+        "written_nll": 3.2363536710330507,
+        "sound_nll": 2.427681960379781,
+        "sound_strict_win": 0.9689395821529816,
+        "strict_win": 0.9791577798804201,
+        "tie": 0.006472807214769292
+      },
+      "without diatonicity": {
+        "written_nll": 3.2498539871733603,
+        "sound_nll": 2.441182276520091,
+        "sound_strict_win": 0.9609482857001467,
+        "strict_win": 0.9650441841123518,
+        "tie": 0.011681140548102625
+      },
+      "without outer consonance": {
+        "written_nll": 3.9804764909828187,
+        "sound_nll": 3.1718047803295497,
+        "sound_strict_win": 0.9632000432248571,
+        "strict_win": 0.9484789673320178,
+        "tie": 0.013357815583701816
+      }
+    },
+    "bach/bwv67.7.mxl": {
+      "uniform": {
+        "written_nll": 6.162223852069796,
+        "sound_nll": 5.469076671509851,
+        "sound_strict_win": 0.19742044555940338,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "range": {
+        "written_nll": 5.425821745232446,
+        "sound_nll": 4.7326745646725,
+        "sound_strict_win": 0.643305297771799,
+        "strict_win": 0.5595476092333058,
+        "tie": 0.4404523907666942
+      },
+      "motion": {
+        "written_nll": 5.220399794310748,
+        "sound_nll": 4.527252613750803,
+        "sound_strict_win": 0.8700954178621673,
+        "strict_win": 0.8668729754261494,
+        "tie": 0.018171877472166014
+      },
+      "large leap": {
+        "written_nll": 4.97286147065721,
+        "sound_nll": 4.279714290097265,
+        "sound_strict_win": 0.7550402910204399,
+        "strict_win": 0.7024796345566132,
+        "tie": 0.29752036544338684
+      },
+      "diatonicity": {
+        "written_nll": 5.588947731183015,
+        "sound_nll": 4.895800550623068,
+        "sound_strict_win": 0.6467483899245686,
+        "strict_win": 0.5735978134602413,
+        "tie": 0.4264021865397587
+      },
+      "outer consonance": {
+        "written_nll": 5.501514255190216,
+        "sound_nll": 4.80836707463027,
+        "sound_strict_win": 0.6402490074946651,
+        "strict_win": 0.6086507594493992,
+        "tie": 0.2923909072172675
+      },
+      "full": {
+        "written_nll": 4.217316048800316,
+        "sound_nll": 3.524168868240371,
+        "sound_strict_win": 0.9284790202904348,
+        "strict_win": 0.9574657331767801,
+        "tie": 0.013950771107613648
+      },
+      "without range": {
+        "written_nll": 4.257107985530735,
+        "sound_nll": 3.5639608049707903,
+        "sound_strict_win": 0.9274928269965491,
+        "strict_win": 0.9458582631758642,
+        "tie": 0.013950771107613648
+      },
+      "without motion": {
+        "written_nll": 3.808962168336345,
+        "sound_nll": 3.1158149877763996,
+        "sound_strict_win": 0.9214739171314853,
+        "strict_win": 0.912376938178154,
+        "tie": 0.04074806182184583
+      },
+      "without large leap": {
+        "written_nll": 4.274798848470252,
+        "sound_nll": 3.5816516679103074,
+        "sound_strict_win": 0.9273519422402797,
+        "strict_win": 0.9561833295860501,
+        "tie": 0.013950771107613648
+      },
+      "without diatonicity": {
+        "written_nll": 4.53705353553484,
+        "sound_nll": 3.8439063549748944,
+        "sound_strict_win": 0.9155567573681718,
+        "strict_win": 0.9245007525793799,
+        "tie": 0.014133971620575085
+      },
+      "without outer consonance": {
+        "written_nll": 4.589738524573879,
+        "sound_nll": 3.8965913440139333,
+        "sound_strict_win": 0.9233397564663073,
+        "strict_win": 0.9181017720485981,
+        "tie": 0.016981074137916677
+      }
+    },
+    "bach/bwv108.6.mxl": {
+      "uniform": {
+        "written_nll": 6.137384588876382,
+        "sound_nll": 5.213188348129788,
+        "sound_strict_win": 0.28209786491424205,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "range": {
+        "written_nll": 5.423144760816089,
+        "sound_nll": 4.4989485200694945,
+        "sound_strict_win": 0.6845239357646306,
+        "strict_win": 0.5480892758999725,
+        "tie": 0.45191072410002747
+      },
+      "motion": {
+        "written_nll": 4.520349623831205,
+        "sound_nll": 3.596153383084611,
+        "sound_strict_win": 0.9383557234053511,
+        "strict_win": 0.9130945689375203,
+        "tie": 0.027688922926711462
+      },
+      "large leap": {
+        "written_nll": 4.977103907386609,
+        "sound_nll": 4.0529076666400154,
+        "sound_strict_win": 0.7721668782462827,
+        "strict_win": 0.6872247828657557,
+        "tie": 0.31277521713424433
+      },
+      "diatonicity": {
+        "written_nll": 5.9301290646970015,
+        "sound_nll": 5.005932823950409,
+        "sound_strict_win": 0.5715574633068429,
+        "strict_win": 0.44296759849109396,
+        "tie": 0.4207811836418596
+      },
+      "outer consonance": {
+        "written_nll": 5.715954892252976,
+        "sound_nll": 4.791758651506382,
+        "sound_strict_win": 0.6463694149798369,
+        "strict_win": 0.5641832588040337,
+        "tie": 0.26611977149899657
+      },
+      "full": {
+        "written_nll": 3.956729978518853,
+        "sound_nll": 3.0325337377722597,
+        "sound_strict_win": 0.9277124860251411,
+        "strict_win": 0.9176994465470867,
+        "tie": 0.00907697388143596
+      },
+      "without range": {
+        "written_nll": 3.9759390961912273,
+        "sound_nll": 3.0517428554446333,
+        "sound_strict_win": 0.9274307165126024,
+        "strict_win": 0.9175162460341254,
+        "tie": 0.00907697388143596
+      },
+      "without motion": {
+        "written_nll": 4.434736292167678,
+        "sound_nll": 3.5105400514210836,
+        "sound_strict_win": 0.8751411372379114,
+        "strict_win": 0.8608077503185191,
+        "tie": 0.03699384352594369
+      },
+      "without large leap": {
+        "written_nll": 3.9717055341855207,
+        "sound_nll": 3.0475092934389267,
+        "sound_strict_win": 0.9326661758423547,
+        "strict_win": 0.9175162460341254,
+        "tie": 0.00907697388143596
+      },
+      "without diatonicity": {
+        "written_nll": 4.003098971895728,
+        "sound_nll": 3.078902731149134,
+        "sound_strict_win": 0.9221952571828503,
+        "strict_win": 0.9088375380973793,
+        "tie": 0.021381386515609512
+      },
+      "without outer consonance": {
+        "written_nll": 4.301990435704211,
+        "sound_nll": 3.377794194957618,
+        "sound_strict_win": 0.9521232948652303,
+        "strict_win": 0.93428925487355,
+        "tie": 0.009351774650878114
+      }
+    },
+    "bach/bwv26.6.mxl": {
+      "uniform": {
+        "written_nll": 6.137384588876382,
+        "sound_nll": 5.444237408316436,
+        "sound_strict_win": 0.19742044555940338,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "range": {
+        "written_nll": 5.423144760816089,
+        "sound_nll": 4.729997580256143,
+        "sound_strict_win": 0.6291177231003534,
+        "strict_win": 0.5480892758999725,
+        "tie": 0.4519107241000275
+      },
+      "motion": {
+        "written_nll": 4.2089165402306605,
+        "sound_nll": 3.5157693596707147,
+        "sound_strict_win": 0.8997969795116197,
+        "strict_win": 0.9061104657456677,
+        "tie": 0.02109265053669423
+      },
+      "large leap": {
+        "written_nll": 4.980392850986583,
+        "sound_nll": 4.287245670426637,
+        "sound_strict_win": 0.7467222833227796,
+        "strict_win": 0.6925207219557487,
+        "tie": 0.3074792780442512
+      },
+      "diatonicity": {
+        "written_nll": 5.952233214467362,
+        "sound_nll": 5.259086033907416,
+        "sound_strict_win": 0.4973796192778823,
+        "strict_win": 0.42577128977324774,
+        "tie": 0.4780484409219983
+      },
+      "outer consonance": {
+        "written_nll": 6.331222613727223,
+        "sound_nll": 5.638075433167278,
+        "sound_strict_win": 0.4299328095854151,
+        "strict_win": 0.3930052795056917,
+        "tie": 0.33575133288782305
+      },
+      "full": {
+        "written_nll": 4.232972356100112,
+        "sound_nll": 3.5398251755401664,
+        "sound_strict_win": 0.9094561696919018,
+        "strict_win": 0.9249085558803202,
+        "tie": 0.009411509988591605
+      },
+      "without range": {
+        "written_nll": 4.243580794102191,
+        "sound_nll": 3.5504336135422463,
+        "sound_strict_win": 0.9088926306668244,
+        "strict_win": 0.9244505545979166,
+        "tie": 0.009411509988591605
+      },
+      "without motion": {
+        "written_nll": 4.939444299653766,
+        "sound_nll": 4.24629711909382,
+        "sound_strict_win": 0.8562541217628067,
+        "strict_win": 0.8539471773589149,
+        "tie": 0.04206477647455595
+      },
+      "without large leap": {
+        "written_nll": 4.235767185445357,
+        "sound_nll": 3.542620004885412,
+        "sound_strict_win": 0.9094561696919016,
+        "strict_win": 0.924633755110878,
+        "tie": 0.009411509988591605
+      },
+      "without diatonicity": {
+        "written_nll": 4.305773794934502,
+        "sound_nll": 3.612626614374556,
+        "sound_strict_win": 0.8866038037874265,
+        "strict_win": 0.8989664784697761,
+        "tie": 0.009503110245072322
+      },
+      "without outer consonance": {
+        "written_nll": 4.02307791701206,
+        "sound_nll": 3.329930736452115,
+        "sound_strict_win": 0.9378907784614979,
+        "strict_win": 0.9408153567829989,
+        "tie": 0.015563716305678384
+      }
+    },
+    "bach/bwv151.5.mxl": {
+      "uniform": {
+        "written_nll": 6.162223852069796,
+        "sound_nll": 5.7001257316965,
+        "sound_strict_win": 0.13648778847290013,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "range": {
+        "written_nll": 5.425821745232446,
+        "sound_nll": 4.963723624859149,
+        "sound_strict_win": 0.619722754958487,
+        "strict_win": 0.5595476092333058,
+        "tie": 0.4404523907666941
+      },
+      "motion": {
+        "written_nll": 4.288438230674138,
+        "sound_nll": 3.8263401103008405,
+        "sound_strict_win": 0.9191977951283161,
+        "strict_win": 0.9221370756201753,
+        "tie": 0.025677711783956628
+      },
+      "large leap": {
+        "written_nll": 4.973274711155269,
+        "sound_nll": 4.511176590781972,
+        "sound_strict_win": 0.7655745825721012,
+        "strict_win": 0.7071916610457417,
+        "tie": 0.2928083389542581
+      },
+      "diatonicity": {
+        "written_nll": 5.562932552697286,
+        "sound_nll": 5.100834432323989,
+        "sound_strict_win": 0.5749113031991443,
+        "strict_win": 0.5909048752154688,
+        "tie": 0.4090951247845312
+      },
+      "outer consonance": {
+        "written_nll": 5.966107662737642,
+        "sound_nll": 5.5040095423643445,
+        "sound_strict_win": 0.4459863498325037,
+        "strict_win": 0.47696396674910685,
+        "tie": 0.2568428514327113
+      },
+      "full": {
+        "written_nll": 3.672574811137938,
+        "sound_nll": 3.2104766907646414,
+        "sound_strict_win": 0.9035273957730534,
+        "strict_win": 0.8957284484373829,
+        "tie": 0.024761709219149445
+      },
+      "without range": {
+        "written_nll": 3.675556489517453,
+        "sound_nll": 3.2134583691441563,
+        "sound_strict_win": 0.9035273957730534,
+        "strict_win": 0.8957284484373829,
+        "tie": 0.024761709219149445
+      },
+      "without motion": {
+        "written_nll": 4.369496427244392,
+        "sound_nll": 3.907398306871095,
+        "sound_strict_win": 0.8228401962893278,
+        "strict_win": 0.8271565094473173,
+        "tie": 0.03629046024965233
+      },
+      "without large leap": {
+        "written_nll": 3.684283793254598,
+        "sound_nll": 3.222185672881301,
+        "sound_strict_win": 0.9035273957730534,
+        "strict_win": 0.8957284484373829,
+        "tie": 0.024761709219149445
+      },
+      "without diatonicity": {
+        "written_nll": 4.069021311194845,
+        "sound_nll": 3.606923190821549,
+        "sound_strict_win": 0.8821488914541024,
+        "strict_win": 0.8732184400684503,
+        "tie": 0.024944909732110884
+      },
+      "without outer consonance": {
+        "written_nll": 3.711697576276008,
+        "sound_nll": 3.249599455902711,
+        "sound_strict_win": 0.9605850908580437,
+        "strict_win": 0.9624196415931783,
+        "tie": 0.024761709219149445
+      }
+    },
+    "bach/bwv404.mxl": {
+      "uniform": {
+        "written_nll": 6.162223852069796,
+        "sound_nll": 5.584601201603175,
+        "sound_strict_win": 0.13408706677937446,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "range": {
+        "written_nll": 5.425821745232446,
+        "sound_nll": 4.848199094765825,
+        "sound_strict_win": 0.6116538204007188,
+        "strict_win": 0.5595476092333058,
+        "tie": 0.4404523907666942
+      },
+      "motion": {
+        "written_nll": 4.570910905767216,
+        "sound_nll": 3.9932882553005946,
+        "sound_strict_win": 0.9150698465214594,
+        "strict_win": 0.9234788762522173,
+        "tie": 0.02077604413883268
+      },
+      "large leap": {
+        "written_nll": 4.984071560847464,
+        "sound_nll": 4.406448910380843,
+        "sound_strict_win": 0.7390920356180902,
+        "strict_win": 0.7012888312223637,
+        "tie": 0.2987111687776362
+      },
+      "diatonicity": {
+        "written_nll": 5.770245522289365,
+        "sound_nll": 5.192622871822745,
+        "sound_strict_win": 0.5221208003466068,
+        "strict_win": 0.5127798752154688,
+        "tie": 0.3960742914511979
+      },
+      "outer consonance": {
+        "written_nll": 5.448735980961993,
+        "sound_nll": 4.871113330495372,
+        "sound_strict_win": 0.6299921932676275,
+        "strict_win": 0.581272093357316,
+        "tie": 0.34117108846086586
+      },
+      "full": {
+        "written_nll": 3.5482473261431644,
+        "sound_nll": 2.9706246756765444,
+        "sound_strict_win": 0.9377522922808281,
+        "strict_win": 0.9616156151373588,
+        "tie": 0.0036575696161949257
+      },
+      "without range": {
+        "written_nll": 3.5517684646556873,
+        "sound_nll": 2.9741458141890664,
+        "sound_strict_win": 0.942100152397919,
+        "strict_win": 0.9664575474447693,
+        "tie": 0.0036575696161949257
+      },
+      "without motion": {
+        "written_nll": 4.058047683264028,
+        "sound_nll": 3.4804250327974064,
+        "sound_strict_win": 0.8845299195795473,
+        "strict_win": 0.8820838485847761,
+        "tie": 0.048976757475830024
+      },
+      "without large leap": {
+        "written_nll": 3.567752725532191,
+        "sound_nll": 2.99013007506557,
+        "sound_strict_win": 0.9364420387993588,
+        "strict_win": 0.9663659471882884,
+        "tie": 0.0036575696161949257
+      },
+      "without diatonicity": {
+        "written_nll": 3.76977393726659,
+        "sound_nll": 3.192151286799968,
+        "sound_strict_win": 0.9390569911661723,
+        "strict_win": 0.9490478908000033,
+        "tie": 0.009718175676800986
+      },
+      "without outer consonance": {
+        "written_nll": 4.109929774001736,
+        "sound_nll": 3.532307123535114,
+        "sound_strict_win": 0.9415030333144476,
+        "strict_win": 0.9465527596659089,
+        "tie": 0.014074236282861592
+      }
+    },
+    "bach/bwv133.6.mxl": {
+      "uniform": {
+        "written_nll": 6.1125453256829685,
+        "sound_nll": 5.419398145123022,
+        "sound_strict_win": 0.2113089557258292,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "range": {
+        "written_nll": 5.4204677763997315,
+        "sound_nll": 4.727320595839786,
+        "sound_strict_win": 0.6445068579063616,
+        "strict_win": 0.5366309425666391,
+        "tie": 0.4633690574333608
+      },
+      "motion": {
+        "written_nll": 3.9540746626791066,
+        "sound_nll": 3.2609274821191607,
+        "sound_strict_win": 0.9529263127278016,
+        "strict_win": 0.93055451464355,
+        "tie": 0.021761722751005515
+      },
+      "large leap": {
+        "written_nll": 4.978368503524716,
+        "sound_nll": 4.28522132296477,
+        "sound_strict_win": 0.7616684390877939,
+        "strict_win": 0.6830123160708487,
+        "tie": 0.3169876839291514
+      },
+      "diatonicity": {
+        "written_nll": 5.49570388554135,
+        "sound_nll": 4.802556704981406,
+        "sound_strict_win": 0.6714794717276106,
+        "strict_win": 0.600474655874491,
+        "tie": 0.39952534412550905
+      },
+      "outer consonance": {
+        "written_nll": 5.4579737013077425,
+        "sound_nll": 4.764826520747797,
+        "sound_strict_win": 0.6624264899699144,
+        "strict_win": 0.6033084347181626,
+        "tie": 0.2845703531606252
+      },
+      "full": {
+        "written_nll": 3.055334779046831,
+        "sound_nll": 2.3621875984868854,
+        "sound_strict_win": 0.9772266608494896,
+        "strict_win": 0.9590488562458884,
+        "tie": 0.012304412634173556
+      },
+      "without range": {
+        "written_nll": 3.051225894099401,
+        "sound_nll": 2.358078713539455,
+        "sound_strict_win": 0.9770857760932202,
+        "strict_win": 0.9588656557329269,
+        "tie": 0.012304412634173556
+      },
+      "without motion": {
+        "written_nll": 3.9052148960491615,
+        "sound_nll": 3.212067715489216,
+        "sound_strict_win": 0.9383470127887001,
+        "strict_win": 0.9138841006936637,
+        "tie": 0.031570444760881694
+      },
+      "without large leap": {
+        "written_nll": 3.054628276415715,
+        "sound_nll": 2.3614810958557695,
+        "sound_strict_win": 0.9770857760932202,
+        "strict_win": 0.9588656557329269,
+        "tie": 0.012304412634173556
+      },
+      "without diatonicity": {
+        "written_nll": 3.411016692557744,
+        "sound_nll": 2.7178695119977987,
+        "sound_strict_win": 0.949076977612958,
+        "strict_win": 0.9275550226086088,
+        "tie": 0.018365018694779616
+      },
+      "without outer consonance": {
+        "written_nll": 3.38686614573975,
+        "sound_nll": 2.6937189651798037,
+        "sound_strict_win": 0.9862887319463002,
+        "strict_win": 0.9662619600789428,
+        "tie": 0.015334715664476585
+      }
+    },
+    "bach/bwv245.11.mxl": {
+      "uniform": {
+        "written_nll": 6.162223852069796,
+        "sound_nll": 5.238027611323203,
+        "sound_strict_win": 0.2807537788927367,
+        "strict_win": 0.0,
+        "tie": 1.0
+      },
+      "range": {
+        "written_nll": 5.425821745232446,
+        "sound_nll": 4.501625504485852,
+        "sound_strict_win": 0.6896015940680953,
+        "strict_win": 0.5595476092333058,
+        "tie": 0.4404523907666941
+      },
+      "motion": {
+        "written_nll": 4.8852367007537145,
+        "sound_nll": 3.961040460007119,
+        "sound_strict_win": 0.9246758893160877,
+        "strict_win": 0.9067492864548203,
+        "tie": 0.018171877472166014
+      },
+      "large leap": {
+        "written_nll": 4.976897907553844,
+        "sound_nll": 4.05270166680725,
+        "sound_strict_win": 0.792077328057477,
+        "strict_win": 0.7024796345566132,
+        "tie": 0.29752036544338684
+      },
+      "diatonicity": {
+        "written_nll": 5.588947731183015,
+        "sound_nll": 4.664751490436419,
+        "sound_strict_win": 0.7023039454801242,
+        "strict_win": 0.5735978134602413,
+        "tie": 0.4264021865397587
+      },
+      "outer consonance": {
+        "written_nll": 5.475251890542133,
+        "sound_nll": 4.551055649795539,
+        "sound_strict_win": 0.6794357994730204,
+        "strict_win": 0.5929647229716789,
+        "tie": 0.31730989824044237
+      },
+      "full": {
+        "written_nll": 3.7674779078754725,
+        "sound_nll": 2.843281667128879,
+        "sound_strict_win": 0.9756206251243471,
+        "strict_win": 0.9673989742853099,
+        "tie": 0.011346604440946982
+      },
+      "without range": {
+        "written_nll": 3.791904123553832,
+        "sound_nll": 2.867707882807238,
+        "sound_strict_win": 0.9754797403680779,
+        "strict_win": 0.9672157737723484,
+        "tie": 0.011346604440946982
+      },
+      "without motion": {
+        "written_nll": 3.792523447902307,
+        "sound_nll": 2.8683272071557133,
+        "sound_strict_win": 0.9370478684994814,
+        "strict_win": 0.913732114529466,
+        "tie": 0.055491370319018705
+      },
+      "without large leap": {
+        "written_nll": 3.800071792863907,
+        "sound_nll": 2.875875552117313,
+        "sound_strict_win": 0.9754797403680779,
+        "strict_win": 0.9673989742853099,
+        "tie": 0.011346604440946982
+      },
+      "without diatonicity": {
+        "written_nll": 4.108977989378929,
+        "sound_nll": 3.1847817486323353,
+        "sound_strict_win": 0.9483022376942972,
+        "strict_win": 0.9307206832338221,
+        "tie": 0.017164274650878112
+      },
+      "without outer consonance": {
+        "written_nll": 4.309232500143506,
+        "sound_nll": 3.3850362593969123,
+        "sound_strict_win": 0.9602837540182453,
+        "strict_win": 0.950786409020127,
+        "tie": 0.0114382046974277
+      }
+    }
+  }
+}

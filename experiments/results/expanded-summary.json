@@ -1,0 +1,5742 @@
+{
+  "manifest": {
+    "version": 2,
+    "music21_version": "8.3.0",
+    "selection": "First 64 Riemenschneider entries; same first/middle/last single and joint attack selection as round 001.",
+    "grouping": "Connected components of normalized titles, transposition-invariant full soprano sequences, and content hashes. Old train/development assignments preserved. New families assigned development iff smallest Riemenschneider number is divisible by three. Related variants may remain undetected.",
+    "pieces": [
+      {
+        "source": "bach/bwv269.mxl",
+        "riemenschneider": 1,
+        "title": "Aus meines Herzens Grunde",
+        "title_group": "ausmeinesherzensgrunde",
+        "melody_group": "5b87f5a4fa1fc28c2fc18483b82ccd058d07f70d03a07629eaf58e5b81d646b1",
+        "tonic": "G4",
+        "mode": "major",
+        "sha256": "9676f11a2b26488bcf30db90c15576caa1ea2a616b909e376d44b8b804e9d138",
+        "outer_key_estimate": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "split": "train",
+        "family_group": "071dea927d59614c"
+      },
+      {
+        "source": "bach/bwv347.mxl",
+        "riemenschneider": 2,
+        "title": "Ich dank\u2019 dir, lieber Herre",
+        "title_group": "ichdankdirlieberherre",
+        "melody_group": "356d4d0c8ee7cb1fb70f8f8f63de6a9c9fc1c96bca4d418412cb0582c6057955",
+        "tonic": "A4",
+        "mode": "major",
+        "sha256": "a017649b259ceda9c0ee8a74909893a69d01163c5f60ae5e631dc3d2ac58bcb5",
+        "outer_key_estimate": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "split": "train",
+        "family_group": "c5a72c6f276c9400"
+      },
+      {
+        "source": "bach/bwv153.1.mxl",
+        "riemenschneider": 3,
+        "title": "Ach Gott, vom Himmel sieh\u2019 darein",
+        "title_group": "achgottvomhimmelsiehdarein",
+        "melody_group": "c49c936b2c0e3ab9f2c56ccaf36ffc92225ac777a08e624bb1cf14cf61d15b3f",
+        "tonic": "E4",
+        "mode": "minor",
+        "sha256": "49553bbbfa8e79ddac3b35232608c9db07c3bf2582a161b805e6eec891e1fe8e",
+        "outer_key_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "split": "development",
+        "family_group": "70770ab67421babd"
+      },
+      {
+        "source": "bach/bwv86.6.mxl",
+        "riemenschneider": 4,
+        "title": "Es ist das Heil uns kommen her",
+        "title_group": "esistdasheilunskommenher",
+        "melody_group": "f3a01fa7dff303efa200e939c524170b17d16ec2ab9b0e07f1863d017d2fb464",
+        "tonic": "E4",
+        "mode": "major",
+        "sha256": "5b9a0acc0010297e9f49f8c43d098361deb28f67dfc13f9f6b682cff9ec1003e",
+        "outer_key_estimate": {
+          "tonic": "E4",
+          "mode": "major"
+        },
+        "split": "development",
+        "family_group": "f830a4c921432b47"
+      },
+      {
+        "source": "bach/bwv267.mxl",
+        "riemenschneider": 5,
+        "title": "An Wasserfl\u00fcssen Babylon",
+        "title_group": "anwasserflssenbabylon",
+        "melody_group": "5bcb66fd2934abdca7770c4b562ae381c7781aa131764bfab30d4ca28a27b69b",
+        "tonic": "G4",
+        "mode": "major",
+        "sha256": "8fd35db74f930089746d03248b8267882c9508d8f005aec67e9f4e23d74c27e4",
+        "outer_key_estimate": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "split": "train",
+        "family_group": "9d2d446f366613d1"
+      },
+      {
+        "source": "bach/bwv281.mxl",
+        "riemenschneider": 6,
+        "title": "Christus, der ist mein Leben",
+        "title_group": "christusderistmeinleben",
+        "melody_group": "11c49f1067d2354b58ec41f8719e73d7a43fdaf607626e9a510c072b90024aa4",
+        "tonic": "F4",
+        "mode": "major",
+        "sha256": "3946fb6c7dc6a0fe772f88aaefa5d32f9b42f9fcc476e9a3070f9e5b33ea760a",
+        "outer_key_estimate": {
+          "tonic": "F4",
+          "mode": "major"
+        },
+        "split": "train",
+        "family_group": "e904f0fc8965327d"
+      },
+      {
+        "source": "bach/bwv17.7.mxl",
+        "riemenschneider": 7,
+        "title": "Nun lob\u2019, mein\u2019 Seel\u2019, den Herren",
+        "title_group": "nunlobmeinseeldenherren",
+        "melody_group": "94bc0f1a5425bf32afc620b23c5264366eee5baf7db2d1be6c0cb8bf411a4f09",
+        "tonic": "A4",
+        "mode": "major",
+        "sha256": "a2f0dde7a8a4005571326e78f0e1fa10b418477e0d7f765e68048901202d1994",
+        "outer_key_estimate": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "split": "train",
+        "family_group": "b6d0c228595e46f0"
+      },
+      {
+        "source": "bach/bwv40.8.mxl",
+        "riemenschneider": 8,
+        "title": "Freuet euch, ihr Christen alle",
+        "title_group": "freueteuchihrchristenalle",
+        "melody_group": "38c701cf60c9167f3b99c95de1cd9524fbfe81c6b64cd239ae6d274c4734b0c9",
+        "tonic": "C4",
+        "mode": "minor",
+        "sha256": "89b527da3439fcfaf49e22ebba367bdcedbd1c624bf49759f2b30f7db789be4c",
+        "outer_key_estimate": {
+          "tonic": "F4",
+          "mode": "minor"
+        },
+        "split": "development",
+        "family_group": "8b532ad4ed143682"
+      },
+      {
+        "source": "bach/bwv248.12-2.mxl",
+        "riemenschneider": 9,
+        "title": "Ermuntre dich, mein schwacher Geist",
+        "title_group": "ermuntredichmeinschwachergeist",
+        "melody_group": "69c5105d91ceb9c6a0485633f1b4454d1ca72f2b356947fc1e206e5b90e45086",
+        "tonic": "G4",
+        "mode": "major",
+        "sha256": "03f27251df1e731d9f0ba2ce61c5768dccda2894517e6a9b658b1fbea2f004af",
+        "outer_key_estimate": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "split": "train",
+        "family_group": "f146475200f44e3f"
+      },
+      {
+        "source": "bach/bwv38.6.mxl",
+        "riemenschneider": 10,
+        "title": "Aus tiefer Not schrei\u2019 ich zu dir",
+        "title_group": "austiefernotschreiichzudir",
+        "melody_group": "5869b8f79fe10d36d17e2f2df01e39bcd0bcab95823d2dfa771fbbf770550e7b",
+        "tonic": "A4",
+        "mode": "minor",
+        "sha256": "3d7f458d1f7588de2c664a9aaefe287937be807355eeb708db38caab98d3bef7",
+        "outer_key_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "split": "train",
+        "family_group": "0a706e03f7bbc6c7"
+      },
+      {
+        "source": "bach/bwv65.2.mxl",
+        "riemenschneider": 12,
+        "title": "Puer natus in Bethlehem",
+        "title_group": "puernatusinbethlehem",
+        "melody_group": "cf3ae88688fb16110e409bb3613026f11f0595e8598730393041bd50316c3f7e",
+        "tonic": "C4",
+        "mode": "major",
+        "sha256": "b3c3257ceec1d28f6d7408dc34f5ffc8876fa985aa864f7e7af1287aba626925",
+        "outer_key_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "split": "development",
+        "family_group": "a15d34df40dfa495"
+      },
+      {
+        "source": "bach/bwv33.6.mxl",
+        "riemenschneider": 13,
+        "title": "Allein zu dir, Herr Jesu Christ",
+        "title_group": "alleinzudirherrjesuchrist",
+        "melody_group": "cf42ca756bfc2b78498c7d327e5a3cfb7d664bf177004da128a5afbe3c5bb2a6",
+        "tonic": "C4",
+        "mode": "major",
+        "sha256": "b1a1a662561edcdd36ab6da4be1512878f06b5bd1173e9d6c6c8df549b418a89",
+        "outer_key_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "split": "train",
+        "family_group": "06a0c11b8eb9ccfa"
+      },
+      {
+        "source": "bach/bwv184.5.mxl",
+        "riemenschneider": 14,
+        "title": "O Herre Gott, dein g\u00f6ttlich Wort",
+        "title_group": "oherregottdeingttlichwort",
+        "melody_group": "c85cd264f1a488d69b5a36c1311c75c166e2c5ebd6e994ddd5fba9a3a2740568",
+        "tonic": "D4",
+        "mode": "major",
+        "sha256": "dcf30e49205b570fbf7f7039f0ce5af42a41e3a021f5653dc2f0683d292ee9b4",
+        "outer_key_estimate": {
+          "tonic": "D4",
+          "mode": "major"
+        },
+        "split": "train",
+        "family_group": "5a7a973b83251b11"
+      },
+      {
+        "source": "bach/bwv277.mxl",
+        "riemenschneider": 15,
+        "title": "Christ lag in Todesbanden",
+        "title_group": "christlagintodesbanden",
+        "melody_group": "158c7ff4c18dc574feaeb16f2c63867fdcd9a3f4ce47e6514b6392dcdce9f745",
+        "tonic": "A4",
+        "mode": "minor",
+        "sha256": "61744d6c58bf64b29c7424f8347323466957b35d83071bfe8b7ba6f0a0bfdf8b",
+        "outer_key_estimate": {
+          "tonic": "D4",
+          "mode": "minor"
+        },
+        "split": "train",
+        "family_group": "468ad251d0cdacd3"
+      },
+      {
+        "source": "bach/bwv311.mxl",
+        "riemenschneider": 16,
+        "title": "Es woll\u2019 uns Gott gen\u00e4dig sein",
+        "title_group": "eswollunsgottgendigsein",
+        "melody_group": "597e0387b7745d66c79fa02553e075b7eccd59623ad0b3153e3716297a7651c4",
+        "tonic": "B4",
+        "mode": "minor",
+        "sha256": "c59e795c3a5ad1a8adde9e6a096029bcd9b39dffb2497c3fa64d62746244e8af",
+        "outer_key_estimate": {
+          "tonic": "B4",
+          "mode": "minor"
+        },
+        "split": "development",
+        "family_group": "c4c71cba8bded8d1"
+      },
+      {
+        "source": "bach/bwv145.5.mxl",
+        "riemenschneider": 17,
+        "title": "Erschienen ist der herrliche Tag",
+        "title_group": "erschienenistderherrlichetag",
+        "melody_group": "7d8af1bae061ca82a60e5a7361406d1a5ec8332ed73bf2c246bff90ecfa65ebb",
+        "tonic": "B4",
+        "mode": "minor",
+        "sha256": "4b6b18d986993ed94c98cc9108912440c3d4c91ee676fe053d875e51ab9809f3",
+        "outer_key_estimate": {
+          "tonic": "F#4",
+          "mode": "minor"
+        },
+        "split": "train",
+        "family_group": "d9386dedbfb2d5de"
+      },
+      {
+        "source": "bach/bwv318.mxl",
+        "riemenschneider": 18,
+        "title": "Gottes Sohn ist kommen",
+        "title_group": "gottessohnistkommen",
+        "melody_group": "a3d8998fe3acee2ae720ccc07c90a870c3141c62193e3d645beffd3b97fd0504",
+        "tonic": "G4",
+        "mode": "major",
+        "sha256": "e2d2baa4f9215f6db06eee3e589d1fba68bc98536e55a82fb287752d64f436e2",
+        "outer_key_estimate": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "split": "development",
+        "family_group": "e3217f96dd95dfa4"
+      },
+      {
+        "source": "bach/bwv351.mxl",
+        "riemenschneider": 19,
+        "title": "Ich hab\u2019 mein\u2019 Sach\u2019 Gott heimgestellt",
+        "title_group": "ichhabmeinsachgottheimgestellt",
+        "melody_group": "c650c2f765002a3813488388e6416a16aa26545df5152581fb5bad23d5be09b7",
+        "tonic": "D4",
+        "mode": "minor",
+        "sha256": "94c548efe4ae90dbbf557b1ead77f0a99f9474be2869c93ccfb007b097503a4f",
+        "outer_key_estimate": {
+          "tonic": "G4",
+          "mode": "minor"
+        },
+        "split": "train",
+        "family_group": "4fb158690072be46"
+      },
+      {
+        "source": "bach/bwv302.mxl",
+        "riemenschneider": 20,
+        "title": "Ein\u2019 feste Burg ist unser Gott",
+        "title_group": "einfesteburgistunsergott",
+        "melody_group": "f7bd1a2ea0ef95d3d860d20f9a86550ac1ea8a8be3fb3b5db7f98485c2f74d7f",
+        "tonic": "D4",
+        "mode": "major",
+        "sha256": "0b16559b20595697aa796aed77f71c7291e008f30a82ebe228a5b1b7c0d9ea4b",
+        "outer_key_estimate": {
+          "tonic": "D4",
+          "mode": "major"
+        },
+        "split": "train",
+        "family_group": "f947eebc65e61862"
+      },
+      {
+        "source": "bach/bwv153.5.mxl",
+        "riemenschneider": 21,
+        "title": "Herzlich tut mich verlangen",
+        "title_group": "herzlichtutmichverlangen",
+        "melody_group": "68d84e63ddd3448edc816e073ef876044e0daa007b84779b47de9184906b79a6",
+        "tonic": "A4",
+        "mode": "minor",
+        "sha256": "f3432eb2e814b8668e5dcf2d7c7a532b576d058c7c5449726ca0f6f7c4a94310",
+        "outer_key_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "split": "development",
+        "family_group": "00c03585d42645a4"
+      },
+      {
+        "source": "bach/bwv180.7.mxl",
+        "riemenschneider": 22,
+        "title": "Schm\u00fccke dich, o liebe Seele",
+        "title_group": "schmckedicholiebeseele",
+        "melody_group": "400ab3d0972c20495573d6dadd707880c37433c7aa1b7e3661c330fd5ac69769",
+        "tonic": "F4",
+        "mode": "major",
+        "sha256": "d3136648f7fa02b7d69ff7d61b249128be92374905ac69a05b1470071fd28acf",
+        "outer_key_estimate": {
+          "tonic": "F4",
+          "mode": "major"
+        },
+        "split": "train",
+        "family_group": "2db21ec65cdfb2e4"
+      },
+      {
+        "source": "bach/bwv28.6.mxl",
+        "riemenschneider": 23,
+        "title": "Zeuch ein zu deinen Toren",
+        "title_group": "zeucheinzudeinentoren",
+        "melody_group": "1e861a818ce2403e83cb8c8101235a538a620375a4adf4ba827ad4154fc74db9",
+        "tonic": "A4",
+        "mode": "minor",
+        "sha256": "7e0ce1bf478ee1358ff1b5523aca07d847a2dc9d05921e7b23fc4ea89f2c16aa",
+        "outer_key_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "split": "train",
+        "family_group": "89ad9bc99f262a15"
+      },
+      {
+        "source": "bach/bwv415.mxl",
+        "riemenschneider": 24,
+        "title": "Valet will ich dir geben",
+        "title_group": "valetwillichdirgeben",
+        "melody_group": "bd92187d01fc94399d478a725b587e51a2b7bf73b80d1ebd184ece92c4e63a2a",
+        "tonic": "D4",
+        "mode": "major",
+        "sha256": "1c266d51e2536aa7cbadfd842a8d1d04e04e78fe665b0f512d38b8d1bcf70b58",
+        "outer_key_estimate": {
+          "tonic": "D4",
+          "mode": "major"
+        },
+        "split": "development",
+        "family_group": "94374aa134f0979d"
+      },
+      {
+        "source": "bach/bwv148.6.mxl",
+        "riemenschneider": 25,
+        "title": "Wo soll ich fliehen hin",
+        "title_group": "wosollichfliehenhin",
+        "melody_group": "70d85d20c719b0d9e414d2ff79ab7b849ac6694a2fe57077b7550a5810476a52",
+        "tonic": "F#4",
+        "mode": "minor",
+        "sha256": "65de0cab98fbfee1b76feab800f8e2df820ae9c653492acc502b1c838692a810",
+        "outer_key_estimate": {
+          "tonic": "F#4",
+          "mode": "minor"
+        },
+        "split": "train",
+        "family_group": "1cc7bc7507e57f10"
+      },
+      {
+        "source": "bach/bwv20.11.mxl",
+        "riemenschneider": 26,
+        "title": "O Ewigkeit, du Donnerwort",
+        "title_group": "oewigkeitdudonnerwort",
+        "melody_group": "415785d5bc69175cce5e266ea78bcd791610500c6a3b2ba71e796b4f8debcf23",
+        "tonic": "F4",
+        "mode": "major",
+        "sha256": "28f7dde915d2671fda40529cd4483fb11807f52ffa1113a1ec5fee79dde856fd",
+        "outer_key_estimate": {
+          "tonic": "F4",
+          "mode": "major"
+        },
+        "split": "train",
+        "family_group": "3035c161cb681010"
+      },
+      {
+        "source": "bach/bwv308.mxl",
+        "riemenschneider": 27,
+        "title": "Es spricht der Unweisen Mund",
+        "title_group": "essprichtderunweisenmund",
+        "melody_group": "dd15084154639d2705b21bda912a5270d876487d9e741b4e16ba2d70f890c013",
+        "tonic": "Bb4",
+        "mode": "major",
+        "sha256": "43c6aaace26a9750b7d818cbd898ecca08479cd4deaeee82eee108c19ccdc025",
+        "outer_key_estimate": {
+          "tonic": "Bb4",
+          "mode": "major"
+        },
+        "split": "development",
+        "family_group": "4b3532c39ee21051"
+      },
+      {
+        "source": "bach/bwv36.8-2.mxl",
+        "riemenschneider": 28,
+        "title": "Nun komm, der Heiden Heiland",
+        "title_group": "nunkommderheidenheiland",
+        "melody_group": "a553962f5382f9d84cb98d87b897a8b6d5d52de79014465e8941ebaf72b1277f",
+        "tonic": "B4",
+        "mode": "minor",
+        "sha256": "2f6d4e612404ae5813763cec5b0c21e8b89c5493002f577252bc05a01eea9290",
+        "outer_key_estimate": {
+          "tonic": "B4",
+          "mode": "minor"
+        },
+        "split": "train",
+        "family_group": "752275fb04cac1c8"
+      },
+      {
+        "source": "bach/bwv32.6.mxl",
+        "riemenschneider": 29,
+        "title": "Freu\u2019 dich sehr, o meine Seele",
+        "title_group": "freudichsehromeineseele",
+        "melody_group": "d47141480d623f7c1b174f8a47ef61b7505725a87398b20bf4ddbf0a7fa9d209",
+        "tonic": "G4",
+        "mode": "major",
+        "sha256": "f51928d8870a15825c61fb6bd480d8644da772c990f6cc9f74d0c57116fc72a2",
+        "outer_key_estimate": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "split": "train",
+        "family_group": "d525f14389a8ae3c"
+      },
+      {
+        "source": "bach/bwv363.mxl",
+        "riemenschneider": 30,
+        "title": "Jesus Christus, unser Heiland",
+        "title_group": "jesuschristusunserheiland",
+        "melody_group": "a95ab0f8a383607fbffad84dc86a776b5e39c5ea2f72b4053e5a8f64f50cac59",
+        "tonic": "E4",
+        "mode": "minor",
+        "sha256": "72c5faafe829687f45d7cad7c1280903a096548b2053111565b8b83d8a4f2db2",
+        "outer_key_estimate": {
+          "tonic": "E4",
+          "mode": "minor"
+        },
+        "split": "development",
+        "family_group": "173546f99ec8debb"
+      },
+      {
+        "source": "bach/bwv256.mxl",
+        "riemenschneider": 31,
+        "title": "Ach lieben Christen, seid getrost",
+        "title_group": "achliebenchristenseidgetrost",
+        "melody_group": "88f783b5109be5bb8d219bf902012e87d353d0c149eda62f111e0e9087901c04",
+        "tonic": "A4",
+        "mode": "minor",
+        "sha256": "eafe5dc24fa6e4daed7aff617d337e507cc9c6fde3cd1eb3ba47f1d343a8f5ac",
+        "outer_key_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "split": "train",
+        "family_group": "94b0c530aec418d5"
+      },
+      {
+        "source": "bach/bwv386.mxl",
+        "riemenschneider": 32,
+        "title": "Nun danket alle Gott",
+        "title_group": "nundanketallegott",
+        "melody_group": "aff4bb09bb2928ab42b5e80bc5c94fccb00174f37f034d75b1decea6a507191e",
+        "tonic": "A4",
+        "mode": "major",
+        "sha256": "c8bd74a5d9089ad8ca7edafc90e61c810b0d840bc5750105675d9ba46938b56d",
+        "outer_key_estimate": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "split": "train",
+        "family_group": "44ad40b7c3790380"
+      },
+      {
+        "source": "bach/bwv330.mxl",
+        "riemenschneider": 33,
+        "title": "Herr, ich habe mi\u00dfgehandelt",
+        "title_group": "herrichhabemigehandelt",
+        "melody_group": "8b9c166e434579e66d10e7112215f381a7dd7e8d93a426139fc0afb80ac8e6ab",
+        "tonic": "A4",
+        "mode": "minor",
+        "sha256": "bbcde3f8caf7bf4c822d370e0b9b16bb3cdd85745c6efdd3a0e5593870219c99",
+        "outer_key_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "split": "development",
+        "family_group": "25309de47f169551"
+      },
+      {
+        "source": "bach/bwv305.mxl",
+        "riemenschneider": 34,
+        "title": "Erbarm\u2019 dich mein, o Herre Gott",
+        "title_group": "erbarmdichmeinoherregott",
+        "melody_group": "5fb78121ac9acb9657c455dac1c8cd7c11ea43a71830c8f3e7a09ebcddce39a6",
+        "tonic": "A4",
+        "mode": "minor",
+        "sha256": "56c644161c59f00dbef5b8166dbd28c493943d6cc0ffa9fa964bb7c655b4d9cb",
+        "outer_key_estimate": {
+          "tonic": "C4",
+          "mode": "major"
+        },
+        "split": "train",
+        "family_group": "d79934ba267a8c01"
+      },
+      {
+        "source": "bach/bwv248.53-5.mxl",
+        "riemenschneider": 35,
+        "title": "Gott des Himmels und der Erden",
+        "title_group": "gottdeshimmelsunddererden",
+        "melody_group": "48a79b98b1faad3378f235f97df8183be8bb25340dd6f4bca224942ef58837b2",
+        "tonic": "A4",
+        "mode": "major",
+        "sha256": "0ff3fe876e209e9b22e23476d11880569755df7d4e66c2d314ac58671d9e7dc9",
+        "outer_key_estimate": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "split": "train",
+        "family_group": "06a8b6add376ff44"
+      },
+      {
+        "source": "bach/bwv385.mxl",
+        "riemenschneider": 36,
+        "title": "Nun bitten wir den heiligen Geist",
+        "title_group": "nunbittenwirdenheiligengeist",
+        "melody_group": "03a12a69789fd5cea59a132f69edaabd1630f10b7d4af36ee1fb7767f245f553",
+        "tonic": "A4",
+        "mode": "major",
+        "sha256": "2fb5b486d54dd7fcadf3f7499ac07c030e7063f5006a0caa446977a52e97e075",
+        "outer_key_estimate": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "split": "development",
+        "family_group": "b6690b581df1622a"
+      },
+      {
+        "source": "bach/bwv352.mxl",
+        "riemenschneider": 37,
+        "title": "Jesu, der du meine Seele",
+        "title_group": "jesuderdumeineseele",
+        "melody_group": "7acb87280687ef9c57b45112fd55f907e9934cdc2eef587941b840bdc97270e0",
+        "tonic": "A4",
+        "mode": "minor",
+        "sha256": "a033aabcb798a424662e69f5c6419bd0c3859419ac67bff09dd066d06328cfe2",
+        "outer_key_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "split": "train",
+        "family_group": "18218e62596ceab8"
+      },
+      {
+        "source": "bach/bwv115.6.mxl",
+        "riemenschneider": 38,
+        "title": "Straf\u2019 mich nicht in deinem Zorn",
+        "title_group": "strafmichnichtindeinemzorn",
+        "melody_group": "56d396bfee5d956070dd53009dd3f64f98b778c1f72d5b85b18604ac75d9e8a8",
+        "tonic": "G4",
+        "mode": "major",
+        "sha256": "a2b0861ea963ec7aa5fef77b4dcc57de3118b96984949e781b2d60e31d4a465a",
+        "outer_key_estimate": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "split": "train",
+        "family_group": "e4f3871ffed6ef61"
+      },
+      {
+        "source": "bach/bwv259.mxl",
+        "riemenschneider": 39,
+        "title": "Ach was soll ich S\u00fcnder machen",
+        "title_group": "achwassollichsndermachen",
+        "melody_group": "809bf1cddad9385551ab249543c8996c62e955c373ac01c27b577381d0cdd503",
+        "tonic": "E4",
+        "mode": "minor",
+        "sha256": "9b6bb9662a1dfcf9abbb3760e7afea13873e6ca56a8e82ff1d19e59c7f5342f9",
+        "outer_key_estimate": {
+          "tonic": "E4",
+          "mode": "minor"
+        },
+        "split": "development",
+        "family_group": "742e6f5254f08435"
+      },
+      {
+        "source": "bach/bwv255.mxl",
+        "riemenschneider": 40,
+        "title": "Ach Gott und Herr",
+        "title_group": "achgottundherr",
+        "melody_group": "238d4a34219506a53bd30bfc3885ba48b6ca2eaa9374a09716e479ddcbaea057",
+        "tonic": "C4",
+        "mode": "major",
+        "sha256": "138406552e49aa9b9ce333cb17820aac846f96c42419791cd62d206e24061129",
+        "outer_key_estimate": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "split": "train",
+        "family_group": "c6430625e2d14c25"
+      },
+      {
+        "source": "bach/bwv65.7.mxl",
+        "riemenschneider": 41,
+        "title": "Was mein Gott will, das g\u2019scheh\u2019 allzeit",
+        "title_group": "wasmeingottwilldasgschehallzeit",
+        "melody_group": "c791204dd20bc05b881d0a4d7aebcc17b43230933edacda70c36641e6bda788d",
+        "tonic": "A4",
+        "mode": "minor",
+        "sha256": "424c840abd974114040e06291df3e975d752121ec9ffa3c92fc0854b8c542989",
+        "outer_key_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "split": "train",
+        "family_group": "77f6586ce6df332b"
+      },
+      {
+        "source": "bach/bwv67.7.mxl",
+        "riemenschneider": 42,
+        "title": "Du Friedef\u00fcrst, Herr Jesu Christ",
+        "title_group": "dufriedefrstherrjesuchrist",
+        "melody_group": "34e4a597b204209a23d9d535d9483a3ee6b90b317275c151ab4bf6078a124c92",
+        "tonic": "A4",
+        "mode": "major",
+        "sha256": "bf1dc2632d7f1ea66ce08e0a044883cf841f5c1d8cf63ee5f35449d99cc1c13d",
+        "outer_key_estimate": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "split": "development",
+        "family_group": "c2a05cef0437e83e"
+      },
+      {
+        "source": "bach/bwv377.mxl",
+        "riemenschneider": 44,
+        "title": "Mach\u2019s mit mir, Gott, nach deiner G\u00fct\u2019",
+        "title_group": "machsmitmirgottnachdeinergt",
+        "melody_group": "35c7e366afd8af2fa161fc5991b8086f42dcbbc61a5fd33cff1eadc8f3f1fbf8",
+        "tonic": "D4",
+        "mode": "major",
+        "sha256": "353f2d93ac556cedad5474e355b00cc5b152f298d55877e19cab720d6d0185c5",
+        "outer_key_estimate": {
+          "tonic": "D4",
+          "mode": "major"
+        },
+        "split": "train",
+        "family_group": "9d9f4a32685d8b31"
+      },
+      {
+        "source": "bach/bwv108.6.mxl",
+        "riemenschneider": 45,
+        "title": "Kommt her zu mir, spricht Gottes Sohn",
+        "title_group": "kommtherzumirsprichtgottessohn",
+        "melody_group": "1657569c7a39fa6b62a412e8db4e6e2854b2a85688245ed5c94dc3fd26371747",
+        "tonic": "B4",
+        "mode": "minor",
+        "sha256": "88f77ee050bb90af656c887a53254e55143abcbbcf4bf440f8d44ab4fd415038",
+        "outer_key_estimate": {
+          "tonic": "B4",
+          "mode": "minor"
+        },
+        "split": "development",
+        "family_group": "2911804328ecb9a3"
+      },
+      {
+        "source": "bach/bwv416.mxl",
+        "riemenschneider": 47,
+        "title": "Vater unser im Himmelreich",
+        "title_group": "vaterunserimhimmelreich",
+        "melody_group": "b689340f8bbc116ba18b7522d99173c3b1814a60f5906ef65aa8999003b9fe41",
+        "tonic": "D4",
+        "mode": "minor",
+        "sha256": "b49c48b49ee18dc63aa0a7de4050b39baaddc6811f823d70c1305f6372d5fd34",
+        "outer_key_estimate": {
+          "tonic": "D4",
+          "mode": "minor"
+        },
+        "split": "train",
+        "family_group": "91f30a1d9035f813"
+      },
+      {
+        "source": "bach/bwv26.6.mxl",
+        "riemenschneider": 48,
+        "title": "Ach wie nichtig, ach wie fl\u00fcchtig",
+        "title_group": "achwienichtigachwieflchtig",
+        "melody_group": "57aaf2fd0ca7a69a7dc9b9a9c34eeacb914c17b57829f25add13a15bf1c2710a",
+        "tonic": "A4",
+        "mode": "minor",
+        "sha256": "b73dae968f9dba2146007d97767394bcbc011c74444a7f7729186f0497d62410",
+        "outer_key_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "split": "development",
+        "family_group": "4401de10b46b80dc"
+      },
+      {
+        "source": "bach/bwv382.mxl",
+        "riemenschneider": 49,
+        "title": "Mit Fried\u2019 und Freud\u2019 ich fahr\u2019 dahin",
+        "title_group": "mitfriedundfreudichfahrdahin",
+        "melody_group": "7a0e5bc2bad4ccb314dca81814a41cd9fb1ca57bad123907eec7fcc2dc8e0f81",
+        "tonic": "A4",
+        "mode": "minor",
+        "sha256": "e08f1f05f2b994301bb92e89ece8bc9e6cb5290eaf22433aee81e59d7a4be21e",
+        "outer_key_estimate": {
+          "tonic": "D4",
+          "mode": "minor"
+        },
+        "split": "train",
+        "family_group": "1937695e164089c5"
+      },
+      {
+        "source": "bach/bwv244.37.mxl",
+        "riemenschneider": 50,
+        "title": "In allen meinen Taten",
+        "title_group": "inallenmeinentaten",
+        "melody_group": "3d9390c7bfee97dddd5ebc682bf017e050e7211fd1117d04cd03939dfdc66e27",
+        "tonic": "F4",
+        "mode": "major",
+        "sha256": "871811537e39ed94af0b00d30ab9fdb9db3689cd0b7936a2f6b166fd3ee4b4b6",
+        "outer_key_estimate": {
+          "tonic": "F4",
+          "mode": "major"
+        },
+        "split": "train",
+        "family_group": "ecd5859e3a137f0f"
+      },
+      {
+        "source": "bach/bwv429.mxl",
+        "riemenschneider": 52,
+        "title": "Wenn mein St\u00fcndlein vorhanden ist",
+        "title_group": "wennmeinstndleinvorhandenist",
+        "melody_group": "a19c8a3498af5dce20be2338d80de3fd9ba7f3e6bd3700474faf79cac865115d",
+        "tonic": "A4",
+        "mode": "major",
+        "sha256": "b626f5635b1b95eb41d4b0efa578c56ede6c6b740bacf3552f940ba67f09c13e",
+        "outer_key_estimate": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "split": "train",
+        "family_group": "faa7ab3e698c0f01"
+      },
+      {
+        "source": "bach/bwv122.6.mxl",
+        "riemenschneider": 53,
+        "title": "Das neugeborne Kindelein",
+        "title_group": "dasneugebornekindelein",
+        "melody_group": "d48fcdfb72cde5ebde5fb8fb23581a2a2ffbfc9667762320146e26661acec8bd",
+        "tonic": "G4",
+        "mode": "minor",
+        "sha256": "a51b81c8f885e0b11d668015d7a76e07c3899d807ff74c3043056b6a142e3a15",
+        "outer_key_estimate": {
+          "tonic": "G4",
+          "mode": "minor"
+        },
+        "split": "train",
+        "family_group": "f16f5b8fe178fb38"
+      },
+      {
+        "source": "bach/bwv151.5.mxl",
+        "riemenschneider": 54,
+        "title": "Lobt Gott, ihr Christen, allzugleich",
+        "title_group": "lobtgottihrchristenallzugleich",
+        "melody_group": "6bc31098e291ea17264b20e9a9761f7e08944935d4888a030308ecd06070a02a",
+        "tonic": "G4",
+        "mode": "major",
+        "sha256": "1c83439a05887d2a7b5003d5fe2eae22bbecdc3738e9895c320e496739ca4c51",
+        "outer_key_estimate": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "split": "development",
+        "family_group": "7352d8b7f0800cc5"
+      },
+      {
+        "source": "bach/bwv110.7.mxl",
+        "riemenschneider": 55,
+        "title": "Wir Christenleut\u2019",
+        "title_group": "wirchristenleut",
+        "melody_group": "42f0540332d9bf75c4ce14aae19217a1d1cdddcc13d95d1dbc3537c72ffff1b5",
+        "tonic": "B4",
+        "mode": "minor",
+        "sha256": "4cdecb4c8675d7645528e34527080a2889fd3d10059ed727d152515e3d530bac",
+        "outer_key_estimate": {
+          "tonic": "B4",
+          "mode": "minor"
+        },
+        "split": "train",
+        "family_group": "6705d07bc488e001"
+      },
+      {
+        "source": "bach/bwv121.6.mxl",
+        "riemenschneider": 56,
+        "title": "Christum wir sollen loben schon",
+        "title_group": "christumwirsollenlobenschon",
+        "melody_group": "860fcdd9057859e45c9497546774d1f3625899dc59ad54af0bf7e79dc99eb756",
+        "tonic": "B4",
+        "mode": "minor",
+        "sha256": "1d47eda517de0aa1da187d2fa9a2fcca24e03677e83d2577441e231ab110f8cc",
+        "outer_key_estimate": {
+          "tonic": "B4",
+          "mode": "minor"
+        },
+        "split": "train",
+        "family_group": "518b724811aeefbe"
+      },
+      {
+        "source": "bach/bwv404.mxl",
+        "riemenschneider": 57,
+        "title": "O Traurigkeit, o Herzeleid",
+        "title_group": "otraurigkeitoherzeleid",
+        "melody_group": "45d44da384c4f68077a5bb6853a41ba99eb971376aeef1e29d57e2e18940cd91",
+        "tonic": "A4",
+        "mode": "minor",
+        "sha256": "8ac61c93e9f46a3cff96654651fe25c73b3b18f887f8106e48d4e03194d05550",
+        "outer_key_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "split": "development",
+        "family_group": "bcdc4225d2294279"
+      },
+      {
+        "source": "bach/bwv174.5.mxl",
+        "riemenschneider": 58,
+        "title": "Herzlich lieb hab\u2019 ich dich, o Herr",
+        "title_group": "herzlichliebhabichdichoherr",
+        "melody_group": "341f8a302cdbc5cf3d3e76c51ea6c71410c2a453f0778b75059ec722c76a892b",
+        "tonic": "D4",
+        "mode": "major",
+        "sha256": "90ac5ec3887e35563f538443bf01d5cb769e7933a2a1b21851eea0154816dae2",
+        "outer_key_estimate": {
+          "tonic": "B4",
+          "mode": "minor"
+        },
+        "split": "train",
+        "family_group": "1eb699fee9b1e4e3"
+      },
+      {
+        "source": "bach/bwv245.3.mxl",
+        "riemenschneider": 59,
+        "title": "Herzliebster Jesu, was hast du verbrochen",
+        "title_group": "herzliebsterjesuwashastduverbrochen",
+        "melody_group": "f19f85b5f5a224ab7c69128f68bd5eafe46e496997ad7c79cbb12329ef37cd03",
+        "tonic": "Bb4",
+        "mode": "major",
+        "sha256": "8f01458271bea522a7d589c4191b7ecb46f60d6d739932fd704f37e37ec1e4ad",
+        "outer_key_estimate": {
+          "tonic": "G4",
+          "mode": "minor"
+        },
+        "split": "train",
+        "family_group": "6870eae40c0f862f"
+      },
+      {
+        "source": "bach/bwv133.6.mxl",
+        "riemenschneider": 60,
+        "title": "Ich freue mich in dir",
+        "title_group": "ichfreuemichindir",
+        "melody_group": "0097329f61e8ccdf441ae2c39d0462520152cf5343c8a884d34a2728159a27a8",
+        "tonic": "D4",
+        "mode": "major",
+        "sha256": "7a7b587c2cdbe263d9f0b54a731face5f6992341aebacae66d1375f7d561a47f",
+        "outer_key_estimate": {
+          "tonic": "D4",
+          "mode": "major"
+        },
+        "split": "development",
+        "family_group": "90ee02de29877f24"
+      },
+      {
+        "source": "bach/bwv159.5.mxl",
+        "riemenschneider": 61,
+        "title": "Jesu Leiden, Pein und Tod",
+        "title_group": "jesuleidenpeinundtod",
+        "melody_group": "c3ff3cbae9bea9e7d4323aff44a757f76c1fbbf2f4c3f97e6950772a6feb50af",
+        "tonic": "Eb4",
+        "mode": "major",
+        "sha256": "8d376911e54c4117f889e5efaca1d69929af127a220246d0408a45ff50bebff4",
+        "outer_key_estimate": {
+          "tonic": "Eb4",
+          "mode": "major"
+        },
+        "split": "train",
+        "family_group": "bedd8130f10efd38"
+      },
+      {
+        "source": "bach/bwv197.10.mxl",
+        "riemenschneider": 62,
+        "title": "Wer nur den lieben Gott l\u00e4\u00dft walten",
+        "title_group": "wernurdenliebengottltwalten",
+        "melody_group": "b5f932e78ba86efe230ae6511c7579d761d3a384cb7b32f314ad497bcf6f4298",
+        "tonic": "B4",
+        "mode": "minor",
+        "sha256": "078b086efcba3e6a6fd69d025228a513e5cc6eed7d9dba6ce46600da62d94c21",
+        "outer_key_estimate": {
+          "tonic": "B4",
+          "mode": "minor"
+        },
+        "split": "train",
+        "family_group": "4368f200f2599463"
+      },
+      {
+        "source": "bach/bwv245.11.mxl",
+        "riemenschneider": 63,
+        "title": "Nun ruhen alle W\u00e4lder",
+        "title_group": "nunruhenallewlder",
+        "melody_group": "40f22cf2a076a407b235630273e16f980c5a257541664b8943ef95eec0c42721",
+        "tonic": "A4",
+        "mode": "major",
+        "sha256": "9f28c677955959cb9e8608b4948127c254c1151a71019b0c6d377baab96c0641",
+        "outer_key_estimate": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "split": "development",
+        "family_group": "fe027e036e2621f7"
+      },
+      {
+        "source": "bach/bwv194.6.mxl",
+        "riemenschneider": 64,
+        "title": "Freu\u2019 dich sehr, o meine Seele",
+        "title_group": "freudichsehromeineseele",
+        "melody_group": "cfa9047e0c555340cbee76faf7df29f20c7923e8952ba462766607a41491be6f",
+        "tonic": "Bb4",
+        "mode": "major",
+        "sha256": "56cc4b4cea771bf3cccd18bda1bf2f81bf80f7ad480734ada9c85271cf6436a2",
+        "outer_key_estimate": {
+          "tonic": "Bb4",
+          "mode": "major"
+        },
+        "split": "train",
+        "family_group": "d525f14389a8ae3c"
+      }
+    ],
+    "excluded": [
+      {
+        "source": "bach/bwv41.6.mxl",
+        "reason": "Exactly four SATB parts required"
+      },
+      {
+        "source": "bach/bwv8.6.mxl",
+        "reason": "Exactly four SATB parts required"
+      },
+      {
+        "source": "bach/bwv248.9-1.mxl",
+        "reason": "Exactly four SATB parts required"
+      },
+      {
+        "source": "bach/bwv91.6.mxl",
+        "reason": "Exactly four SATB parts required"
+      }
+    ],
+    "test_policy": "Expanded development only. No final test partition selected or opened.",
+    "key_audit": [
+      {
+        "source": "bach/bwv269.mxl",
+        "encoded": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "G2"
+      },
+      {
+        "source": "bach/bwv347.mxl",
+        "encoded": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "A2"
+      },
+      {
+        "source": "bach/bwv153.1.mxl",
+        "encoded": {
+          "tonic": "E4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "disagreement": true,
+        "final_bass": "E3"
+      },
+      {
+        "source": "bach/bwv86.6.mxl",
+        "encoded": {
+          "tonic": "E4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "E4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "E2"
+      },
+      {
+        "source": "bach/bwv267.mxl",
+        "encoded": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "G2"
+      },
+      {
+        "source": "bach/bwv281.mxl",
+        "encoded": {
+          "tonic": "F4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "F4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "F2"
+      },
+      {
+        "source": "bach/bwv17.7.mxl",
+        "encoded": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "A2"
+      },
+      {
+        "source": "bach/bwv40.8.mxl",
+        "encoded": {
+          "tonic": "C4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "F4",
+          "mode": "minor"
+        },
+        "disagreement": true,
+        "final_bass": "F3"
+      },
+      {
+        "source": "bach/bwv248.12-2.mxl",
+        "encoded": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "G2"
+      },
+      {
+        "source": "bach/bwv38.6.mxl",
+        "encoded": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "disagreement": false,
+        "final_bass": "E2"
+      },
+      {
+        "source": "bach/bwv65.2.mxl",
+        "encoded": {
+          "tonic": "C4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "disagreement": true,
+        "final_bass": "A2"
+      },
+      {
+        "source": "bach/bwv33.6.mxl",
+        "encoded": {
+          "tonic": "C4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "disagreement": true,
+        "final_bass": "A2"
+      },
+      {
+        "source": "bach/bwv184.5.mxl",
+        "encoded": {
+          "tonic": "D4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "D4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "A3"
+      },
+      {
+        "source": "bach/bwv277.mxl",
+        "encoded": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "D4",
+          "mode": "minor"
+        },
+        "disagreement": true,
+        "final_bass": "D2"
+      },
+      {
+        "source": "bach/bwv311.mxl",
+        "encoded": {
+          "tonic": "B4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "B4",
+          "mode": "minor"
+        },
+        "disagreement": false,
+        "final_bass": "F#2"
+      },
+      {
+        "source": "bach/bwv145.5.mxl",
+        "encoded": {
+          "tonic": "B4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "F#4",
+          "mode": "minor"
+        },
+        "disagreement": true,
+        "final_bass": "F#3"
+      },
+      {
+        "source": "bach/bwv318.mxl",
+        "encoded": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "G3"
+      },
+      {
+        "source": "bach/bwv351.mxl",
+        "encoded": {
+          "tonic": "D4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "G4",
+          "mode": "minor"
+        },
+        "disagreement": true,
+        "final_bass": "G2"
+      },
+      {
+        "source": "bach/bwv302.mxl",
+        "encoded": {
+          "tonic": "D4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "D4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "D2"
+      },
+      {
+        "source": "bach/bwv153.5.mxl",
+        "encoded": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "disagreement": false,
+        "final_bass": "E3"
+      },
+      {
+        "source": "bach/bwv180.7.mxl",
+        "encoded": {
+          "tonic": "F4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "F4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "F2"
+      },
+      {
+        "source": "bach/bwv28.6.mxl",
+        "encoded": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "disagreement": false,
+        "final_bass": "A2"
+      },
+      {
+        "source": "bach/bwv415.mxl",
+        "encoded": {
+          "tonic": "D4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "D4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "D2"
+      },
+      {
+        "source": "bach/bwv148.6.mxl",
+        "encoded": {
+          "tonic": "F#4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "F#4",
+          "mode": "minor"
+        },
+        "disagreement": false,
+        "final_bass": "F#2"
+      },
+      {
+        "source": "bach/bwv20.11.mxl",
+        "encoded": {
+          "tonic": "F4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "F4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "F2"
+      },
+      {
+        "source": "bach/bwv308.mxl",
+        "encoded": {
+          "tonic": "Bb4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "Bb4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "Bb2"
+      },
+      {
+        "source": "bach/bwv36.8-2.mxl",
+        "encoded": {
+          "tonic": "B4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "B4",
+          "mode": "minor"
+        },
+        "disagreement": false,
+        "final_bass": "B2"
+      },
+      {
+        "source": "bach/bwv32.6.mxl",
+        "encoded": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "G2"
+      },
+      {
+        "source": "bach/bwv363.mxl",
+        "encoded": {
+          "tonic": "E4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "E4",
+          "mode": "minor"
+        },
+        "disagreement": false,
+        "final_bass": "E2"
+      },
+      {
+        "source": "bach/bwv256.mxl",
+        "encoded": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "disagreement": false,
+        "final_bass": "A2"
+      },
+      {
+        "source": "bach/bwv386.mxl",
+        "encoded": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "A2"
+      },
+      {
+        "source": "bach/bwv330.mxl",
+        "encoded": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "disagreement": false,
+        "final_bass": "A2"
+      },
+      {
+        "source": "bach/bwv305.mxl",
+        "encoded": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "C4",
+          "mode": "major"
+        },
+        "disagreement": true,
+        "final_bass": "E3"
+      },
+      {
+        "source": "bach/bwv248.53-5.mxl",
+        "encoded": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "A2"
+      },
+      {
+        "source": "bach/bwv385.mxl",
+        "encoded": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "A2"
+      },
+      {
+        "source": "bach/bwv352.mxl",
+        "encoded": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "disagreement": false,
+        "final_bass": "A2"
+      },
+      {
+        "source": "bach/bwv115.6.mxl",
+        "encoded": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "G2"
+      },
+      {
+        "source": "bach/bwv259.mxl",
+        "encoded": {
+          "tonic": "E4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "E4",
+          "mode": "minor"
+        },
+        "disagreement": false,
+        "final_bass": "E2"
+      },
+      {
+        "source": "bach/bwv255.mxl",
+        "encoded": {
+          "tonic": "C4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "disagreement": true,
+        "final_bass": "C3"
+      },
+      {
+        "source": "bach/bwv65.7.mxl",
+        "encoded": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "disagreement": false,
+        "final_bass": "A2"
+      },
+      {
+        "source": "bach/bwv67.7.mxl",
+        "encoded": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "A2"
+      },
+      {
+        "source": "bach/bwv377.mxl",
+        "encoded": {
+          "tonic": "D4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "D4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "D2"
+      },
+      {
+        "source": "bach/bwv108.6.mxl",
+        "encoded": {
+          "tonic": "B4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "B4",
+          "mode": "minor"
+        },
+        "disagreement": false,
+        "final_bass": "B2"
+      },
+      {
+        "source": "bach/bwv416.mxl",
+        "encoded": {
+          "tonic": "D4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "D4",
+          "mode": "minor"
+        },
+        "disagreement": false,
+        "final_bass": "D3"
+      },
+      {
+        "source": "bach/bwv26.6.mxl",
+        "encoded": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "disagreement": false,
+        "final_bass": "A2"
+      },
+      {
+        "source": "bach/bwv382.mxl",
+        "encoded": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "D4",
+          "mode": "minor"
+        },
+        "disagreement": true,
+        "final_bass": "D2"
+      },
+      {
+        "source": "bach/bwv244.37.mxl",
+        "encoded": {
+          "tonic": "F4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "F4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "F2"
+      },
+      {
+        "source": "bach/bwv429.mxl",
+        "encoded": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "A2"
+      },
+      {
+        "source": "bach/bwv122.6.mxl",
+        "encoded": {
+          "tonic": "G4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "G4",
+          "mode": "minor"
+        },
+        "disagreement": false,
+        "final_bass": "G2"
+      },
+      {
+        "source": "bach/bwv151.5.mxl",
+        "encoded": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "G4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "G2"
+      },
+      {
+        "source": "bach/bwv110.7.mxl",
+        "encoded": {
+          "tonic": "B4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "B4",
+          "mode": "minor"
+        },
+        "disagreement": false,
+        "final_bass": "B2"
+      },
+      {
+        "source": "bach/bwv121.6.mxl",
+        "encoded": {
+          "tonic": "B4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "B4",
+          "mode": "minor"
+        },
+        "disagreement": false,
+        "final_bass": "F#2"
+      },
+      {
+        "source": "bach/bwv404.mxl",
+        "encoded": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "A4",
+          "mode": "minor"
+        },
+        "disagreement": false,
+        "final_bass": "A2"
+      },
+      {
+        "source": "bach/bwv174.5.mxl",
+        "encoded": {
+          "tonic": "D4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "B4",
+          "mode": "minor"
+        },
+        "disagreement": true,
+        "final_bass": "D3"
+      },
+      {
+        "source": "bach/bwv245.3.mxl",
+        "encoded": {
+          "tonic": "Bb4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "G4",
+          "mode": "minor"
+        },
+        "disagreement": true,
+        "final_bass": "G2"
+      },
+      {
+        "source": "bach/bwv133.6.mxl",
+        "encoded": {
+          "tonic": "D4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "D4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "D3"
+      },
+      {
+        "source": "bach/bwv159.5.mxl",
+        "encoded": {
+          "tonic": "Eb4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "Eb4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "Eb2"
+      },
+      {
+        "source": "bach/bwv197.10.mxl",
+        "encoded": {
+          "tonic": "B4",
+          "mode": "minor"
+        },
+        "outer_estimate": {
+          "tonic": "B4",
+          "mode": "minor"
+        },
+        "disagreement": false,
+        "final_bass": "B2"
+      },
+      {
+        "source": "bach/bwv245.11.mxl",
+        "encoded": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "A4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "A2"
+      },
+      {
+        "source": "bach/bwv194.6.mxl",
+        "encoded": {
+          "tonic": "Bb4",
+          "mode": "major"
+        },
+        "outer_estimate": {
+          "tonic": "Bb4",
+          "mode": "major"
+        },
+        "disagreement": false,
+        "final_bass": "Bb2"
+      }
+    ]
+  },
+  "code_sha256": "e7b4d38b5e1b3b56acb6b8a2abe1209877dabd672861b4789948c8f5130062a8",
+  "coverage": [
+    {
+      "source": "bach/bwv269.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv269.mxl",
+      "split": "train",
+      "start": "5/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv269.mxl",
+      "split": "train",
+      "start": "27",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv269.mxl",
+      "split": "train",
+      "start": "35",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv269.mxl",
+      "split": "train",
+      "start": "121/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv269.mxl",
+      "split": "train",
+      "start": "61",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv347.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv347.mxl",
+      "split": "train",
+      "start": "5/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv347.mxl",
+      "split": "train",
+      "start": "51/2",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv347.mxl",
+      "split": "train",
+      "start": "26",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv347.mxl",
+      "split": "train",
+      "start": "195/4",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv347.mxl",
+      "split": "train",
+      "start": "49",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv153.1.mxl",
+      "split": "development",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv153.1.mxl",
+      "split": "development",
+      "start": "21/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv153.1.mxl",
+      "split": "development",
+      "start": "20",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv153.1.mxl",
+      "split": "development",
+      "start": "43/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv153.1.mxl",
+      "split": "development",
+      "start": "57/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv153.1.mxl",
+      "split": "development",
+      "start": "39",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv86.6.mxl",
+      "split": "development",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv86.6.mxl",
+      "split": "development",
+      "start": "3/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv86.6.mxl",
+      "split": "development",
+      "start": "14",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv86.6.mxl",
+      "split": "development",
+      "start": "19",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv86.6.mxl",
+      "split": "development",
+      "start": "38",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv86.6.mxl",
+      "split": "development",
+      "start": "39",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv267.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv267.mxl",
+      "split": "train",
+      "start": "3/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv267.mxl",
+      "split": "train",
+      "start": "32",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv267.mxl",
+      "split": "train",
+      "start": "83/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv267.mxl",
+      "split": "train",
+      "start": "133/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv267.mxl",
+      "split": "train",
+      "start": "67",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv281.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv281.mxl",
+      "split": "train",
+      "start": "11/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv281.mxl",
+      "split": "train",
+      "start": "11",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv281.mxl",
+      "split": "train",
+      "start": "18",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv281.mxl",
+      "split": "train",
+      "start": "115/4",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv281.mxl",
+      "split": "train",
+      "start": "29",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv17.7.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv17.7.mxl",
+      "split": "train",
+      "start": "5",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv17.7.mxl",
+      "split": "train",
+      "start": "55",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv17.7.mxl",
+      "split": "train",
+      "start": "123/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv17.7.mxl",
+      "split": "train",
+      "start": "108",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv17.7.mxl",
+      "split": "train",
+      "start": "109",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv40.8.mxl",
+      "split": "development",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv40.8.mxl",
+      "split": "development",
+      "start": "5/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv40.8.mxl",
+      "split": "development",
+      "start": "75/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv40.8.mxl",
+      "split": "development",
+      "start": "40",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv40.8.mxl",
+      "split": "development",
+      "start": "151/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv40.8.mxl",
+      "split": "development",
+      "start": "79",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv248.12-2.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv248.12-2.mxl",
+      "split": "train",
+      "start": "3/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv248.12-2.mxl",
+      "split": "train",
+      "start": "24",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv248.12-2.mxl",
+      "split": "train",
+      "start": "53/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv248.12-2.mxl",
+      "split": "train",
+      "start": "183/4",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv248.12-2.mxl",
+      "split": "train",
+      "start": "47",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv38.6.mxl",
+      "split": "train",
+      "start": "2",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv38.6.mxl",
+      "split": "train",
+      "start": "11/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv38.6.mxl",
+      "split": "train",
+      "start": "24",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv38.6.mxl",
+      "split": "train",
+      "start": "53/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv38.6.mxl",
+      "split": "train",
+      "start": "48",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv38.6.mxl",
+      "split": "train",
+      "start": "50",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv65.2.mxl",
+      "split": "development",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv65.2.mxl",
+      "split": "development",
+      "start": "8",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv65.2.mxl",
+      "split": "development",
+      "start": "25",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv65.2.mxl",
+      "split": "development",
+      "start": "26",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv65.2.mxl",
+      "split": "development",
+      "start": "44",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv65.2.mxl",
+      "split": "development",
+      "start": "46",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv33.6.mxl",
+      "split": "train",
+      "start": "1/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv33.6.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv33.6.mxl",
+      "split": "train",
+      "start": "53/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv33.6.mxl",
+      "split": "train",
+      "start": "31",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv33.6.mxl",
+      "split": "train",
+      "start": "125/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv33.6.mxl",
+      "split": "train",
+      "start": "63",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv184.5.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv184.5.mxl",
+      "split": "train",
+      "start": "5/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv184.5.mxl",
+      "split": "train",
+      "start": "28",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv184.5.mxl",
+      "split": "train",
+      "start": "59/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv184.5.mxl",
+      "split": "train",
+      "start": "103/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv184.5.mxl",
+      "split": "train",
+      "start": "53",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv277.mxl",
+      "split": "train",
+      "start": "1/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv277.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv277.mxl",
+      "split": "train",
+      "start": "30",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv277.mxl",
+      "split": "train",
+      "start": "61/2",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv277.mxl",
+      "split": "train",
+      "start": "59",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv277.mxl",
+      "split": "train",
+      "start": "63",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv311.mxl",
+      "split": "development",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv311.mxl",
+      "split": "development",
+      "start": "5/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv311.mxl",
+      "split": "development",
+      "start": "35",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv311.mxl",
+      "split": "development",
+      "start": "87/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv311.mxl",
+      "split": "development",
+      "start": "63",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv311.mxl",
+      "split": "development",
+      "start": "67",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv145.5.mxl",
+      "split": "train",
+      "start": "1/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv145.5.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv145.5.mxl",
+      "split": "train",
+      "start": "23",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv145.5.mxl",
+      "split": "train",
+      "start": "61/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv145.5.mxl",
+      "split": "train",
+      "start": "99/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv145.5.mxl",
+      "split": "train",
+      "start": "51",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv318.mxl",
+      "split": "development",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv318.mxl",
+      "split": "development",
+      "start": "3/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv318.mxl",
+      "split": "development",
+      "start": "22",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv318.mxl",
+      "split": "development",
+      "start": "29",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv318.mxl",
+      "split": "development",
+      "start": "99/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv318.mxl",
+      "split": "development",
+      "start": "50",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv351.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv351.mxl",
+      "split": "train",
+      "start": "3/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv351.mxl",
+      "split": "train",
+      "start": "17",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv351.mxl",
+      "split": "train",
+      "start": "51/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv351.mxl",
+      "split": "train",
+      "start": "35",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv351.mxl",
+      "split": "train",
+      "start": "71/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv302.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv302.mxl",
+      "split": "train",
+      "start": "6",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv302.mxl",
+      "split": "train",
+      "start": "24",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv302.mxl",
+      "split": "train",
+      "start": "30",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv302.mxl",
+      "split": "train",
+      "start": "93/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv302.mxl",
+      "split": "train",
+      "start": "47",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv153.5.mxl",
+      "split": "development",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv153.5.mxl",
+      "split": "development",
+      "start": "11/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv153.5.mxl",
+      "split": "development",
+      "start": "33/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv153.5.mxl",
+      "split": "development",
+      "start": "25",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv153.5.mxl",
+      "split": "development",
+      "start": "81/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv153.5.mxl",
+      "split": "development",
+      "start": "47",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv180.7.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv180.7.mxl",
+      "split": "train",
+      "start": "3/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv180.7.mxl",
+      "split": "train",
+      "start": "31",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv180.7.mxl",
+      "split": "train",
+      "start": "63/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv180.7.mxl",
+      "split": "train",
+      "start": "219/4",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv180.7.mxl",
+      "split": "train",
+      "start": "56",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv28.6.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv28.6.mxl",
+      "split": "train",
+      "start": "11/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv28.6.mxl",
+      "split": "train",
+      "start": "21",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv28.6.mxl",
+      "split": "train",
+      "start": "61/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv28.6.mxl",
+      "split": "train",
+      "start": "89/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv28.6.mxl",
+      "split": "train",
+      "start": "45",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv415.mxl",
+      "split": "development",
+      "start": "1/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv415.mxl",
+      "split": "development",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv415.mxl",
+      "split": "development",
+      "start": "41/2",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv415.mxl",
+      "split": "development",
+      "start": "49/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv415.mxl",
+      "split": "development",
+      "start": "89/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv415.mxl",
+      "split": "development",
+      "start": "45",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv148.6.mxl",
+      "split": "train",
+      "start": "1/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv148.6.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv148.6.mxl",
+      "split": "train",
+      "start": "21",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv148.6.mxl",
+      "split": "train",
+      "start": "25",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv148.6.mxl",
+      "split": "train",
+      "start": "93/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv148.6.mxl",
+      "split": "train",
+      "start": "47",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv20.11.mxl",
+      "split": "train",
+      "start": "1/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv20.11.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv20.11.mxl",
+      "split": "train",
+      "start": "20",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv20.11.mxl",
+      "split": "train",
+      "start": "21",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv20.11.mxl",
+      "split": "train",
+      "start": "77/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv20.11.mxl",
+      "split": "train",
+      "start": "39",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv308.mxl",
+      "split": "development",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv308.mxl",
+      "split": "development",
+      "start": "3",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv308.mxl",
+      "split": "development",
+      "start": "20",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv308.mxl",
+      "split": "development",
+      "start": "45/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv308.mxl",
+      "split": "development",
+      "start": "38",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv308.mxl",
+      "split": "development",
+      "start": "39",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv36.8-2.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv36.8-2.mxl",
+      "split": "train",
+      "start": "3/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv36.8-2.mxl",
+      "split": "train",
+      "start": "11",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv36.8-2.mxl",
+      "split": "train",
+      "start": "18",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv36.8-2.mxl",
+      "split": "train",
+      "start": "117/4",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv36.8-2.mxl",
+      "split": "train",
+      "start": "30",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv32.6.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv32.6.mxl",
+      "split": "train",
+      "start": "3",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv32.6.mxl",
+      "split": "train",
+      "start": "26",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv32.6.mxl",
+      "split": "train",
+      "start": "27",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv32.6.mxl",
+      "split": "train",
+      "start": "99/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv32.6.mxl",
+      "split": "train",
+      "start": "50",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv363.mxl",
+      "split": "development",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv363.mxl",
+      "split": "development",
+      "start": "5/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv363.mxl",
+      "split": "development",
+      "start": "43/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv363.mxl",
+      "split": "development",
+      "start": "22",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv363.mxl",
+      "split": "development",
+      "start": "175/4",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv363.mxl",
+      "split": "development",
+      "start": "44",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv256.mxl",
+      "split": "train",
+      "start": "1/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv256.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv256.mxl",
+      "split": "train",
+      "start": "20",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv256.mxl",
+      "split": "train",
+      "start": "55/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv256.mxl",
+      "split": "train",
+      "start": "77/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv256.mxl",
+      "split": "train",
+      "start": "39",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv386.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv386.mxl",
+      "split": "train",
+      "start": "13",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv386.mxl",
+      "split": "train",
+      "start": "20",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv386.mxl",
+      "split": "train",
+      "start": "67/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv386.mxl",
+      "split": "train",
+      "start": "179/4",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv386.mxl",
+      "split": "train",
+      "start": "45",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv330.mxl",
+      "split": "development",
+      "start": "1/2",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv330.mxl",
+      "split": "development",
+      "start": "5/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv330.mxl",
+      "split": "development",
+      "start": "13",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv330.mxl",
+      "split": "development",
+      "start": "16",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv330.mxl",
+      "split": "development",
+      "start": "63/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv330.mxl",
+      "split": "development",
+      "start": "32",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv305.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv305.mxl",
+      "split": "train",
+      "start": "9/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv305.mxl",
+      "split": "train",
+      "start": "23",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv305.mxl",
+      "split": "train",
+      "start": "57/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv305.mxl",
+      "split": "train",
+      "start": "50",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv305.mxl",
+      "split": "train",
+      "start": "51",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv248.53-5.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv248.53-5.mxl",
+      "split": "train",
+      "start": "5/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv248.53-5.mxl",
+      "split": "train",
+      "start": "27/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv248.53-5.mxl",
+      "split": "train",
+      "start": "37/2",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv248.53-5.mxl",
+      "split": "train",
+      "start": "59/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv248.53-5.mxl",
+      "split": "train",
+      "start": "31",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv385.mxl",
+      "split": "development",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv385.mxl",
+      "split": "development",
+      "start": "3/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv385.mxl",
+      "split": "development",
+      "start": "20",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv385.mxl",
+      "split": "development",
+      "start": "29",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv385.mxl",
+      "split": "development",
+      "start": "54",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv385.mxl",
+      "split": "development",
+      "start": "55",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv352.mxl",
+      "split": "train",
+      "start": "1/2",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv352.mxl",
+      "split": "train",
+      "start": "7/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv352.mxl",
+      "split": "train",
+      "start": "22",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv352.mxl",
+      "split": "train",
+      "start": "45/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv352.mxl",
+      "split": "train",
+      "start": "183/4",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv352.mxl",
+      "split": "train",
+      "start": "46",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv115.6.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv115.6.mxl",
+      "split": "train",
+      "start": "5/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv115.6.mxl",
+      "split": "train",
+      "start": "18",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv115.6.mxl",
+      "split": "train",
+      "start": "41/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv115.6.mxl",
+      "split": "train",
+      "start": "75/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv115.6.mxl",
+      "split": "train",
+      "start": "38",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv259.mxl",
+      "split": "development",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv259.mxl",
+      "split": "development",
+      "start": "11/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv259.mxl",
+      "split": "development",
+      "start": "21",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv259.mxl",
+      "split": "development",
+      "start": "29",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv259.mxl",
+      "split": "development",
+      "start": "183/4",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv259.mxl",
+      "split": "development",
+      "start": "46",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv255.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv255.mxl",
+      "split": "train",
+      "start": "2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv255.mxl",
+      "split": "train",
+      "start": "13",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv255.mxl",
+      "split": "train",
+      "start": "16",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv255.mxl",
+      "split": "train",
+      "start": "61/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv255.mxl",
+      "split": "train",
+      "start": "31",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv65.7.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv65.7.mxl",
+      "split": "train",
+      "start": "3/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv65.7.mxl",
+      "split": "train",
+      "start": "43/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv65.7.mxl",
+      "split": "train",
+      "start": "29",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv65.7.mxl",
+      "split": "train",
+      "start": "54",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv65.7.mxl",
+      "split": "train",
+      "start": "55",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv67.7.mxl",
+      "split": "development",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv67.7.mxl",
+      "split": "development",
+      "start": "17",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv67.7.mxl",
+      "split": "development",
+      "start": "41/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv67.7.mxl",
+      "split": "development",
+      "start": "28",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv67.7.mxl",
+      "split": "development",
+      "start": "65/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv67.7.mxl",
+      "split": "development",
+      "start": "33",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv377.mxl",
+      "split": "train",
+      "start": "1/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv377.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv377.mxl",
+      "split": "train",
+      "start": "15",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv377.mxl",
+      "split": "train",
+      "start": "37/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv377.mxl",
+      "split": "train",
+      "start": "61/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv377.mxl",
+      "split": "train",
+      "start": "31",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv108.6.mxl",
+      "split": "development",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv108.6.mxl",
+      "split": "development",
+      "start": "7/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv108.6.mxl",
+      "split": "development",
+      "start": "25",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv108.6.mxl",
+      "split": "development",
+      "start": "59/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv108.6.mxl",
+      "split": "development",
+      "start": "101/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv108.6.mxl",
+      "split": "development",
+      "start": "51",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv416.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv416.mxl",
+      "split": "train",
+      "start": "9/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv416.mxl",
+      "split": "train",
+      "start": "23",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv416.mxl",
+      "split": "train",
+      "start": "51/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv416.mxl",
+      "split": "train",
+      "start": "187/4",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv416.mxl",
+      "split": "train",
+      "start": "47",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv26.6.mxl",
+      "split": "development",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv26.6.mxl",
+      "split": "development",
+      "start": "17/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv26.6.mxl",
+      "split": "development",
+      "start": "20",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv26.6.mxl",
+      "split": "development",
+      "start": "43/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv26.6.mxl",
+      "split": "development",
+      "start": "77/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv26.6.mxl",
+      "split": "development",
+      "start": "39",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv382.mxl",
+      "split": "train",
+      "start": "1/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv382.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv382.mxl",
+      "split": "train",
+      "start": "20",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv382.mxl",
+      "split": "train",
+      "start": "25",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv382.mxl",
+      "split": "train",
+      "start": "45",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv382.mxl",
+      "split": "train",
+      "start": "47",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv244.37.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv244.37.mxl",
+      "split": "train",
+      "start": "5/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv244.37.mxl",
+      "split": "train",
+      "start": "25",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv244.37.mxl",
+      "split": "train",
+      "start": "59/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv244.37.mxl",
+      "split": "train",
+      "start": "93/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv244.37.mxl",
+      "split": "train",
+      "start": "47",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv429.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv429.mxl",
+      "split": "train",
+      "start": "2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv429.mxl",
+      "split": "train",
+      "start": "27",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv429.mxl",
+      "split": "train",
+      "start": "67/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv429.mxl",
+      "split": "train",
+      "start": "113/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv429.mxl",
+      "split": "train",
+      "start": "57",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv122.6.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv122.6.mxl",
+      "split": "train",
+      "start": "3/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv122.6.mxl",
+      "split": "train",
+      "start": "25/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv122.6.mxl",
+      "split": "train",
+      "start": "25",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv122.6.mxl",
+      "split": "train",
+      "start": "40",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv122.6.mxl",
+      "split": "train",
+      "start": "45",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv151.5.mxl",
+      "split": "development",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv151.5.mxl",
+      "split": "development",
+      "start": "3/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv151.5.mxl",
+      "split": "development",
+      "start": "33/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv151.5.mxl",
+      "split": "development",
+      "start": "19",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv151.5.mxl",
+      "split": "development",
+      "start": "73/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv151.5.mxl",
+      "split": "development",
+      "start": "37",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv110.7.mxl",
+      "split": "train",
+      "start": "1/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv110.7.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv110.7.mxl",
+      "split": "train",
+      "start": "45/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv110.7.mxl",
+      "split": "train",
+      "start": "23",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv110.7.mxl",
+      "split": "train",
+      "start": "85/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv110.7.mxl",
+      "split": "train",
+      "start": "43",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv121.6.mxl",
+      "split": "train",
+      "start": "1/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv121.6.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv121.6.mxl",
+      "split": "train",
+      "start": "30",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv121.6.mxl",
+      "split": "train",
+      "start": "34",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv121.6.mxl",
+      "split": "train",
+      "start": "111/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv121.6.mxl",
+      "split": "train",
+      "start": "63",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv404.mxl",
+      "split": "development",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv404.mxl",
+      "split": "development",
+      "start": "3/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv404.mxl",
+      "split": "development",
+      "start": "14",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv404.mxl",
+      "split": "development",
+      "start": "41/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv404.mxl",
+      "split": "development",
+      "start": "61/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv404.mxl",
+      "split": "development",
+      "start": "31",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv174.5.mxl",
+      "split": "train",
+      "start": "1/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv174.5.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv174.5.mxl",
+      "split": "train",
+      "start": "55/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv174.5.mxl",
+      "split": "train",
+      "start": "36",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv174.5.mxl",
+      "split": "train",
+      "start": "147/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv174.5.mxl",
+      "split": "train",
+      "start": "75",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv245.3.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv245.3.mxl",
+      "split": "train",
+      "start": "3/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv245.3.mxl",
+      "split": "train",
+      "start": "20",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv245.3.mxl",
+      "split": "train",
+      "start": "22",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv245.3.mxl",
+      "split": "train",
+      "start": "81/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv245.3.mxl",
+      "split": "train",
+      "start": "41",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv133.6.mxl",
+      "split": "development",
+      "start": "1/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv133.6.mxl",
+      "split": "development",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv133.6.mxl",
+      "split": "development",
+      "start": "21",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv133.6.mxl",
+      "split": "development",
+      "start": "51/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv133.6.mxl",
+      "split": "development",
+      "start": "87/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv133.6.mxl",
+      "split": "development",
+      "start": "45",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv159.5.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv159.5.mxl",
+      "split": "train",
+      "start": "3/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv159.5.mxl",
+      "split": "train",
+      "start": "28",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv159.5.mxl",
+      "split": "train",
+      "start": "33",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv159.5.mxl",
+      "split": "train",
+      "start": "123/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv159.5.mxl",
+      "split": "train",
+      "start": "62",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv197.10.mxl",
+      "split": "train",
+      "start": "1/2",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv197.10.mxl",
+      "split": "train",
+      "start": "9/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv197.10.mxl",
+      "split": "train",
+      "start": "31/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv197.10.mxl",
+      "split": "train",
+      "start": "17",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv197.10.mxl",
+      "split": "train",
+      "start": "69/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv197.10.mxl",
+      "split": "train",
+      "start": "35",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv245.11.mxl",
+      "split": "development",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv245.11.mxl",
+      "split": "development",
+      "start": "7/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv245.11.mxl",
+      "split": "development",
+      "start": "21",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv245.11.mxl",
+      "split": "development",
+      "start": "55/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv245.11.mxl",
+      "split": "development",
+      "start": "89/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv245.11.mxl",
+      "split": "development",
+      "start": "47",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv194.6.mxl",
+      "split": "train",
+      "start": "1",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv194.6.mxl",
+      "split": "train",
+      "start": "5/2",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv194.6.mxl",
+      "split": "train",
+      "start": "24",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv194.6.mxl",
+      "split": "train",
+      "start": "67/2",
+      "attacks": 1,
+      "candidates": 56,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv194.6.mxl",
+      "split": "train",
+      "start": "49",
+      "attacks": 1,
+      "candidates": 65,
+      "gold_covered": true
+    },
+    {
+      "source": "bach/bwv194.6.mxl",
+      "split": "train",
+      "start": "50",
+      "attacks": 2,
+      "candidates": 3640,
+      "gold_covered": true
+    }
+  ],
+  "results": {
+    "summary": {
+      "uniform": {
+        "mean_nll_per_decision": 6.149804220473088,
+        "mean_piece_nll": 6.14980422047309,
+        "mean_nll_single_attack": 4.099869480315393,
+        "mean_nll_joint_attack": 8.199738960630784
+      },
+      "pitch": {
+        "mean_nll_per_decision": 4.1705845693759125,
+        "mean_piece_nll": 4.170584569375912,
+        "mean_nll_single_attack": 2.7085013748443645,
+        "mean_nll_joint_attack": 5.6326677639074605
+      },
+      "seed": {
+        "mean_nll_per_decision": 4.773235481609392,
+        "mean_piece_nll": 4.773235481609392,
+        "mean_nll_single_attack": 3.2678714976173726,
+        "mean_nll_joint_attack": 6.278599465601413
+      },
+      "melodic": {
+        "mean_nll_per_decision": 4.44610813889337,
+        "mean_piece_nll": 4.446108138893372,
+        "mean_nll_single_attack": 3.074928749169641,
+        "mean_nll_joint_attack": 5.817287528617101
+      },
+      "seed+melodic": {
+        "mean_nll_per_decision": 4.370544812778576,
+        "mean_piece_nll": 4.370544812778576,
+        "mean_nll_single_attack": 3.0486330987200585,
+        "mean_nll_joint_attack": 5.692456526837094
+      },
+      "spacing-shared": {
+        "mean_nll_per_decision": 4.340306756203144,
+        "mean_piece_nll": 4.3403067562031445,
+        "mean_nll_single_attack": 3.0368900190000923,
+        "mean_nll_joint_attack": 5.6437234934061955
+      },
+      "leading-tone": {
+        "mean_nll_per_decision": 4.3623065721179,
+        "mean_piece_nll": 4.3623065721179,
+        "mean_nll_single_attack": 3.0462312330130064,
+        "mean_nll_joint_attack": 5.678381911222794
+      },
+      "parallel-octaves": {
+        "mean_nll_per_decision": 4.370363943833969,
+        "mean_piece_nll": 4.37036394383397,
+        "mean_nll_single_attack": 3.0484144907807567,
+        "mean_nll_joint_attack": 5.692313396887183
+      },
+      "spacing+leading": {
+        "mean_nll_per_decision": 4.332100628927606,
+        "mean_piece_nll": 4.332100628927606,
+        "mean_nll_single_attack": 3.0344941226981885,
+        "mean_nll_joint_attack": 5.629707135157023
+      },
+      "all-original-proposals": {
+        "mean_nll_per_decision": 4.331907712944534,
+        "mean_piece_nll": 4.331907712944534,
+        "mean_nll_single_attack": 3.034271554338252,
+        "mean_nll_joint_attack": 5.629543871550815
+      },
+      "spacing-once": {
+        "mean_nll_per_decision": 4.353842462623493,
+        "mean_piece_nll": 4.353842462623493,
+        "mean_nll_single_attack": 3.039175173493753,
+        "mean_nll_joint_attack": 5.6685097517532315
+      },
+      "spacing-separate": {
+        "mean_nll_per_decision": 4.350101722696379,
+        "mean_piece_nll": 4.35010172269638,
+        "mean_nll_single_attack": 3.040740551568337,
+        "mean_nll_joint_attack": 5.659462893824421
+      }
+    },
+    "by_piece": {
+      "bach/bwv108.6.mxl": {
+        "uniform": 6.137384588876382,
+        "pitch": 4.559164329332096,
+        "seed": 4.6905105778230265,
+        "melodic": 4.520349623831205,
+        "seed+melodic": 4.411395486819171,
+        "spacing-shared": 4.394045851217929,
+        "leading-tone": 4.413732060302671,
+        "parallel-octaves": 4.4113916050216835,
+        "spacing+leading": 4.396400555474232,
+        "all-original-proposals": 4.396395404093359,
+        "spacing-once": 4.400406024064698,
+        "spacing-separate": 4.399773540626956
+      },
+      "bach/bwv133.6.mxl": {
+        "uniform": 6.1125453256829685,
+        "pitch": 3.3424408549923323,
+        "seed": 4.813036660910191,
+        "melodic": 3.9540746626791066,
+        "seed+melodic": 3.97308405818972,
+        "spacing-shared": 3.9469002991929667,
+        "leading-tone": 3.9498556243234053,
+        "parallel-octaves": 3.9727050257669956,
+        "spacing+leading": 3.9236865552871474,
+        "all-original-proposals": 3.9232691950205396,
+        "spacing-once": 3.9596860437442047,
+        "spacing-separate": 3.9551238309344137
+      },
+      "bach/bwv151.5.mxl": {
+        "uniform": 6.162223852069796,
+        "pitch": 3.2629171234770773,
+        "seed": 4.6991212807765566,
+        "melodic": 4.288438230674138,
+        "seed+melodic": 4.209372800136497,
+        "spacing-shared": 4.202379145636049,
+        "leading-tone": 4.188321100354348,
+        "parallel-octaves": 4.209377401817034,
+        "spacing+leading": 4.1813431785401285,
+        "all-original-proposals": 4.181343701870277,
+        "spacing-once": 4.205004140437154,
+        "spacing-separate": 4.204474834570259
+      },
+      "bach/bwv153.1.mxl": {
+        "uniform": 6.162223852069796,
+        "pitch": 3.7684021901447715,
+        "seed": 4.555072573775928,
+        "melodic": 4.28320086595142,
+        "seed+melodic": 4.161490340610619,
+        "spacing-shared": 4.081107777203445,
+        "leading-tone": 4.1380488207058095,
+        "parallel-octaves": 4.16117062536252,
+        "spacing+leading": 4.057765821061191,
+        "all-original-proposals": 4.057429246685021,
+        "spacing-once": 4.123727867168406,
+        "spacing-separate": 4.108772030088253
+      },
+      "bach/bwv153.5.mxl": {
+        "uniform": 6.162223852069796,
+        "pitch": 4.003344211690755,
+        "seed": 4.741603147593337,
+        "melodic": 4.172972572636023,
+        "seed+melodic": 4.107470802499428,
+        "spacing-shared": 4.101574061896685,
+        "leading-tone": 4.083893666123005,
+        "parallel-octaves": 4.10746760319958,
+        "spacing+leading": 4.0780535440201895,
+        "all-original-proposals": 4.078045178128257,
+        "spacing-once": 4.103468360537314,
+        "spacing-separate": 4.10367224088058
+      },
+      "bach/bwv245.11.mxl": {
+        "uniform": 6.162223852069796,
+        "pitch": 4.296583050205636,
+        "seed": 4.513669056270282,
+        "melodic": 4.8852367007537145,
+        "seed+melodic": 4.661682770502393,
+        "spacing-shared": 4.603582830880224,
+        "leading-tone": 4.664209717580602,
+        "parallel-octaves": 4.6610664309999414,
+        "spacing+leading": 4.606077178148909,
+        "all-original-proposals": 4.605375061771812,
+        "spacing-once": 4.63047705698715,
+        "spacing-separate": 4.621880769875222
+      },
+      "bach/bwv259.mxl": {
+        "uniform": 6.137384588876382,
+        "pitch": 4.984043337528827,
+        "seed": 4.620635211264975,
+        "melodic": 4.167684675709651,
+        "seed+melodic": 4.056431759258859,
+        "spacing-shared": 4.045834654520898,
+        "leading-tone": 4.059268469088175,
+        "parallel-octaves": 4.056440118425315,
+        "spacing+leading": 4.048633365733095,
+        "all-original-proposals": 4.048633215209009,
+        "spacing-once": 4.049445211628839,
+        "spacing-separate": 4.049575945036648
+      },
+      "bach/bwv26.6.mxl": {
+        "uniform": 6.137384588876382,
+        "pitch": 4.4474639032118946,
+        "seed": 4.76175290595775,
+        "melodic": 4.2089165402306605,
+        "seed+melodic": 4.160593205912808,
+        "spacing-shared": 4.148057678704528,
+        "leading-tone": 4.160974596537494,
+        "parallel-octaves": 4.16060551299035,
+        "spacing+leading": 4.148421784354803,
+        "all-original-proposals": 4.14842926301512,
+        "spacing-once": 4.152653487137511,
+        "spacing-separate": 4.152093067533493
+      },
+      "bach/bwv308.mxl": {
+        "uniform": 6.162223852069796,
+        "pitch": 3.3760287427936757,
+        "seed": 4.668855669335634,
+        "melodic": 4.463288996234246,
+        "seed+melodic": 4.377375626301195,
+        "spacing-shared": 4.356701448689597,
+        "leading-tone": 4.38016836196369,
+        "parallel-octaves": 4.377356244926298,
+        "spacing+leading": 4.359548932988783,
+        "all-original-proposals": 4.35952018582095,
+        "spacing-once": 4.3632888042368005,
+        "spacing-separate": 4.362591639599575
+      },
+      "bach/bwv311.mxl": {
+        "uniform": 6.187063115263211,
+        "pitch": 4.339432015037227,
+        "seed": 4.623312195090667,
+        "melodic": 4.067521466491025,
+        "seed+melodic": 3.9620900666603602,
+        "spacing-shared": 3.957313773134866,
+        "leading-tone": 3.9162842769691597,
+        "parallel-octaves": 3.9615824000526096,
+        "spacing+leading": 3.911626418166573,
+        "all-original-proposals": 3.911116503434623,
+        "spacing-once": 3.959878166151949,
+        "spacing-separate": 3.9585849517638074
+      },
+      "bach/bwv318.mxl": {
+        "uniform": 6.137384588876382,
+        "pitch": 3.6508474880173694,
+        "seed": 4.6619313451745406,
+        "melodic": 4.623488302516649,
+        "seed+melodic": 4.497996464030484,
+        "spacing-shared": 4.4666143613885,
+        "leading-tone": 4.476856381800541,
+        "parallel-octaves": 4.497943786741389,
+        "spacing+leading": 4.445542213954556,
+        "all-original-proposals": 4.4454809221619955,
+        "spacing-once": 4.474013947428055,
+        "spacing-separate": 4.476046884367762
+      },
+      "bach/bwv330.mxl": {
+        "uniform": 6.137384588876382,
+        "pitch": 4.220685305489723,
+        "seed": 5.734848786521412,
+        "melodic": 5.388932770775065,
+        "seed+melodic": 5.501353120053394,
+        "spacing-shared": 5.432687031777786,
+        "leading-tone": 5.479858655307479,
+        "parallel-octaves": 5.501351228918895,
+        "spacing+leading": 5.4113107663513675,
+        "all-original-proposals": 5.411327681288303,
+        "spacing-once": 5.4599527361914895,
+        "spacing-separate": 5.454760201549777
+      },
+      "bach/bwv363.mxl": {
+        "uniform": 6.137384588876382,
+        "pitch": 5.744768036106799,
+        "seed": 4.685396563070765,
+        "melodic": 4.275799738755133,
+        "seed+melodic": 4.188744222065336,
+        "spacing-shared": 4.17823104428713,
+        "leading-tone": 4.193959756323173,
+        "parallel-octaves": 4.18874592166518,
+        "spacing+leading": 4.183406010170053,
+        "all-original-proposals": 4.183402581814153,
+        "spacing-once": 4.181391949024948,
+        "spacing-separate": 4.1820678013557835
+      },
+      "bach/bwv385.mxl": {
+        "uniform": 6.137384588876382,
+        "pitch": 3.9572160267616288,
+        "seed": 4.749566131332598,
+        "melodic": 4.629116522337516,
+        "seed+melodic": 4.531552793729533,
+        "spacing-shared": 4.50786079744466,
+        "leading-tone": 4.536574355199266,
+        "parallel-octaves": 4.531550316885265,
+        "spacing+leading": 4.512969853471884,
+        "all-original-proposals": 4.512966280188427,
+        "spacing-once": 4.5178380282378106,
+        "spacing-separate": 4.515304701198679
+      },
+      "bach/bwv40.8.mxl": {
+        "uniform": 6.137384588876382,
+        "pitch": 4.395080075505885,
+        "seed": 4.758732634218693,
+        "melodic": 3.658742740211991,
+        "seed+melodic": 3.697641271440119,
+        "spacing-shared": 3.6866735905403645,
+        "leading-tone": 3.6984114059275996,
+        "parallel-octaves": 3.6973950843650987,
+        "spacing+leading": 3.6874290861858903,
+        "all-original-proposals": 3.687142444822804,
+        "spacing-once": 3.6949985901864566,
+        "spacing-separate": 3.688756258054432
+      },
+      "bach/bwv404.mxl": {
+        "uniform": 6.162223852069796,
+        "pitch": 4.0351470638866616,
+        "seed": 4.882560733788197,
+        "melodic": 4.570910905767216,
+        "seed+melodic": 4.519772695636813,
+        "spacing-shared": 4.48448736406826,
+        "leading-tone": 4.524448955134541,
+        "parallel-octaves": 4.519765334947722,
+        "spacing+leading": 4.489202774263357,
+        "all-original-proposals": 4.48919530334043,
+        "spacing-once": 4.501282032572083,
+        "spacing-separate": 4.495316695304548
+      },
+      "bach/bwv415.mxl": {
+        "uniform": 6.187063115263211,
+        "pitch": 4.853884867713169,
+        "seed": 4.628388791857017,
+        "melodic": 4.719279440035543,
+        "seed+melodic": 4.561614800161387,
+        "spacing-shared": 4.537260197308595,
+        "leading-tone": 4.56612920870573,
+        "parallel-octaves": 4.561594881817938,
+        "spacing+leading": 4.54182931978085,
+        "all-original-proposals": 4.541810562726713,
+        "spacing-once": 4.548400777008367,
+        "spacing-separate": 4.544886543631171
+      },
+      "bach/bwv65.2.mxl": {
+        "uniform": 6.162223852069796,
+        "pitch": 3.6235227289604417,
+        "seed": 4.703991468562465,
+        "melodic": 3.826710665096536,
+        "seed+melodic": 3.835869720671345,
+        "spacing-shared": 3.841110212726034,
+        "leading-tone": 3.838785893058114,
+        "parallel-octaves": 3.8353911283656514,
+        "spacing+leading": 3.844010561965689,
+        "all-original-proposals": 3.8435076002970194,
+        "spacing-once": 3.8380521096113362,
+        "spacing-separate": 3.839353268192736
+      },
+      "bach/bwv67.7.mxl": {
+        "uniform": 6.162223852069796,
+        "pitch": 3.092943745990894,
+        "seed": 4.525567178231731,
+        "melodic": 5.220399794310748,
+        "seed+melodic": 4.940551237261792,
+        "spacing-shared": 4.912512226392419,
+        "leading-tone": 4.945072692685616,
+        "parallel-octaves": 4.940029436390662,
+        "spacing+leading": 4.917000482684236,
+        "all-original-proposals": 4.916479483485035,
+        "spacing-once": 4.92407720166407,
+        "spacing-separate": 4.921445979156986
+      },
+      "bach/bwv86.6.mxl": {
+        "uniform": 6.1125453256829685,
+        "pitch": 5.457776290671376,
+        "seed": 5.446156720632087,
+        "melodic": 4.99709756286983,
+        "seed+melodic": 5.054813013630267,
+        "spacing-shared": 4.9212007770519355,
+        "leading-tone": 5.031277444267583,
+        "parallel-octaves": 5.054348788019262,
+        "spacing+leading": 4.897754175949183,
+        "all-original-proposals": 4.897284443716833,
+        "spacing-once": 4.988806718451207,
+        "spacing-separate": 4.967553270206503
+      }
+    },
+    "added_rules": {
+      "seed": [],
+      "melodic": [],
+      "seed+melodic": [],
+      "spacing-shared": [
+        "Inner-voice spacing"
+      ],
+      "leading-tone": [
+        "Inner leading-tone resolution"
+      ],
+      "parallel-octaves": [
+        "Parallel octaves involving inner voices"
+      ],
+      "spacing+leading": [
+        "Inner-voice spacing",
+        "Inner leading-tone resolution"
+      ],
+      "all-original-proposals": [
+        "Inner-voice spacing",
+        "Inner leading-tone resolution",
+        "Parallel octaves involving inner voices"
+      ],
+      "spacing-once": [
+        "Spacing counted once per event"
+      ],
+      "spacing-separate": [
+        "Spacing at alto attacks",
+        "Spacing at tenor attacks"
+      ]
+    },
+    "weights": {
+      "seed": {
+        "Large leaps": 0.9807433663046771,
+        "Continuing upward after a large upward leap": 1.0521040137272417e-16,
+        "Tenor range": 0.3863409132633913,
+        "Crossing at simultaneous attacks": 1.1771167266232683,
+        "Parallel exact fifths": 0.07467320497630692,
+        "Crossing involving a held note": 0.5386444674188271,
+        "Wide inner voices at figure onset": 0.0
+      },
+      "melodic": {
+        "Alto motion baseline": 0.4649385475436992,
+        "Tenor motion baseline": 0.5055206492270677
+      },
+      "seed+melodic": {
+        "Large leaps": 0.2935482850452583,
+        "Continuing upward after a large upward leap": 1.8142097460101044e-17,
+        "Tenor range": 0.2042311850928473,
+        "Crossing at simultaneous attacks": 0.7126459088508886,
+        "Parallel exact fifths": 0.0812407154908558,
+        "Crossing involving a held note": 0.20225449235070686,
+        "Wide inner voices at figure onset": 0.0,
+        "Alto motion baseline": 0.39091817235632975,
+        "Tenor motion baseline": 0.45004235893199074
+      },
+      "spacing-shared": {
+        "Large leaps": 0.27407609267905503,
+        "Continuing upward after a large upward leap": 7.087254602074104e-17,
+        "Tenor range": 0.20919124103655898,
+        "Crossing at simultaneous attacks": 0.7028207134975117,
+        "Parallel exact fifths": 0.08252570226216965,
+        "Crossing involving a held note": 0.19899242982460952,
+        "Wide inner voices at figure onset": 0.0,
+        "Alto motion baseline": 0.3795431808033657,
+        "Tenor motion baseline": 0.43786791279762116,
+        "Inner-voice spacing": 0.39545777166039914
+      },
+      "leading-tone": {
+        "Large leaps": 0.29401565776050087,
+        "Continuing upward after a large upward leap": 1.1616058778812598e-17,
+        "Tenor range": 0.20440069025353175,
+        "Crossing at simultaneous attacks": 0.7113911497201699,
+        "Parallel exact fifths": 0.08126229369066988,
+        "Crossing involving a held note": 0.2024327692365499,
+        "Wide inner voices at figure onset": 0.0,
+        "Alto motion baseline": 0.39036436791417894,
+        "Tenor motion baseline": 0.44977679858524583,
+        "Inner leading-tone resolution": 0.1564774695601338
+      },
+      "parallel-octaves": {
+        "Large leaps": 0.29356286316849806,
+        "Continuing upward after a large upward leap": 0.0,
+        "Tenor range": 0.20425107301610318,
+        "Crossing at simultaneous attacks": 0.7126501766375448,
+        "Parallel exact fifths": 0.08128355647124999,
+        "Crossing involving a held note": 0.2022364097012757,
+        "Wide inner voices at figure onset": 0.0,
+        "Alto motion baseline": 0.39089480813564603,
+        "Tenor motion baseline": 0.45003640898841557,
+        "Parallel octaves involving inner voices": 0.032659371052433266
+      },
+      "spacing+leading": {
+        "Large leaps": 0.27458824073956173,
+        "Continuing upward after a large upward leap": 0.0,
+        "Tenor range": 0.20936505906407768,
+        "Crossing at simultaneous attacks": 0.7015855094883915,
+        "Parallel exact fifths": 0.08252676775849732,
+        "Crossing involving a held note": 0.1992120407737191,
+        "Wide inner voices at figure onset": 0.0,
+        "Alto motion baseline": 0.3790101483218062,
+        "Tenor motion baseline": 0.4375895287955742,
+        "Inner-voice spacing": 0.39539033871257234,
+        "Inner leading-tone resolution": 0.15610392346460097
+      },
+      "all-original-proposals": {
+        "Large leaps": 0.27462051894426737,
+        "Continuing upward after a large upward leap": 3.625072960232368e-18,
+        "Tenor range": 0.20937274289721539,
+        "Crossing at simultaneous attacks": 0.7016013872341271,
+        "Parallel exact fifths": 0.0825428572821115,
+        "Crossing involving a held note": 0.1992186093286685,
+        "Wide inner voices at figure onset": 0.0,
+        "Alto motion baseline": 0.3789909065869118,
+        "Tenor motion baseline": 0.4375870598745601,
+        "Inner-voice spacing": 0.39542809522438066,
+        "Inner leading-tone resolution": 0.1561096219940353,
+        "Parallel octaves involving inner voices": 0.03340243163702432
+      },
+      "spacing-once": {
+        "Large leaps": 0.2820938169080116,
+        "Continuing upward after a large upward leap": 4.211780519977436e-17,
+        "Tenor range": 0.20702452631216076,
+        "Crossing at simultaneous attacks": 0.708275205684239,
+        "Parallel exact fifths": 0.08192951785914618,
+        "Crossing involving a held note": 0.19956103206955428,
+        "Wide inner voices at figure onset": 0.0,
+        "Alto motion baseline": 0.38424145828591777,
+        "Tenor motion baseline": 0.44239959658065603,
+        "Spacing counted once per event": 0.3375808676248683
+      },
+      "spacing-separate": {
+        "Large leaps": 0.28057526089708845,
+        "Continuing upward after a large upward leap": 0.0,
+        "Tenor range": 0.2076489215333472,
+        "Crossing at simultaneous attacks": 0.7058033306468574,
+        "Parallel exact fifths": 0.08218350514231854,
+        "Crossing involving a held note": 0.20022085786307567,
+        "Wide inner voices at figure onset": 0.0,
+        "Alto motion baseline": 0.38332095021212664,
+        "Tenor motion baseline": 0.44156925258703944,
+        "Spacing at alto attacks": 0.22164251991524353,
+        "Spacing at tenor attacks": 0.2662837917281256
+      }
+    },
+    "training_windows_with_varying_feature": {
+      "Large leaps": 240,
+      "Continuing upward after a large upward leap": 0,
+      "Tenor range": 203,
+      "Crossing at simultaneous attacks": 169,
+      "Parallel exact fifths": 48,
+      "Crossing involving a held note": 146,
+      "Wide inner voices at figure onset": 0,
+      "Alto motion baseline": 157,
+      "Tenor motion baseline": 203,
+      "Inner-voice spacing": 240,
+      "Inner leading-tone resolution": 42,
+      "Parallel octaves involving inner voices": 27,
+      "Spacing counted once per event": 240,
+      "Spacing at alto attacks": 157,
+      "Spacing at tenor attacks": 203
+    }
+  },
+  "key_sensitivity": {
+    "summary": {
+      "uniform": {
+        "mean_nll_per_decision": 6.149804220473088,
+        "mean_piece_nll": 6.14980422047309,
+        "mean_nll_single_attack": 4.099869480315393,
+        "mean_nll_joint_attack": 8.199738960630784
+      },
+      "pitch": {
+        "mean_nll_per_decision": 4.1705845693759125,
+        "mean_piece_nll": 4.170584569375912,
+        "mean_nll_single_attack": 2.7085013748443645,
+        "mean_nll_joint_attack": 5.6326677639074605
+      },
+      "seed": {
+        "mean_nll_per_decision": 4.773235481609392,
+        "mean_piece_nll": 4.773235481609392,
+        "mean_nll_single_attack": 3.2678714976173726,
+        "mean_nll_joint_attack": 6.278599465601413
+      },
+      "melodic": {
+        "mean_nll_per_decision": 4.44610813889337,
+        "mean_piece_nll": 4.446108138893372,
+        "mean_nll_single_attack": 3.074928749169641,
+        "mean_nll_joint_attack": 5.817287528617101
+      },
+      "seed+melodic": {
+        "mean_nll_per_decision": 4.370544812778576,
+        "mean_piece_nll": 4.370544812778576,
+        "mean_nll_single_attack": 3.0486330987200585,
+        "mean_nll_joint_attack": 5.692456526837094
+      },
+      "spacing-shared": {
+        "mean_nll_per_decision": 4.340306756203144,
+        "mean_piece_nll": 4.3403067562031445,
+        "mean_nll_single_attack": 3.0368900190000923,
+        "mean_nll_joint_attack": 5.6437234934061955
+      },
+      "leading-tone": {
+        "mean_nll_per_decision": 4.3643375347301605,
+        "mean_piece_nll": 4.364337534730161,
+        "mean_nll_single_attack": 3.0468751598212265,
+        "mean_nll_joint_attack": 5.681799909639096
+      },
+      "parallel-octaves": {
+        "mean_nll_per_decision": 4.370363943833969,
+        "mean_piece_nll": 4.37036394383397,
+        "mean_nll_single_attack": 3.0484144907807567,
+        "mean_nll_joint_attack": 5.692313396887183
+      },
+      "spacing+leading": {
+        "mean_nll_per_decision": 4.334112209467217,
+        "mean_piece_nll": 4.334112209467216,
+        "mean_nll_single_attack": 3.03512881792959,
+        "mean_nll_joint_attack": 5.633095601004842
+      },
+      "all-original-proposals": {
+        "mean_nll_per_decision": 4.333919379637508,
+        "mean_piece_nll": 4.333919379637509,
+        "mean_nll_single_attack": 3.0349062522755235,
+        "mean_nll_joint_attack": 5.632932506999493
+      },
+      "spacing-once": {
+        "mean_nll_per_decision": 4.353842462623493,
+        "mean_piece_nll": 4.353842462623493,
+        "mean_nll_single_attack": 3.039175173493753,
+        "mean_nll_joint_attack": 5.6685097517532315
+      },
+      "spacing-separate": {
+        "mean_nll_per_decision": 4.350101722696379,
+        "mean_piece_nll": 4.35010172269638,
+        "mean_nll_single_attack": 3.040740551568337,
+        "mean_nll_joint_attack": 5.659462893824421
+      }
+    },
+    "by_piece": {
+      "bach/bwv108.6.mxl": {
+        "uniform": 6.137384588876382,
+        "pitch": 4.559164329332096,
+        "seed": 4.6905105778230265,
+        "melodic": 4.520349623831205,
+        "seed+melodic": 4.411395486819171,
+        "spacing-shared": 4.394045851217929,
+        "leading-tone": 4.413120124047755,
+        "parallel-octaves": 4.4113916050216835,
+        "spacing+leading": 4.39578458754739,
+        "all-original-proposals": 4.395779533177845,
+        "spacing-once": 4.400406024064698,
+        "spacing-separate": 4.399773540626956
+      },
+      "bach/bwv133.6.mxl": {
+        "uniform": 6.1125453256829685,
+        "pitch": 3.3424408549923323,
+        "seed": 4.813036660910191,
+        "melodic": 3.9540746626791066,
+        "seed+melodic": 3.97308405818972,
+        "spacing-shared": 3.9469002991929667,
+        "leading-tone": 3.9558932538529414,
+        "parallel-octaves": 3.9727050257669956,
+        "spacing+leading": 3.9296957135172756,
+        "all-original-proposals": 3.929277707538566,
+        "spacing-once": 3.9596860437442047,
+        "spacing-separate": 3.9551238309344137
+      },
+      "bach/bwv151.5.mxl": {
+        "uniform": 6.162223852069796,
+        "pitch": 3.2629171234770773,
+        "seed": 4.6991212807765566,
+        "melodic": 4.288438230674138,
+        "seed+melodic": 4.209372800136497,
+        "spacing-shared": 4.202379145636049,
+        "leading-tone": 4.193719507140091,
+        "parallel-octaves": 4.209377401817034,
+        "spacing+leading": 4.186724160129253,
+        "all-original-proposals": 4.1867247260567115,
+        "spacing-once": 4.205004140437154,
+        "spacing-separate": 4.204474834570259
+      },
+      "bach/bwv153.1.mxl": {
+        "uniform": 6.162223852069796,
+        "pitch": 3.7684021901447715,
+        "seed": 4.555072573775928,
+        "melodic": 4.28320086595142,
+        "seed+melodic": 4.161490340610619,
+        "spacing-shared": 4.081107777203445,
+        "leading-tone": 4.143900926044748,
+        "parallel-octaves": 4.16117062536252,
+        "spacing+leading": 4.063588715556036,
+        "all-original-proposals": 4.063252764247179,
+        "spacing-once": 4.123727867168406,
+        "spacing-separate": 4.108772030088253
+      },
+      "bach/bwv153.5.mxl": {
+        "uniform": 6.162223852069796,
+        "pitch": 4.003344211690755,
+        "seed": 4.741603147593337,
+        "melodic": 4.172972572636023,
+        "seed+melodic": 4.107470802499428,
+        "spacing-shared": 4.101574061896685,
+        "leading-tone": 4.089884166719311,
+        "parallel-octaves": 4.10746760319958,
+        "spacing+leading": 4.084029111001913,
+        "all-original-proposals": 4.084021393902256,
+        "spacing-once": 4.103468360537314,
+        "spacing-separate": 4.10367224088058
+      },
+      "bach/bwv245.11.mxl": {
+        "uniform": 6.162223852069796,
+        "pitch": 4.296583050205636,
+        "seed": 4.513669056270282,
+        "melodic": 4.8852367007537145,
+        "seed+melodic": 4.661682770502393,
+        "spacing-shared": 4.603582830880224,
+        "leading-tone": 4.663559488460613,
+        "parallel-octaves": 4.6610664309999414,
+        "spacing+leading": 4.60543579211081,
+        "all-original-proposals": 4.604734292882761,
+        "spacing-once": 4.63047705698715,
+        "spacing-separate": 4.621880769875222
+      },
+      "bach/bwv259.mxl": {
+        "uniform": 6.137384588876382,
+        "pitch": 4.984043337528827,
+        "seed": 4.620635211264975,
+        "melodic": 4.167684675709651,
+        "seed+melodic": 4.056431759258859,
+        "spacing-shared": 4.045834654520898,
+        "leading-tone": 4.058503393234613,
+        "parallel-octaves": 4.056440118425315,
+        "spacing+leading": 4.047886629297151,
+        "all-original-proposals": 4.047886776007757,
+        "spacing-once": 4.049445211628839,
+        "spacing-separate": 4.049575945036648
+      },
+      "bach/bwv26.6.mxl": {
+        "uniform": 6.137384588876382,
+        "pitch": 4.4474639032118946,
+        "seed": 4.76175290595775,
+        "melodic": 4.2089165402306605,
+        "seed+melodic": 4.160593205912808,
+        "spacing-shared": 4.148057678704528,
+        "leading-tone": 4.160934980240203,
+        "parallel-octaves": 4.16060551299035,
+        "spacing+leading": 4.148380449876193,
+        "all-original-proposals": 4.148387450412346,
+        "spacing-once": 4.152653487137511,
+        "spacing-separate": 4.152093067533493
+      },
+      "bach/bwv308.mxl": {
+        "uniform": 6.162223852069796,
+        "pitch": 3.3760287427936757,
+        "seed": 4.668855669335634,
+        "melodic": 4.463288996234246,
+        "seed+melodic": 4.377375626301195,
+        "spacing-shared": 4.356701448689597,
+        "leading-tone": 4.379549729300026,
+        "parallel-octaves": 4.377356244926298,
+        "spacing+leading": 4.358899070029595,
+        "all-original-proposals": 4.358869605599549,
+        "spacing-once": 4.3632888042368005,
+        "spacing-separate": 4.362591639599575
+      },
+      "bach/bwv311.mxl": {
+        "uniform": 6.187063115263211,
+        "pitch": 4.339432015037227,
+        "seed": 4.623312195090667,
+        "melodic": 4.067521466491025,
+        "seed+melodic": 3.9620900666603602,
+        "spacing-shared": 3.957313773134866,
+        "leading-tone": 3.928085756241187,
+        "parallel-octaves": 3.9615824000526096,
+        "spacing+leading": 3.9233646376474858,
+        "all-original-proposals": 3.9228547588902196,
+        "spacing-once": 3.959878166151949,
+        "spacing-separate": 3.9585849517638074
+      },
+      "bach/bwv318.mxl": {
+        "uniform": 6.137384588876382,
+        "pitch": 3.6508474880173694,
+        "seed": 4.6619313451745406,
+        "melodic": 4.623488302516649,
+        "seed+melodic": 4.497996464030484,
+        "spacing-shared": 4.4666143613885,
+        "leading-tone": 4.48228745674709,
+        "parallel-octaves": 4.497943786741389,
+        "spacing+leading": 4.450939034123561,
+        "all-original-proposals": 4.450878240930512,
+        "spacing-once": 4.474013947428055,
+        "spacing-separate": 4.476046884367762
+      },
+      "bach/bwv330.mxl": {
+        "uniform": 6.137384588876382,
+        "pitch": 4.220685305489723,
+        "seed": 5.734848786521412,
+        "melodic": 5.388932770775065,
+        "seed+melodic": 5.501353120053394,
+        "spacing-shared": 5.432687031777786,
+        "leading-tone": 5.485514500937587,
+        "parallel-octaves": 5.501351228918895,
+        "spacing+leading": 5.416863785225385,
+        "all-original-proposals": 5.416880605389303,
+        "spacing-once": 5.4599527361914895,
+        "spacing-separate": 5.454760201549777
+      },
+      "bach/bwv363.mxl": {
+        "uniform": 6.137384588876382,
+        "pitch": 5.744768036106799,
+        "seed": 4.685396563070765,
+        "melodic": 4.275799738755133,
+        "seed+melodic": 4.188744222065336,
+        "spacing-shared": 4.17823104428713,
+        "leading-tone": 4.192524596754611,
+        "parallel-octaves": 4.18874592166518,
+        "spacing+leading": 4.181993233014556,
+        "all-original-proposals": 4.181990152178376,
+        "spacing-once": 4.181391949024948,
+        "spacing-separate": 4.1820678013557835
+      },
+      "bach/bwv385.mxl": {
+        "uniform": 6.137384588876382,
+        "pitch": 3.9572160267616288,
+        "seed": 4.749566131332598,
+        "melodic": 4.629116522337516,
+        "seed+melodic": 4.531552793729533,
+        "spacing-shared": 4.50786079744466,
+        "leading-tone": 4.535242217603385,
+        "parallel-octaves": 4.531550316885265,
+        "spacing+leading": 4.511612990383547,
+        "all-original-proposals": 4.511609471961574,
+        "spacing-once": 4.5178380282378106,
+        "spacing-separate": 4.515304701198679
+      },
+      "bach/bwv40.8.mxl": {
+        "uniform": 6.137384588876382,
+        "pitch": 4.395080075505885,
+        "seed": 4.758732634218693,
+        "melodic": 3.658742740211991,
+        "seed+melodic": 3.697641271440119,
+        "spacing-shared": 3.6866735905403645,
+        "leading-tone": 3.6982671506908904,
+        "parallel-octaves": 3.6973950843650987,
+        "spacing+leading": 3.6872847826063393,
+        "all-original-proposals": 3.68699718712584,
+        "spacing-once": 3.6949985901864566,
+        "spacing-separate": 3.688756258054432
+      },
+      "bach/bwv404.mxl": {
+        "uniform": 6.162223852069796,
+        "pitch": 4.0351470638866616,
+        "seed": 4.882560733788197,
+        "melodic": 4.570910905767216,
+        "seed+melodic": 4.519772695636813,
+        "spacing-shared": 4.48448736406826,
+        "leading-tone": 4.5231634231549585,
+        "parallel-octaves": 4.519765334947722,
+        "spacing+leading": 4.48790823822216,
+        "all-original-proposals": 4.487900921089955,
+        "spacing-once": 4.501282032572083,
+        "spacing-separate": 4.495316695304548
+      },
+      "bach/bwv415.mxl": {
+        "uniform": 6.187063115263211,
+        "pitch": 4.853884867713169,
+        "seed": 4.628388791857017,
+        "melodic": 4.719279440035543,
+        "seed+melodic": 4.561614800161387,
+        "spacing-shared": 4.537260197308595,
+        "leading-tone": 4.564839149209865,
+        "parallel-octaves": 4.561594881817938,
+        "spacing+leading": 4.540538664042283,
+        "all-original-proposals": 4.540520874012344,
+        "spacing-once": 4.548400777008367,
+        "spacing-separate": 4.544886543631171
+      },
+      "bach/bwv65.2.mxl": {
+        "uniform": 6.162223852069796,
+        "pitch": 3.6235227289604417,
+        "seed": 4.703991468562465,
+        "melodic": 3.826710665096536,
+        "seed+melodic": 3.835869720671345,
+        "spacing-shared": 3.841110212726034,
+        "leading-tone": 3.836427337797073,
+        "parallel-octaves": 3.8353911283656514,
+        "spacing+leading": 3.8416504337364192,
+        "all-original-proposals": 3.8411464280970393,
+        "spacing-once": 3.8380521096113362,
+        "spacing-separate": 3.839353268192736
+      },
+      "bach/bwv67.7.mxl": {
+        "uniform": 6.162223852069796,
+        "pitch": 3.092943745990894,
+        "seed": 4.525567178231731,
+        "melodic": 5.220399794310748,
+        "seed+melodic": 4.940551237261792,
+        "spacing-shared": 4.912512226392419,
+        "leading-tone": 4.943775109714577,
+        "parallel-octaves": 4.940029436390662,
+        "spacing+leading": 4.915731342169555,
+        "all-original-proposals": 4.91521187257795,
+        "spacing-once": 4.92407720166407,
+        "spacing-separate": 4.921445979156986
+      },
+      "bach/bwv86.6.mxl": {
+        "uniform": 6.1125453256829685,
+        "pitch": 5.457776290671376,
+        "seed": 5.446156720632087,
+        "melodic": 4.99709756286983,
+        "seed+melodic": 5.054813013630267,
+        "spacing-shared": 4.9212007770519355,
+        "leading-tone": 5.037558426711704,
+        "parallel-octaves": 5.054348788019262,
+        "spacing+leading": 4.903932819107422,
+        "all-original-proposals": 4.903462830672078,
+        "spacing-once": 4.988806718451207,
+        "spacing-separate": 4.967553270206503
+      }
+    }
+  },
+  "development_strata": {
+    "uniform": {
+      "previous": 6.152288146792431,
+      "added": 6.148976245033309
+    },
+    "pitch": {
+      "previous": 4.31684266006394,
+      "added": 4.121831872479903
+    },
+    "seed": {
+      "previous": 4.817453118455967,
+      "added": 4.758496269327201
+    },
+    "melodic": {
+      "previous": 4.166654660124161,
+      "added": 4.539259298483107
+    },
+    "seed+melodic": {
+      "previous": 4.142380882602542,
+      "added": 4.4465994561705875
+    },
+    "spacing-shared": {
+      "previous": 4.097481226131329,
+      "added": 4.421248599560415
+    },
+    "leading-tone": {
+      "previous": 4.124561568185653,
+      "added": 4.441554906761982
+    },
+    "parallel-octaves": {
+      "previous": 4.141977605233029,
+      "added": 4.446492723367616
+    },
+    "spacing+leading": {
+      "previous": 4.079717212665705,
+      "added": 4.416228434348239
+    },
+    "all-original-proposals": {
+      "previous": 4.07929604779126,
+      "added": 4.416111601328959
+    },
+    "spacing-once": {
+      "previous": 4.121092690313871,
+      "added": 4.431425720060034
+    },
+    "spacing-separate": {
+      "previous": 4.112603955661147,
+      "added": 4.429267645041458
+    }
+  },
+  "uncertainty": {
+    "uniform": {
+      "gain_nats": -1.7792594076945143,
+      "interval95": [
+        -1.9601076161178768,
+        -1.5825307890275344
+      ],
+      "development_families": 20
+    },
+    "pitch": {
+      "gain_nats": 0.19996024340266416,
+      "interval95": [
+        -0.14614731558448912,
+        0.5434480620349883
+      ],
+      "development_families": 20
+    },
+    "seed": {
+      "gain_nats": -0.4026906688308163,
+      "interval95": [
+        -0.5493591999989894,
+        -0.2581864304578781
+      ],
+      "development_families": 20
+    },
+    "melodic": {
+      "gain_nats": -0.07556332611479633,
+      "interval95": [
+        -0.11436197162942217,
+        -0.036830101737469645
+      ],
+      "development_families": 20
+    },
+    "seed+melodic": {
+      "gain_nats": 0.0,
+      "interval95": [
+        0.0,
+        0.0
+      ],
+      "development_families": 20
+    },
+    "spacing-shared": {
+      "gain_nats": 0.030238056575431216,
+      "interval95": [
+        0.017840393836944097,
+        0.04607374964238769
+      ],
+      "development_families": 20
+    },
+    "leading-tone": {
+      "gain_nats": 0.0082382406606758,
+      "interval95": [
+        0.0020099679662740916,
+        0.014872698702779756
+      ],
+      "development_families": 20
+    },
+    "parallel-octaves": {
+      "gain_nats": 0.0001808689446054501,
+      "interval95": [
+        8.627292706167855e-05,
+        0.0002819230582606574
+      ],
+      "development_families": 20
+    },
+    "spacing+leading": {
+      "gain_nats": 0.03844418385097015,
+      "interval95": [
+        0.02307787752704213,
+        0.057161539785139756
+      ],
+      "development_families": 20
+    },
+    "all-original-proposals": {
+      "gain_nats": 0.038637099834041955,
+      "interval95": [
+        0.02315118065297518,
+        0.057394748856492525
+      ],
+      "development_families": 20
+    },
+    "spacing-once": {
+      "gain_nats": 0.016702350155083145,
+      "interval95": [
+        0.010419213534360197,
+        0.024323384590842368
+      ],
+      "development_families": 20
+    },
+    "spacing-separate": {
+      "gain_nats": 0.020443090082196136,
+      "interval95": [
+        0.012259726626916606,
+        0.03072104137464994
+      ],
+      "development_families": 20
+    }
+  },
+  "runtime_seconds": 1072.577686322,
+  "rules": [
+    {
+      "id": "7923d77cb191c35d",
+      "title": "Large leaps"
+    },
+    {
+      "id": "20b9ec79d7ec0354",
+      "title": "Continuing upward after a large upward leap"
+    },
+    {
+      "id": "65aaf4211fd31920",
+      "title": "Tenor range"
+    },
+    {
+      "id": "d1f7a3fdc1845554",
+      "title": "Crossing at simultaneous attacks"
+    },
+    {
+      "id": "7063be1ead592277",
+      "title": "Parallel exact fifths"
+    },
+    {
+      "id": "56dbca1584cf2227",
+      "title": "Crossing involving a held note"
+    },
+    {
+      "id": "78b5667d94a4d579",
+      "title": "Wide inner voices at figure onset"
+    },
+    {
+      "id": "6f2a9b81fd1ea814",
+      "title": "Alto motion baseline"
+    },
+    {
+      "id": "44a95171f7bb2bd1",
+      "title": "Tenor motion baseline"
+    },
+    {
+      "id": "0ceb20f10367e41d",
+      "title": "Inner-voice spacing"
+    },
+    {
+      "id": "dea90be2fc22c3dd",
+      "title": "Inner leading-tone resolution"
+    },
+    {
+      "id": "a5b9e094550b619e",
+      "title": "Parallel octaves involving inner voices"
+    },
+    {
+      "id": "636e97b0e42e8c27",
+      "title": "Spacing counted once per event"
+    },
+    {
+      "id": "b9954ad0baaa3c29",
+      "title": "Spacing at alto attacks"
+    },
+    {
+      "id": "c8f6e7357299d954",
+      "title": "Spacing at tenor attacks"
+    }
+  ]
+}

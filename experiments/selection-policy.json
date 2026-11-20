@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "stage": "development-only, provisional",
+  "reference_model": "seed+melodic",
+  "primary_metric": "mean of per-piece mean negative log likelihood",
+  "minimum_improvement_nats": 0.02,
+  "minimum_piece_win_fraction": 0.6,
+  "simplicity_tolerance_nats": 0.01,
+  "candidates": "Each proposed rule individually, plus all three together",
+  "notes": "Declared before reading the expanded experiment results. Prefer fewer added rules among eligible models within tolerance of the best. This is an engineering selection rule, not a significance test. Do not evaluate the final test set."
+}

@@ -1,0 +1,46 @@
+name: Bounded U-M rule proposal
+on:
+  push:
+    branches: [attack-dsl-prototype]
+    paths:
+      - 'experiments/requests/round-002.json'
+      - '.github/workflows/rule-proposal.yml'
+permissions:
+  contents: write
+concurrency:
+  group: harmonizer-paid-api
+  cancel-in-progress: false
+jobs:
+  proposal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: attack-dsl-prototype
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: python -m pip install -e '.[dev,experiment]'
+      - run: python -m pytest -q
+      - name: Configure checkpoint identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Probe or perform the single recorded request
+        env:
+          UM_TOOLKIT_API_KEY: ${{ secrets.UM_TOOLKIT_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python -m harmonizer.attack.cloud_proposals
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: round-002-api-record
+          path: |
+            experiments/api-ledger.json
+            experiments/um-provider-status.json
+            experiments/api-responses/round-002.json
+            experiments/round-002-validation.json
+          retention-days: 30

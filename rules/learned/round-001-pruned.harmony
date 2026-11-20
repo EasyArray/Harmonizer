@@ -1,0 +1,72 @@
+// Handwritten hypotheses, not discovered rules.
+At attack n:
+  Rule "Large leaps":
+    let leap = distance(n.previous, n)
+    if leap > 7:
+      penalty leap - 7
+
+  Rule "Continuing upward after a large upward leap":
+    let previous = n.previous
+    let earlier = previous.previous
+    if previous is above earlier
+      and distance(earlier, previous) > 7
+      and n is above previous:
+      penalty 1
+
+At tenor attack t:
+  Rule "Tenor range":
+    if t is below C3:
+      penalty distance(t, C3)
+    if t is above G4:
+      penalty distance(t, G4)
+
+At attack (upper, lower):
+  Rule "Crossing at simultaneous attacks":
+    if upper is below lower:
+      penalty 1
+
+  Rule "Parallel exact fifths":
+    let previous = interval(lower.previous, upper.previous)
+    let current = interval(lower, upper)
+    if distance(upper.previous, upper) > 0:
+      if previous == P5 and current == P5:
+        penalty 1
+      if previous == -P5 and current == -P5:
+        penalty 1
+
+At attack n1 while n2 holds:
+  Rule "Crossing involving a held note":
+    if n1.voice is above n2.voice and n1 is below n2:
+      penalty 1
+    if n2.voice is above n1.voice and n2 is below n1:
+      penalty 1
+
+At figure f:
+  Rule "Wide inner voices at figure onset":
+    let alto = A at f
+    let tenor = T at f
+    if distance(tenor, alto) > 12:
+      penalty 1
+
+At alto attack a:
+  Rule "Alto motion baseline":
+    penalty distance(a.previous, a)
+At tenor attack t:
+  Rule "Tenor motion baseline":
+    penalty distance(t.previous, t)
+
+At attack n:
+  Rule "Inner-voice spacing":
+    if n.voice == A or n.voice == T:
+      if distance((T at n), (A at n)) > 12:
+        penalty 1
+
+At attack n:
+  Rule "Inner leading-tone resolution":
+    if n.voice == A or n.voice == T:
+      if key.mode == "major" and degree(n.previous) == 7:
+        if degree(n) != 1:
+          penalty 1
+      if key.mode == "minor" and degree(n.previous) == #7:
+        if degree(n) != 1:
+          penalty 1
