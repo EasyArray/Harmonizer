@@ -111,6 +111,10 @@ def infer(tree, scope):
         return int if name == "distance" else Interval
       if name == "degree" and len(kinds) == 1 and kinds[0] in PITCH_TYPES:
         return Degree
+      if name == "in_scale" and len(kinds) == 1 and kinds[0] in PITCH_TYPES:
+        return bool
+      if name == "dissonant" and kinds == [Note, Note]:
+        return bool
       raise DSLError(f"Unsupported function or arguments: {name}")
     case "negative":
       kind = infer(c[0], scope)
@@ -365,6 +369,15 @@ def evaluate_expression(tree, env, score):
           return interval(*values)
         case "degree":
           return score.key.degree(pitch_of(values[0]))
+        case "in_scale":
+          scale = (0, 2, 4, 5, 7, 9, 11) if score.key.mode == "major" else (0, 2, 3, 5, 7, 8, 10)
+          return (pitch_of(values[0]).semitones - score.key.tonic.semitones) % 12 in scale
+        case "dissonant":
+          a, b = values
+          spacing = abs(a.pitch.semitones - b.pitch.semitones) % 12
+          if spacing == 5:
+            return Voice.B in (a.voice, b.voice)
+          return spacing not in (0, 3, 4, 7, 8, 9)
     case "negative" | "logical_not":
       value = evaluate_expression(c[0], env, score)
       if isinstance(value, Missing):

@@ -183,3 +183,14 @@ pieces, a soprano/bass-only key estimator disagreed with five encoded labels.
 Neither source is treated as ground truth. The leading-tone result is provisional.
 The key-independent selection policy excludes that proposal from the default
 model; the original experiment and fitted inventories remain reproducible.
+
+## Sounding-pitch predicates used in the foundations experiment
+
+`in_scale(n)` accepts a note or pitch. Its sounding pitch class must occur in
+the supplied global major or natural-minor scale. Enharmonic spellings agree.
+
+`dissonant(n, m)` accepts two notes. Reduce their absolute semitone distance
+modulo 12. Unisons/octaves, thirds, fifths and sixths count as consonant.
+A fourth counts as dissonant when either note belongs to the bass part.
+This is a deliberately coarse two-note predicate. A silent voice yields a
+missing value and skips that comparison. See [the rulebook](../rules/foundations.harmony).

@@ -1,6 +1,6 @@
 # Resume here
 
-Updated November 17, 2026. Branch: `attack-dsl-prototype`; draft PR #1.
+Updated November 20, 2026. Branch: `attack-dsl-prototype`; draft PR #1.
 
 ## Recovery check
 
@@ -46,17 +46,17 @@ still divide probability; the report now shows the sounding-pitch total too.
 
 ## Next action
 
-Round 002 completed through OpenAI using Astra/high and the expanded report.
-All three proposals passed DSL validation. Conservative total API accounting is
-$0.330158 of $10. The response and validation are saved: never resend round-002.
-The offline proposal evaluation is launched by the committed evaluation request;
-check that workflow once on resume and read docs/round-002-evaluation.md when
-available. It publishes its own report and fitted candidate model.
-Active evaluation run: https://github.com/EasyArray/Harmonizer/actions/runs/44103341737
-It was confirmed running at this checkpoint. Its dedicated workflow receives no
-API key and makes no paid requests. Do not launch a duplicate evaluation.
-Keep the proposal response and its validation separate from evidence that any
-rule improves predictive probabilities.
+Round 002 finished and published its [evaluation](round-002-evaluation.md).
+The [five-family foundations experiment](foundations.md) has also finished. Its
+rulebook, reproducible offline runner and per-piece results are on this branch.
+Both runs preserve the 40/20 split. Conservative total API accounting remains
+$0.330158 of $10. No experiments are pending.
+
+The next scientific question is why outer consonance helps joint attacks but
+reduces the probability of Bach’s pitch on single attacks. Compare a shared
+weight against separate weights by attack type on the same decisions, and
+inspect passing notes and suspensions before interpreting the difference.
+Reserve fresh chorale families for a confirmatory test after model selection.
 
 ## Durable operation
 

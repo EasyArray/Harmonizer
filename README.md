@@ -1,4 +1,4 @@
-> **Current project:** [Resume/status](docs/project-status.md) · [Expanded results](docs/expanded-development.md) · [DSL reference](docs/attack-prototype.md). No local installation is needed to review these reports.
+> **Current project:** [Resume/status](docs/project-status.md) · [Five basic harmony preferences](docs/foundations.md) · [Expanded results](docs/expanded-development.md) · [DSL reference](docs/attack-prototype.md). No local installation is needed to review these reports.
 
 # Harmonizer Workbench
 
